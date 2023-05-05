@@ -1,0 +1,32 @@
+@@include('./header.html', {
+    "title": "Home",
+    "canonical": ""
+  })
+
+  <body class="home">
+
+    <div class="welcome">
+      <canvas id="starfield" width="900" height="300">
+      your browser no goody
+      </canvas>
+      <div class="splash">
+        <h1 class="name">OUTER SPACE</h1>
+      </div>
+
+    </div>
+
+      @@include('./nav.html')
+
+    <div class="container p-4" id="current-exhibition">
+
+      <div class="row py-4 text-center">
+        <p class="fs-3"><em>Outer Space Inaugural Exhibition: Alex Olson & Katherine Porter</em></p>
+        <p>May 13th - July 31th 2023</p>
+      </div>
+
+        @@include('./current-ex.html')
+
+    </div> <!-- end container -->
+
+
+@@include('./footer.html')
