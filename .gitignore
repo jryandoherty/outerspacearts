@@ -1,0 +1,9 @@
+
+*.xml
+node_modules/.bin/acorn
+
+node_modules
+.DS_Store
+dist/_notes/dwsync.xml
+dist/css/_notes/dwsync.xml
+dist/img/_notes/dwsync.xml
