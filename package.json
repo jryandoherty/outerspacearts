@@ -182,6 +182,7 @@
     }
   },
   "dependencies": {
+    "bs5-lightbox": "^1.8.3",
     "cssnano": "^6.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
