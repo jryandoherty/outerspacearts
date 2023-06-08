@@ -24,3 +24,25 @@ function getRandom(min, max) {
 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+console.log(window.location.href);
+const host = "http://127.0.0.1:5500/";
+// JAVASCRIPT FOR INDEX PAGE
+if (window.location.href == host + 'index.html') {
+    console.log("this is index page");
+
+    fsLightboxInstances["first-lightbox"].props.onOpen = function () {
+      console.log("The first lightbox has opened.");
+    }
+    fsLightboxInstances["second-lightbox"].props.onOpen = function () {
+      console.log("The second lightbox has opened.");
+    }
+
+    fsLightboxInstances["third-lightbox"].props.onOpen = function () {
+      console.log("The third lightbox has opened.");
+    }
+    fsLightboxInstances["fourth-lightbox"].props.onOpen = function () {
+      console.log("The fourth lightbox has opened.");
+    }
+
+}

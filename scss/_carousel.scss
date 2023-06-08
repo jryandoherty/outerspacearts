@@ -236,3 +236,35 @@
     }
   }
 }
+
+/* custom edits */
+.carousel-control-prev, .carousel-control-next {
+
+  color:#ccc;
+  opacity: 1;
+  top: 85%;
+  width:auto;
+
+  svg {
+    fill:#000;
+  }
+
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  width: 1.4rem;
+  height: 1.7rem;
+}
+
+.carousel-control-prev {
+  right: 50px;
+  left: auto;
+}
+
+.carousel-item {
+  font-size:.75em;
+  p {
+    margin-top:8px;
+    /*min-height: 100px;*/
+  }
+}

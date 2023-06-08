@@ -1,0 +1,164 @@
+body {
+  font-family: bookmania, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+
+  a {
+    color:$spacered;
+    text-decoration: none;
+   &:hover {
+        color:$spaceredlight;
+      }
+
+    }
+  }
+
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0
+  }
+
+
+  100% {
+    transform: translateY(0);
+    opacity:1
+  }
+}
+
+h1 {
+  font-family: bdr-mono, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6.15vw;
+  animation: 1s ease-out 0s 1 slideInTop;
+  letter-spacing: -3px;
+  font-display: swap;
+}
+
+
+@media screen and (min-width: 1300px) {
+  h1 {
+    font-size: 4.18em;
+    animation: 2s ease-out 0s 1 slideInTop;
+    letter-spacing: -4px;
+    transition: 1s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 7.55vw;
+    animation: 2s ease-out 0s 1 slideInTop;
+    letter-spacing: -2px;
+    transition: 1s;
+  }
+}
+
+h2 {
+  font-family: bdr-mono, sans-serif;
+  font-size:6.5vw;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 600px) {
+    font-size:4.5vw;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size:4vw;
+  }
+
+  @media screen and (min-width: 1300px) {
+    font-size:3em;
+  }
+}
+
+
+.btn-outline-primary {
+  padding:16px 20px 11px!important;
+}
+
+.video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.galaxy {
+  position:absolute;
+  width:15px;
+  top:165px;
+  right:10%;
+  z-index:201;
+  @media (max-width:992px){
+    top:75px;
+    width:15px;
+  }
+
+}
+
+.saturn {
+  position:absolute;
+  width:20px;
+  top:125px;
+  right:5%;
+  z-index:201;
+  @media (max-width:992px){
+    top:55px;
+    width:15px;
+  }
+
+  @media (min-width:1900px){
+    width:50px;
+  }
+}
+
+.jupiter {
+  position:absolute;
+  width:20px;
+  top:325px;
+  left:20%;
+  z-index:201;
+}
+
+.house {
+  background: url("../img/house-2100.jpg")no-repeat center #ebe3e0;
+  background-size: auto;
+  background-size: 1135px;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin-top:60px;*/
+
+  @media (max-width:992px){
+    background-size: 830px;
+  }
+
+  + canvas {
+    display: none;
+  }
+
+  h1 {
+    color:$black;
+    text-shadow: 1px 2px 3px #fff;
+
+  }
+} /* end house */
+
+
+.credits svg:hover {
+  fill:$spacered;
+}
+
+.credits .col-lg-8 li {
+  padding-bottom:14px;
+}
+
+#insta-contact svg  {
+  fill:$gray-400;
+  &:hover {
+    fill: $spacered;
+    transition: .7s ease-in;
+  }
+}
