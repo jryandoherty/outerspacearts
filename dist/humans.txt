@@ -1,0 +1,28 @@
+
+/* TEAM */
+
+Roger Buttles, Curator
+https://www.instagram.com/outerspace.xyz/
+https://www.rogerbuttles.com/
+
+J. Ryan Doherty, website
+@jryandoherty
+https://github.com/jryandoherty
+
+/* THANKS */
+Ross Normandin,
+Michelle Grabner
+Harris Doran
+Mel Taing
+Tynan Flanagan
+Maggie Hamilton
+Donna Rice
+Richard and Judy Hampe
+Brian McKenna
+Charles Costa
+Jason Buttles and Clinton Yara
+Meghan Doherty
+
+/* SITE */
+Bootstrap 5.3.1
+Gulp 4 + BrowserSync

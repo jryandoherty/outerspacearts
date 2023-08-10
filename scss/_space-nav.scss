@@ -18,7 +18,8 @@ nav {
   svg {
     margin-left:10px;
     @media (max-width:992px){
-      margin:0 10px 0 0;
+      margin:0 14px 0 0;
+      width:32px!important;
     }
   }
 
@@ -85,6 +86,7 @@ canvas {
 
 #insta svg  {
   fill:$white;
+  width:20px;
   &:hover{
     fill: $spaceredlight;
   }
@@ -95,5 +97,21 @@ canvas {
   width:20px;
   &:hover {
     fill: $spaceredlight
+  }
+
+}
+
+
+@media (max-width:575px){
+
+  .navbar-toggler {
+
+  }
+
+  .nav-item{
+    margin-bottom:10px;
+    &:first-child {
+      margin-top:10px;
+    }
   }
 }

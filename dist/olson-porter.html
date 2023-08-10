@@ -1,0 +1,565 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Outer Space is an artist-run exhibition venue.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id="title">Outer Space | Home</title>
+    <link rel="author" href="humans.txt">
+    <link href="/css/bootstrap.css?v=9878342932" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/jel1pya.css" rel="preload" as="font">
+    <link rel="canonical" href="https://www.outerspacearts.xyz/" >
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M99WXRGMTL"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M99WXRGMTL');
+    </script>
+
+
+  </head>
+
+  <!--[if lt IE 10]>
+      <p class="chromeframe">Are you really using IE?! C'mon man/mam.  Please <a href="http://browsehappy.com/" target="_blank" onclick="s.tl(this,'e','AnotherSite',null)">upgrade your browser</a> right now! I'm not joking, this is my job.</p>
+  <![endif]-->
+
+
+  <body>
+
+    <div class="welcome">
+      <canvas id="starfield" width="900" height="300">
+      your browser no goody
+      </canvas>
+      <div class="splash">
+        <h1 class="name">PAST EXHIBITIONS</h1>
+      </div>
+
+    </div>
+
+      <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      MENU
+    </button>
+    <a class="navbar-brand" href="/"><img src="/img/logo.svg" alt="Outer Space"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">EXHIBITIONS</a>
+          <ul class="dropdown-menu">
+            <li class="p-2 top-item">CURRENT</li>
+            <li><a class="dropdown-item" href="/#current-exhibition">Matthew Fischer & William J. O'Brien</a></li>
+            <li ><hr class="dropdown-divider"></li>
+            <li class="p-2 top-item">UPCOMING</li>
+            <li><a class="dropdown-item" href="/upcoming/">Maria Antelman & Mark Armijo McKnight</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li class="p-2 top-item">PAST</li>
+            <li><a class="dropdown-item" href="/olson-porter/">Alex Olson & Katherine Porter</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          INFO
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/about/">About</a></li>
+            <li><a class="dropdown-item" href="/contact/">Contact</a></li>
+            <li><a class="dropdown-item" href="/charities/">Charities</a></li>
+            <li><a class="dropdown-item" href="/credits/">Credits</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <div class="d-flex">
+        <a href="mailto:info@outerspacearts.xyz" id="email"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg></a>
+        <a href="https://www.instagram.com/outerspace.xyz/" target="_blank" id="insta">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+      <div class="container p-4" id="past-exhibition">
+
+        <div class="row pt-4 text-center">
+          <p class="fs-3"><em>Outer Space Inaugural Exhibition: Alex Olson & Katherine Porter</em></p>
+          <p>May 13th - July 31st 2023</p>
+      </div>
+
+      <div class="row justify-content-md-center py-4">
+        <div class="col-lg-9">
+          <iframe class="video" src="https://www.youtube.com/embed/l8Yg2hTk_uI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+
+
+
+<div class="row justify-content-md-center mb-5">
+
+    <div class="col-lg-3 fs-4 mt-3 artists">
+      <div class="align-items-start">
+        <div class="nav flex-column text-end" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="artist-1-tab" data-bs-toggle="pill" data-bs-target="#artist-1" role="tab" aria-selected="true" href="#" >Alex Olson</a>
+          <a class="nav-link" id="artist-2-tab" data-bs-toggle="pill" data-bs-target="#artist-2" role="tab" aria-selected="false" href="#">Katherine Porter</a>
+        </div>
+      </div>
+    </div><!-- end navigation artists -->
+
+    <div class="col-lg-9">
+
+        <div class="tab-content">
+
+          <div class="tab-pane fade show active" id="artist-1" role="tabpanel" aria-labelledby="artist-1" tabindex="0">
+
+            <!-- begin first tab -->
+            <ul class="nav mb-3 nav-pills" id="pills-tab-1" role="tablist">
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">welcome</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">works</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">installations</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false">artist statement</button>
+              </li>
+              <!--<li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">interview</button>
+              </li>-->
+            </ul>
+
+
+
+            <div class="tab-content" id="artist-1-tabContent">
+              <div class="tab-pane fade show active" id="pills-one" role="tabpanel" aria-labelledby="pills-one" tabindex="0">
+
+                  <p>Alex Olson is a painter living and working in Los Angeles, CA. She earned her Bachelor of Arts from Harvard University in 2001 and her MFA from California Institute of the Arts in 2008.</p>
+                  <p>Olson has exhibited extensively in the United States and abroad including solo shows at Altman Siegel Gallery, San Francisco, Paul Soto/Park View, Los Angeles, Shane Campbell Gallery, Chicago, Lisa Cooley NY, Laura Bartlett Gallery, London and others.</p>
+                  <p>Her work was included in group shows at LACMA (Los Angeles County Museum of Art) and "Made in LA 2012" at the Hammer Museum, Los Angeles, and can be found in many public collections including at The Los Angeles County Museum of Art, The Museum of Contemporary Art, Chicago, Hammer Museum, Los Angeles, Walker Art Center, Minneapolis, and The Dallas Museum of Art.</p>
+
+              </div>
+
+            <div class="tab-pane fade" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
+
+
+       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                      <picture>
+                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9010-crop.jpg"><img src="/img/alex-olson/img-1.jpg" class="d-block w-100" alt="Transfer 2023"></a>
+                      </picture>
+                      <p>
+                      Transfer, 2023<br>
+                      Oil and modeling paste on canvas<br>
+                      51" x 36"</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Reread.jpg"><img src="/img/alex-olson/img-2.jpg" class="d-block w-100" alt="Reread 2023"></a>
+                      </picture>
+                      <p>
+                      Reread, 2023<br>
+                      Oil and modeling paste on canvas<br>
+                      51" x 36"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Build.jpg"><img src="/img/alex-olson/img-4.jpg" class="d-block w-100" alt="Build 2023"></a>
+                      </picture>
+                      <p>
+                      Build, 2023<br>
+                      Oil, modeling paste and grease pencil on canvas<br>
+                      51" x 36"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Margins.jpg"><img src="/img/alex-olson/img-5.jpg" class="d-block w-100" alt="Margins 2023"></a>
+                      </picture>
+                      <p>
+                      Margins, 2023<br>
+                      Oil and modeling paste canvas<br>
+                      51" x 36"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/IMG-9249.jpg"><img src="/img/alex-olson/img-6.jpg" class="d-block w-100" alt="Margins 2023"></a>
+                      </picture>
+                      <p>
+                    Baby, 2023<br>
+                      Oil and modeling paste canvas<br>
+                      11" x 8-1/2"</p>
+                    </div>
+
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+
+              </div>
+
+
+              <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three" tabindex="0">
+
+                <div id="carouselExampleFade-2" class="carousel slide carousel-fade installations" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+  <!--  <div class="carousel-item">
+    <iframe class="video" src="https://www.youtube.com/embed/G2c8dDHlSAU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>
+  Installation Video</p>
+  </div>-->
+  <div class="carousel-item active">
+    <picture>
+      <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation4.jpg"><img src="/img/installations/5-13/installation4.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+    </picture>
+    <p>Outer Space 2023</p>
+  </div>
+
+    <div class="carousel-item">
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation2.jpg"><img src="/img/installations/5-13/installation2.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item">
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation3.jpg"><img src="/img/installations/5-13/installation3.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item" >
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation5.jpg"><img src="/img/installations/5-13/installation5.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item" >
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation6.jpg"><img src="/img/installations/5-13/installation6.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item" >
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation8.jpg"><img src="/img/installations/5-13/installation8.jpg" class="d-block w-100" alt="Outer Space 2023"></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item" >
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation9.jpg"><img src="/img/installations/5-13/installation9.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+    <div class="carousel-item" >
+      <picture>
+        <a data-fslightbox="third-lightbox" href="/img/installations/5-13/installation10.jpg"><img src="/img/installations/5-13/installation10.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+      </picture>
+      <p>Outer Space 2023</p>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+
+              </div>
+
+              <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four" tabindex="0">
+
+                <p>One of my favorite aspects of making paintings is that you can rewrite the rules of how we experience the world. My paintings have aspirational qualities, often being bolder, louder and more colorful than myself, with an eye towards design and fashion. They  are aware of how they self-present but likewise show that they have multiple, alternative layers to choose from. They take familiar forms—a brushstroke, learned ideas of pictorial space, written language—and choreograph them into less familiar results. We still wish to “read” them, but do not come to singular conclusions. Instead, these tools point to our desire to define, and the processes we use to do so. The paintings offer expanded reads in hopes of bringing more awareness to how we look and judge while encouraging comfort with complexity.</p>
+   
+                <p>When Roger offered me the opportunity to show at Outer Space, and asked if there was another artist I would like to be paired with, I immediately thought of Katherine Porter. I was lucky enough to grow up with a painting of Katherine’s in our house, and I credit this painting for being the reason I am also a painter. The painting itself is inseparable from my idea of "home;" it has an iconic status in our family by being included in key photos, and it's been a constant through the stages of growing up. It also happens to be an exceptional painting, with an assertive, confident presence and a sophisticated wit. I'm pretty sure some of its use of stock signage (an "X," a wavering grid), its insistence on mark making as the main event, and its lack of familiar tropes of pictorial space heavily influenced these aspects in my own work. My parents knew Katherine, and the fact that my family actually knew the artist—the artist was a real person who didn't just exist in black and white photos in books or was from another time period—made it possible for me to almost, maybe, potentially imagine that perhaps someday I could be an artist too. It is an absolute honor and dream come true to show work alongside hers in Outer Space.</p>
+
+                <p>On behalf of Alex, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://www.kimballjenkins.com/about" target="_blank">Kimball Jenkins</a>. </p>
+
+                <p><a href="AlexOlsonCV.pdf" target="_blank">view her full biography</a></p>
+
+              </div>
+
+          <!-- <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five-tab" tabindex="0">
+
+
+            </div> end interview pane -->
+
+            </div><!-- end tabbed-content -->
+
+          </div><!-- end first artist -->
+
+
+          <!-- begin second artist -->
+          <div class="tab-pane fade" id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
+
+
+            <ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link me-2 active"  data-bs-toggle="pill" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">welcome</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="false">works</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane4" aria-selected="false">installations</button>
+              </li>
+              <li class="nav-item me-2" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane4" type="button" role="tab" aria-controls="pane4" aria-selected="false">artist statement</button>
+              </li>
+
+            </ul>
+
+            <div class="tab-content" id="artist-2-tabContent">
+              <div class="tab-pane fade show active" id="pane1" role="tabpanel" aria-labelledby="pane1" tabindex="0">
+
+                <p>Katherine Porter is a painter living and working in Maine. She earned her Bachelor of Arts from Colorado College in 1963, studied at Boston University, and received honorary doctorates from Colby College in 1982 and Bowdoin College in 1992. <p>Porter has shown twice in the Whitney Biennial (1981, 1973) and has exhibited extensively in the United States and abroad including at The Knoedler Gallery in London, Galerie Hubert Winter in Vienna, Austria, The Nina Nielsen Gallery in Boston, and David McKee, Andre Emmerich, and Salander O'Reilly Galleries in New York.</p><p> Her work can be found in numerous public collections worldwide including at The Metropolitan Museum of Art, Museum of Modern Art, Whitney Museum of American Art, Museum of Fine Arts in Boston, Solomon R. Guggenheim Museum, Philadelphia Museum of Art, SFMOMA, Detroit Art Institute, amongst many others.</p>
+
+              </div>
+
+              <div class="tab-pane fade" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
+
+        <div id="carouselExampleFade-3" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                      <picture>
+                        <a data-fslightbox="second-lightbox" href="/img/k-porter/1A3A8999-crop.jpg"><img src="/img/k-porter/1A3A9057-frame.jpg" class="d-block w-100" alt="House of Cards 2018"></a>
+                      </picture>
+                      <p>
+                      House of Cards, 2018<br>
+                      Oil on canvas<br>
+                      50" x 42"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                        <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-Memory-Disbanded.jpg"><img src="/img/k-porter/img-3.jpg" class="d-block w-100" alt="Memory Disbanded"></a>
+                      </picture>
+                      <p>
+                      Memory Disbanded, 2017<br>
+                      Oil on canvas<br>
+                      42" x 36"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                        <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-Arabesque.jpg"><img src="/img/k-porter/img-4.jpg" class="d-block w-100" alt="Arabesque"></a>
+                      </picture>
+                      <p>
+                      Arabesque, 2014<br>
+                      Oil on canvas<br>
+                      44" x 42"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                        <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-To-Lee-Krasner.jpg"><img src="/img/k-porter/img-5.jpg" class="d-block w-100" alt="To Lee Krasner"></a>
+                      </picture>
+                      <p>
+                      To Lee Krasner, 2015<br>
+                      Oil on canvas<br>
+                      44" x 42"</p>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="4000">
+                      <picture>
+                        <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-After-Melancholia.jpg"><img src="/img/k-porter/img-6.jpg" class="d-block w-100" alt="After Melancholia"></a>
+                      </picture>
+                      <p>
+                      After Melancholia, 2012<br>
+                      Oil on canvas<br>
+                      41" x 44"</p>
+                    </div>
+
+                  </div>
+
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="pane3" tabindex="0">
+
+                <div id="carouselExampleFade-4" class="carousel slide carousel-fade installations" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+
+                  <!--  <div class="carousel-item">
+                    <iframe class="video" src="https://www.youtube.com/embed/G2c8dDHlSAU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>
+                  Installation Video</p>
+                  </div>-->
+                  <div class="carousel-item active">
+                    <picture>
+                      <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation4.jpg"><img src="/img/installations/5-13/installation4.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                    </picture>
+                    <p>Outer Space 2023</p>
+                  </div>
+
+                    <div class="carousel-item">
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation2.jpg"><img src="/img/installations/5-13/installation2.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item">
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation3.jpg"><img src="/img/installations/5-13/installation3.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item" >
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation5.jpg"><img src="/img/installations/5-13/installation5.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item" >
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation6.jpg"><img src="/img/installations/5-13/installation6.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item" >
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation8.jpg"><img src="/img/installations/5-13/installation8.jpg" class="d-block w-100" alt="Outer Space 2023"></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item" >
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation9.jpg"><img src="/img/installations/5-13/installation9.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                    <div class="carousel-item" >
+                      <picture>
+                        <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation10.jpg"><img src="/img/installations/5-13/installation10.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
+                      </picture>
+                      <p>Outer Space 2023</p>
+                    </div>
+
+                  </div>
+
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+
+
+
+              </div><!-- end pane 3 -->
+
+              <div class="tab-pane fade" id="pane4" role="tabpanel" aria-labelledby="pane4" tabindex="0">
+                <p>Painting and drawings are the way that I say what I have to say ... about everything. Listening to music much of the time ... from Benign to Mozart's Requiem ... is very important in my life ... and always looking outside of myself. Whether it is the library or the ocean ... goes straight into the work. Color is everywhere.</p>
+
+                <p>On behalf of Katherine, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://u24.gov.ua" target="_blank">United 24 Aid to Ukrainians</a></p>
+
+                <p><a href="/img/k-porter/KatherinePorterCV.pdf" target="_blank">view her full biography</a></p>
+
+              </div>
+
+
+            </div>
+
+          </div><!-- end second artist -->
+
+          </div> <!--end tabbed-content  -->
+
+        </div> <!--end col-lg-9  -->
+
+    </div> <!-- end row current-exhibitions -->
+
+
+</div> <!-- end container -->
+    <footer class="p-5 text-center">
+  <div class="container">
+    <div class="row text-start align-items-center ">
+
+      <div class="col-lg-2">
+          <a href="/"><img src="/img/os-black.svg" alt="Outer Space"></a>
+      </div>
+      <div class="col-lg-2 text-center">
+        <p>&copy; <span id="year"></span> Outer Space<br>
+        35 Pleasant Street<br> Concord, NH 03301</p>
+      </div>
+
+      <div class="col-lg-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="/#current-exhibition">Current Exhibition</a></li>
+          <li class="list-group-item"><a href="/upcoming/">Upcoming Exhibition</a></li>
+          <li class="list-group-item"><a href="/about/">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="/contact/">Contact</a></li>
+          <li class="list-group-item"><a href="/charities/">Charities</a></li>
+          <li class="list-group-item"><a href="/credits/">Credits</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 text-center">
+        <a href="mailto:info@outerspacearts.xyz" id="email-footer"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/></svg></a>
+        <a href="https://www.instagram.com/outerspace.xyz/" target="_blank" id="insta-footer">
+        <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <p>site design:<br> <a href="https://www.jryandoherty.com" target="_blank">J. Ryan Doherty Design</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="/js/fslightbox.js"></script>
+<script src="/js/outerspace.js"></script>
+</body>
+</html>
+

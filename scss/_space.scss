@@ -160,5 +160,20 @@ h2 {
   &:hover {
     fill: $spacered;
     transition: .7s ease-in;
+
   }
+}
+
+.credits ul.artists-credits {
+    margin: 0 auto;
+    text-align: center;
+    padding-left:0;
+    li {
+        display: inline-block;
+        vertical-align: top;
+        margin:20px 20px;
+
+        svg {margin-top:8px;}
+    }
+
 }

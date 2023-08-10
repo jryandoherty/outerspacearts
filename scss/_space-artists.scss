@@ -21,7 +21,7 @@
 
   @media (max-width:992px){
     margin-bottom:0!important;
-    margin-top: 0!important;
+    margin-top: 2rem!important;
     font-size: .95rem !important;
 
     .nav {
@@ -36,9 +36,10 @@
 
   }
 
-  @media (max-width: 400px){
+  @media (max-width: 500px){
     a {
       padding: .5rem 0.7rem;
+      font-size:.75rem!important;
     }
   }
 
@@ -81,7 +82,7 @@ hr {
 }
 
 .upcoming p {
-  font-size:.85rem;
+
 }
 
 @media (max-width:992px) {
