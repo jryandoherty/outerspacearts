@@ -7,3 +7,5 @@ node_modules
 dist/_notes/dwsync.xml
 dist/css/_notes/dwsync.xml
 dist/img/_notes/dwsync.xml
+*.jpg
+*.webp

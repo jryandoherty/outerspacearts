@@ -6,12 +6,36 @@
 
   <body>
 
-<div class="welcome">
-<canvas id="starfield" width="900" height="100">
-your browser no goody
-</canvas>
-<div class="splash"><h2>Charities</h2></div>
-</div>
+    <div class="welcome" style="height:50vh">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+    <filter id="filter">
+    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+    <feDisplacementMap scale="80"/>
+    <feColorMatrix values="1 0 0 0 0
+                       0 1 0 0 0
+                       0 0 1 0 0
+                       0 0 0 1.2 -.75"/>
+    <feColorMatrix values="2 0 0 0 -.6
+                       .3 0 .5 .5 -.5
+                       0 0 .1 0 .1
+                       0 0 0 1 0" result="n"/>
+    <feTurbulence baseFrequency=".2" result="s"/>
+    <feTurbulence baseFrequency=".1"/>
+    <feBlend in="s"/>
+    <feColorMatrix values="0 0 0 9 -6
+                       0 0 0 9 -6
+                       0 0 0 9 -6
+                       0 0 0 0 1"/>
+    <feBlend in="n"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
+    </svg>
+
+    <div class="splash">
+      <h2 class="name">Charities</h2>
+    </div>
+
+    </div>
 
 @@include('./nav.html')
 
@@ -45,6 +69,17 @@ and Honor Historic Preservation</p>
     <img src="/img/k-porter/24.svg" alt="United24" style="width:300px">
     <p class="my-2">The official fundraising platform of Ukraine</p>
     <button type="button" class="btn btn-outline-primary" onclick="window.open('https://u24.gov.ua','_blank')">Learn more</button>
+</div>
+
+
+</div>
+
+
+<div class="row justify-content-md-center my-5">
+  <div class="col-lg-5 text-center">
+    <img src="https://static.wixstatic.com/media/84ad5e_87c80724dbfe4d8088d85bc170e7e7ab~mv2.png/v1/fill/w_932,h_366,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/small%20o%20logo_edited_edited.png" alt="United24" style="width:300px;margin-bottom:-30px">
+    <p class="my-2">For 30 years, Seacoast Outright has been one of the only specific resources available to LGBTQ+ youth in the Seacoast area. </p>
+    <button type="button" class="btn btn-outline-primary" onclick="window.open('https://www.seacoastoutright.org/about','_blank')">Learn more</button>
 </div>
 
 

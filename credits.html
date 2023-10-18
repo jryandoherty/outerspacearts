@@ -4,14 +4,35 @@
   })
 
   <body class="credits">
+    <div class="welcome" style="height:50vh">
+    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+    <filter id="filter">
+    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+    <feDisplacementMap scale="80"/>
+    <feColorMatrix values="1 0 0 0 0
+                       0 1 0 0 0
+                       0 0 1 0 0
+                       0 0 0 1.2 -.75"/>
+    <feColorMatrix values="2 0 0 0 -.6
+                       .3 0 .5 .5 -.5
+                       0 0 .1 0 .1
+                       0 0 0 1 0" result="n"/>
+    <feTurbulence baseFrequency=".2" result="s"/>
+    <feTurbulence baseFrequency=".1"/>
+    <feBlend in="s"/>
+    <feColorMatrix values="0 0 0 9 -6
+                       0 0 0 9 -6
+                       0 0 0 9 -6
+                       0 0 0 0 1"/>
+    <feBlend in="n"/>
+    </filter>
+    <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
+    </svg>
 
-  <div class="welcome">
-    <canvas id="starfield" width="900" height="100">
-    your browser no goody
-    </canvas>
-    <div class="splash text-center">
-      <h2>CREDITS</h2>
+    <div class="splash">
+      <h2 class="name">CREDITS</h2>
     </div>
+
   </div>
 
   @@include('./nav.html')

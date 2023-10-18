@@ -5,27 +5,69 @@
 
   <body class="home">
 
-    <div class="welcome">
-      <canvas id="starfield" width="900" height="300">
-      your browser no goody
-      </canvas>
-      <div class="splash">
-        <h1 class="name">OUTER SPACE</h1>
+  <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <div class="welcome">
+          <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+          <filter id="filter">
+          <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+          <feDisplacementMap scale="80" in2="" />
+          <feColorMatrix values="1 0 0 0 0
+                             0 1 0 0 0
+                             0 0 1 0 0
+                             0 0 0 1.2 -.75"/>
+          <feColorMatrix values="2 0 0 0 -.6
+                             .3 0 .5 .5 -.5
+                             0 0 .1 0 .1
+                             0 0 0 1 0" result="n"/>
+          <feTurbulence baseFrequency=".2" result="s"/>
+          <feTurbulence baseFrequency=".1"/>
+          <feBlend in="s" in2="" />
+          <feColorMatrix values="0 0 0 9 -6
+                             0 0 0 9 -6
+                             0 0 0 9 -6
+                             0 0 0 0 1"/>
+          <feBlend in="n" in2="" />
+          </filter>
+          <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
+          </svg>
+
+          <div class="splash">
+            <h1 class="name">OUTER SPACE</h1>
+          </div>
+
+        </div>
       </div>
 
-    </div>
+        <div class="carousel-item ">
+          <div class="welcome">
+            <img src="/img/installations/8-5/fischer/1A3A7753-Edit.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+          </div>
+
+        </div>
+        <div class="carousel-item" >
+          <div class="welcome">
+            <img src="/img/installations/8-5/obrien/1A3A7811.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+          </div>
+        </div>
+
+    </div><!-- end inner carousel -->
+
+  </div>
 
       @@include('./nav.html')
 
     <div class="container p-4" id="current-exhibition">
 
-      <div class="row pt-4 text-center">
-
-        <p class="fs-3">Matthew Fischer & William J. O'Brien</p>
+    <div class="row justify-content-md-center py-4 text-center">
+      <div class="col-lg-9">
+        <p class="fs-3 m-0">Matthew Fischer & William J. O'Brien</p>
         <p class="fs-4"><em>Duplex Magic</em></p>
         <p>August 5th - October 22nd 2023</p>
-    </div>
+      </div>
 
+    </div>
 
         @@include('./current-ex.html')
 
