@@ -1,39 +1,59 @@
 
 @@include('./header.html', {
-    "title": "Home",
-    "canonical": ""
+    "title": "Olson & Porter",
+    "canonical": "olson-porter"
   })
 
   <body>
 
-    <div class="welcome" style="height:50vh">
-    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-    <filter id="filter">
-    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
-    <feDisplacementMap scale="80"/>
-    <feColorMatrix values="1 0 0 0 0
-                       0 1 0 0 0
-                       0 0 1 0 0
-                       0 0 0 1.2 -.75"/>
-    <feColorMatrix values="2 0 0 0 -.6
-                       .3 0 .5 .5 -.5
-                       0 0 .1 0 .1
-                       0 0 0 1 0" result="n"/>
-    <feTurbulence baseFrequency=".2" result="s"/>
-    <feTurbulence baseFrequency=".1"/>
-    <feBlend in="s"/>
-    <feColorMatrix values="0 0 0 9 -6
-                       0 0 0 9 -6
-                       0 0 0 9 -6
-                       0 0 0 0 1"/>
-    <feBlend in="n"/>
-    </filter>
-    <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
-    </svg>
+    <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="welcome">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+            <feDisplacementMap scale="80" in2="" />
+            <feColorMatrix values="1 0 0 0 0
+                               0 1 0 0 0
+                               0 0 1 0 0
+                               0 0 0 1.2 -.75"/>
+            <feColorMatrix values="2 0 0 0 -.6
+                               .3 0 .5 .5 -.5
+                               0 0 .1 0 .1
+                               0 0 0 1 0" result="n"/>
+            <feTurbulence baseFrequency=".2" result="s"/>
+            <feTurbulence baseFrequency=".1"/>
+            <feBlend in="s" in2="" />
+            <feColorMatrix values="0 0 0 9 -6
+                               0 0 0 9 -6
+                               0 0 0 9 -6
+                               0 0 0 0 1"/>
+            <feBlend in="n" in2="" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
+            </svg>
 
-    <div class="splash">
-      <h2 class="name">past exhibitions</h2>
-    </div>
+            <div class="splash">
+              <h1 class="name">Past Exhibitions</h1>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="carousel-item ">
+            <div class="welcome">
+              <img src="/img/installations/5-13/installation2.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+            </div>
+
+          </div>
+          <div class="carousel-item" >
+            <div class="welcome">
+              <img src="/img/installations/5-13/installation4.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+            </div>
+          </div>
+
+      </div><!-- end inner carousel -->
 
     </div>
 
@@ -41,28 +61,21 @@
 
 
       <div class="container p-4" id="past-exhibition">
-
         <div class="row pt-4 text-center">
           <p class="fs-3"><em>Outer Space Inaugural Exhibition: Alex Olson & Katherine Porter</em></p>
           <p>May 13th - July 31st 2023</p>
       </div>
 
+      <div class="row justify-content-md-center mb-5">
 
-
-
-
-
-
-<div class="row justify-content-md-center mb-5">
-
-    <div class="col-lg-3 fs-4 mt-3 artists">
-      <div class="align-items-start">
-        <div class="nav flex-column text-end" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="artist-1-tab" data-bs-toggle="pill" data-bs-target="#artist-1" role="tab" aria-selected="true" href="#" >Alex Olson</a>
-          <a class="nav-link" id="artist-2-tab" data-bs-toggle="pill" data-bs-target="#artist-2" role="tab" aria-selected="false" href="#">Katherine Porter</a>
+      <div class="col-lg-3 fs-4 mt-3 artists">
+        <div class="align-items-start">
+          <div class="nav flex-column text-end" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="artist-1-tab" data-bs-toggle="pill" data-bs-target="#artist-1" role="tab" aria-selected="true" href="#" >Alex Olson</a>
+            <a class="nav-link" id="artist-2-tab" data-bs-toggle="pill" data-bs-target="#artist-2" role="tab" aria-selected="false" href="#">Katherine Porter</a>
+          </div>
         </div>
-      </div>
-    </div><!-- end navigation artists -->
+      </div><!-- end navigation artists -->
 
     <div class="col-lg-9">
 
@@ -85,12 +98,13 @@
               <li class="nav-item me-2" role="presentation">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-four" type="button" role="tab" aria-controls="pills-four" aria-selected="false">video</button>
               </li>
-              <li class="nav-item" role="presentation">
+              <li class="nav-item me-2" role="presentation">
                 <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" aria-selected="false">artist statement</button>
               </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pills-six" type="button" role="tab" aria-controls="pills-six" aria-selected="false">press</button>
+              </li>
             </ul>
-
-
 
             <div class="tab-content" id="artist-1-tabContent">
               <div class="tab-pane fade" id="pills-one" role="tabpanel" aria-labelledby="pills-one" tabindex="0">
@@ -98,6 +112,12 @@
                   <p>Alex Olson is a painter living and working in Los Angeles, CA. She earned her Bachelor of Arts from Harvard University in 2001 and her MFA from California Institute of the Arts in 2008.</p>
                   <p>Olson has exhibited extensively in the United States and abroad including solo shows at Altman Siegel Gallery, San Francisco, Paul Soto/Park View, Los Angeles, Shane Campbell Gallery, Chicago, Lisa Cooley NY, Laura Bartlett Gallery, London and others.</p>
                   <p>Her work was included in group shows at LACMA (Los Angeles County Museum of Art) and "Made in LA 2012" at the Hammer Museum, Los Angeles, and can be found in many public collections including at The Los Angeles County Museum of Art, The Museum of Contemporary Art, Chicago, Hammer Museum, Los Angeles, Walker Art Center, Minneapolis, and The Dallas Museum of Art.</p>
+
+                  <p>Outer Space would like to thank <a href="https://altmansiegel.com/" target="_blank">Altman Siegel Gallery</a> for working with us on this exhibition.</p>
+
+                  <p>On behalf of Alex, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://www.kimballjenkins.com/about" target="_blank">Kimball Jenkins</a>. </p>
+
+                  <p><a href="/AlexOlsonCV.pdf" target="_blank">view her full biography</a></p>
 
               </div>
 
@@ -107,9 +127,7 @@
        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
-                      <picture>
                           <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9010-crop.jpg"><img src="/img/alex-olson/img-1.jpg" class="d-block w-100" alt="Transfer 2023"></a>
-                      </picture>
                       <p>
                       Transfer, 2023<br>
                       Oil and modeling paste on canvas<br>
@@ -117,9 +135,9 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
+
                           <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9013.jpg"><img src="/img/alex-olson/img-1-detail.jpg" class="d-block w-100" alt="Transfer 2023"></a>
-                      </picture>
+
                       <p>
                       Transfer, 2023<br>
                       Detail<br>
@@ -128,9 +146,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Reread.jpg"><img src="/img/alex-olson/img-2.jpg" class="d-block w-100" alt="Reread 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Reread.jpg"><img src="/img/alex-olson/img-2.jpg" class="d-block w-100" alt="Reread 2023"></a>
                       <p>
                       Reread, 2023<br>
                       Oil and modeling paste on canvas<br>
@@ -138,9 +154,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Build.jpg"><img src="/img/alex-olson/img-4.jpg" class="d-block w-100" alt="Build 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/AO-Build.jpg"><img src="/img/alex-olson/img-4.jpg" class="d-block w-100" alt="Build 2023"></a>
                       <p>
                       Build, 2023<br>
                       Oil, modeling paste and grease pencil on canvas<br>
@@ -148,9 +162,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9034.jpg"><img src="/img/alex-olson/img-4-detail.jpg" class="d-block w-100" alt="Build 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9034.jpg"><img src="/img/alex-olson/img-4-detail.jpg" class="d-block w-100" alt="Build 2023"></a>
                       <p>
                       Build, 2023<br>
                       Detail<br>
@@ -159,9 +171,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9088.jpg"><img src="/img/alex-olson/img-5.jpg" class="d-block w-100" alt="Margins 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9088.jpg"><img src="/img/alex-olson/img-5.jpg" class="d-block w-100" alt="Margins 2023"></a>
                       <p>
                       Margins, 2023<br>
                       Oil and modeling paste canvas<br>
@@ -169,9 +179,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9090.jpg"><img src="/img/alex-olson/img-5-detail.jpg" class="d-block w-100" alt="Margins 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9090.jpg"><img src="/img/alex-olson/img-5-detail.jpg" class="d-block w-100" alt="Margins 2023"></a>
                       <p>
                       Margins, 2023<br>
                     Detail<br>
@@ -179,9 +187,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
-                          <a data-fslightbox="first-lightbox" href="/img/alex-olson/baby.jpg"><img src="/img/alex-olson/img-6.jpg" class="d-block w-100" alt="Margins 2023"></a>
-                      </picture>
+                      <a data-fslightbox="first-lightbox" href="/img/alex-olson/baby.jpg"><img src="/img/alex-olson/img-6.jpg" class="d-block w-100" alt="Margins 2023"></a>
                       <p>
                     Baby, 2023<br>
                       Oil and modeling paste canvas<br>
@@ -189,24 +195,24 @@
                     </div>
 
                   </div>
+                  <div class="prev-next-container">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
 
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </button>
                 </div>
 
               </div>
-
 
               <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three" tabindex="0">
 
                 @@include('./install.html')
 
               </div>
-
 
               <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four" tabindex="0">
                 <iframe class="video" src="https://www.youtube.com/embed/l8Yg2hTk_uI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -218,13 +224,23 @@
    
                 <p>When Roger offered me the opportunity to show at Outer Space, and asked if there was another artist I would like to be paired with, I immediately thought of Katherine Porter. I was lucky enough to grow up with a painting of Katherine’s in our house, and I credit this painting for being the reason I am also a painter. The painting itself is inseparable from my idea of "home;" it has an iconic status in our family by being included in key photos, and it's been a constant through the stages of growing up. It also happens to be an exceptional painting, with an assertive, confident presence and a sophisticated wit. I'm pretty sure some of its use of stock signage (an "X," a wavering grid), its insistence on mark making as the main event, and its lack of familiar tropes of pictorial space heavily influenced these aspects in my own work. My parents knew Katherine, and the fact that my family actually knew the artist—the artist was a real person who didn't just exist in black and white photos in books or was from another time period—made it possible for me to almost, maybe, potentially imagine that perhaps someday I could be an artist too. It is an absolute honor and dream come true to show work alongside hers in Outer Space.</p>
 
-                <p>On behalf of Alex, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://www.kimballjenkins.com/about" target="_blank">Kimball Jenkins</a>. </p>
-
-                <p><a href="AlexOlsonCV.pdf" target="_blank">view her full biography</a></p>
-
               </div>
 
+              <div class="tab-pane fade" id="pills-six" role="tabpanel" aria-labelledby="pills-six" tabindex="0">
 
+                <h3>Alex Olson and Katherine Porter at Outer Space</h3>
+                 <h4 class="mb-3">by Sarah Lehrer-Graiwer</h4>
+      <p>I’ve been looking at, getting lost in, and dazzled by Alex Olson’s paintings for as long as she’s been showing them. And throughout that time most of the pictorial principles and material fundaments of her practice have been present, to varying degrees: the interest in ‘reading’ imagery and calligraphic script as abstracted painterly mark; the layered, peekaboo conception of the picture plane as a deep stack of sheets to be lifted, folded, unfurled, peeled, or squeegeed away one by one; the strategic use of illusion and textural surface effects within abstraction to generate perceptual whiplash, discovery, and surprise; the elegance, restraint, intelligence, and chicness of her sensibility; the things she can do with and against the color gray; the uncanny of her other, often-garish colors; the imbrication of literary and sartorial influences; the strength of geometry and abundance of patterns, usually paired in clashing juxtaposition with each other. I’ve long loved how she deftly manipulates the directionality of her brushstrokes to effect tone and contrast, exaggerating how the painting changes according to viewing position. I’ve noted how reveals and cut-outs have grown in clarity and importance across her compositions.</p>
+
+      <p>But more recently, and as her pictures have evolved alongside her, I’ve also become aware of another related angle cutting through it all on the bias which has to do with a persistent and growing commitment to transmission, dialogue, and bonds among women. While the range of her tastes and what she looks at is broad, she also consistently demonstrates a preference for working with and in relation to other women artists. In connection to this show, she has explained that “(m)y paintings have aspirational qualities, often being bolder, louder and more colorful than myself... They are aware of how they self-present but likewise show that they have multiple, alternative layers to choose from.” In other words, she is thinking about aesthetic manners of self-presentation (including concealment and withholding, on our bodies and on the page), in ways that relate to self-perception and experiment with how to be and, in particular, how to be an artist who explores an experience of female subjecthood through abstraction. We can read her abstraction allegorically as picturing a dynamic between interiority and exteriority. I can see now how much she is thinking through lineage and cross-generational culture in her paintings—an experience of which she is increasingly attuned to as someone who transmits and passes down knowledge (as a teacher and parent-to-be), in addition to continuing to be an ever- eager recipient. She wants to be in conversation through her work and she knows who with.</p>
+
+
+      <p>Katherine Porter has been painting for over half a century, navigating the cresting of multiple art historical eras and circulating in and out of some high-powered painting scenes on the East Coast. The grid—wobbly, worried, quivering, and hand-drawn—is her most enduring approach for mapping action, mark, and color across large picture planes. An immediacy and being- worked quality often comes through her layers of mixed and muddied patches of color. Arcs, circles, spirals, targets, and curlicues hover over, vibrate, and weave across the gridded spans with playfulness and lyricism. Almost all elements convey motion, often speedy and swirling. Squares and Xs pin her planes down and grab our attention. Her gridding often produces the sensation of an overhead view, like that of an aerial urban landscape or tabletop, one in the show called Arabesque (2014) even has sections painted with a kind of wood grain. Manny Farber’s scatter-field tabletop still-lives come to my mind there, while at different points there are resonances with peers like Elizabeth Murray or Lee Krasner and historical figures like Lissitzky or Bonnard. But just as often the grid, if it’s there at all, is buried and obscured below a jittery, buzzing conflagration of activity. In fact, even when absent, the grid’s promise of structure persists as an underlying stability and cohesion that makes all the overlaid movement possible and sustainable. Something grounded and foundational to hold on to, to stand on top of, to keep coming back to. And that’s what this exhibition’s pairing shows Porter’s practice to be, taken as a whole, for Olson, who has said that Porter was, formatively, one of the first artists she was aware of in her youth whose example made it possible to imagine a future for herself in paint.</p>
+
+
+      <em>Sarah Lehrer-Graiwer is an art writer and curator based in Los Angeles, where she publishes Pep Talk, and co-runs the experimental art venue The Finley Gallery. Her writing has appeared in such publications as Artforum, ArtReview, Art in America, Artonpaper, ArtSlant, Frieze Magazine, Mousse, and numerous exhibition catalogs. She is the author of Lee Lozano: Dropout Piece (Afterall, 2014).</em>
+
+              </div>
 
             </div><!-- end tabbed-content -->
 
@@ -246,10 +262,14 @@
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane4" aria-selected="false">installations</button>
               </li>
               <li class="nav-item me-2" role="presentation">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane4" type="button" role="tab" aria-controls="pane4" aria-selected="false">artist video</button>
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane4" type="button" role="tab" aria-controls="pane4" aria-selected="false">video</button>
               </li>
               <li class="nav-item me-2" role="presentation">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane5" type="button" role="tab" aria-controls="pane5" aria-selected="false">artist statement</button>
+              </li>
+
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane6" type="button" role="tab" aria-controls="pane6" aria-selected="false">press</button>
               </li>
             </ul>
 
@@ -258,6 +278,10 @@
 
                 <p>Katherine Porter is a painter living and working in Maine. She earned her Bachelor of Arts from Colorado College in 1963, studied at Boston University, and received honorary doctorates from Colby College in 1982 and Bowdoin College in 1992. <p>Porter has shown twice in the Whitney Biennial (1981, 1973) and has exhibited extensively in the United States and abroad including at The Knoedler Gallery in London, Galerie Hubert Winter in Vienna, Austria, The Nina Nielsen Gallery in Boston, and David McKee, Andre Emmerich, and Salander O'Reilly Galleries in New York.</p><p> Her work can be found in numerous public collections worldwide including at The Metropolitan Museum of Art, Museum of Modern Art, Whitney Museum of American Art, Museum of Fine Arts in Boston, Solomon R. Guggenheim Museum, Philadelphia Museum of Art, SFMOMA, Detroit Art Institute, amongst many others.</p>
 
+                <p>On behalf of Katherine, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://u24.gov.ua" target="_blank">United 24 Aid to Ukrainians</a></p>
+
+                <p><a href="/img/k-porter/KatherinePorterCV.pdf" target="_blank">view her full biography</a></p>
+
               </div>
 
               <div class="tab-pane fade show active" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
@@ -265,9 +289,7 @@
                 <div id="carouselExampleFade-3" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/1A3A8999-crop.jpg"><img src="/img/k-porter/1A3A9057-frame.jpg" class="d-block w-100" alt="House of Cards 2018"></a>
-                      </picture>
                       <p>
                       House of Cards, 2018<br>
                       Oil on canvas<br>
@@ -275,9 +297,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-Memory-Disbanded.jpg"><img src="/img/k-porter/img-3.jpg" class="d-block w-100" alt="Memory Disbanded"></a>
-                      </picture>
                       <p>
                       Memory Disbanded, 2017<br>
                       Oil on canvas<br>
@@ -285,9 +305,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-Arabesque.jpg"><img src="/img/k-porter/img-4.jpg" class="d-block w-100" alt="Arabesque"></a>
-                      </picture>
                       <p>
                       Arabesque, 2014<br>
                       Oil on canvas<br>
@@ -295,9 +313,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/1A3A9086.jpg"><img src="/img/k-porter/img-4-detail.jpg" class="d-block w-100" alt="Arabesque"></a>
-                      </picture>
                       <p>
                       Arabesque, 2014<br>
                       Detail<br>
@@ -305,9 +321,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-To-Lee-Krasner.jpg"><img src="/img/k-porter/img-5.jpg" class="d-block w-100" alt="To Lee Krasner"></a>
-                      </picture>
                       <p>
                       To Lee Krasner, 2015<br>
                       Oil on canvas<br>
@@ -315,9 +329,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/1A3A9043.jpg"><img src="/img/k-porter/img-5-detail.jpg" class="d-block w-100" alt="To Lee Krasner"></a>
-                      </picture>
                       <p>
                       To Lee Krasner, 2015<br>
                       Detail<br>
@@ -325,9 +337,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="4000">
-                      <picture>
                         <a data-fslightbox="second-lightbox" href="/img/k-porter/KP-After-Melancholia.jpg"><img src="/img/k-porter/img-6.jpg" class="d-block w-100" alt="After Melancholia"></a>
-                      </picture>
                       <p>
                       After Melancholia, 2012<br>
                       Oil on canvas<br>
@@ -335,13 +345,15 @@
                     </div>
 
                   </div>
+                  <div class="prev-next-container">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
 
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </button>
                 </div>
 
               </div>
@@ -351,69 +363,54 @@
                 <div id="carouselExampleFade-4" class="carousel slide carousel-fade installations" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation4.jpg"><img src="/img/installations/5-13/installation4.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation2.jpg"><img src="/img/installations/5-13/installation2.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation3.jpg"><img src="/img/installations/5-13/installation3.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation5.jpg"><img src="/img/installations/5-13/installation5.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation6.jpg"><img src="/img/installations/5-13/installation6.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation8.jpg"><img src="/img/installations/5-13/installation8.jpg" class="d-block w-100" alt="Outer Space 2023"></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item" >
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation9.jpg"><img src="/img/installations/5-13/installation9.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                     <div class="carousel-item">
-                      <picture>
                         <a data-fslightbox="fourth-lightbox" href="/img/installations/5-13/installation10.jpg"><img src="/img/installations/5-13/installation10.jpg" class="d-block w-100" alt="Outer Space 2023" ></a>
-                      </picture>
                       <p>Outer Space 2023</p>
                     </div>
 
                   </div>
-
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                  </button>
+                  <div class="prev-next-container">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </button>
+                  </div>
                 </div>
 
               </div><!-- end pane 3 -->
@@ -426,11 +423,26 @@
               <div class="tab-pane fade" id="pane5" role="tabpanel" aria-labelledby="pane5" tabindex="0">
                 <p>Painting and drawings are the way that I say what I have to say ... about everything. Listening to music much of the time ... from Benign to Mozart's Requiem ... is very important in my life ... and always looking outside of myself. Whether it is the library or the ocean ... goes straight into the work. Color is everywhere.</p>
 
-                <p>On behalf of Katherine, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://u24.gov.ua" target="_blank">United 24 Aid to Ukrainians</a></p>
-
-                <p><a href="/img/k-porter/KatherinePorterCV.pdf" target="_blank">view her full biography</a></p>
-
               </div><!-- end pane5 -->
+
+
+              <div class="tab-pane fade" id="pane6" role="tabpanel" aria-labelledby="pane6" tabindex="0">
+
+                <h3>Alex Olson and Katherine Porter at Outer Space</h3>
+                 <h4 class="mb-3">by Sarah Lehrer-Graiwer</h4>
+<p>I’ve been looking at, getting lost in, and dazzled by Alex Olson’s paintings for as long as she’s been showing them. And throughout that time most of the pictorial principles and material fundaments of her practice have been present, to varying degrees: the interest in ‘reading’ imagery and calligraphic script as abstracted painterly mark; the layered, peekaboo conception of the picture plane as a deep stack of sheets to be lifted, folded, unfurled, peeled, or squeegeed away one by one; the strategic use of illusion and textural surface effects within abstraction to generate perceptual whiplash, discovery, and surprise; the elegance, restraint, intelligence, and chicness of her sensibility; the things she can do with and against the color gray; the uncanny of her other, often-garish colors; the imbrication of literary and sartorial influences; the strength of geometry and abundance of patterns, usually paired in clashing juxtaposition with each other. I’ve long loved how she deftly manipulates the directionality of her brushstrokes to effect tone and contrast, exaggerating how the painting changes according to viewing position. I’ve noted how reveals and cut-outs have grown in clarity and importance across her compositions.</p>
+
+<p>But more recently, and as her pictures have evolved alongside her, I’ve also become aware of another related angle cutting through it all on the bias which has to do with a persistent and growing commitment to transmission, dialogue, and bonds among women. While the range of her tastes and what she looks at is broad, she also consistently demonstrates a preference for working with and in relation to other women artists. In connection to this show, she has explained that “(m)y paintings have aspirational qualities, often being bolder, louder and more colorful than myself... They are aware of how they self-present but likewise show that they have multiple, alternative layers to choose from.” In other words, she is thinking about aesthetic manners of self-presentation (including concealment and withholding, on our bodies and on the page), in ways that relate to self-perception and experiment with how to be and, in particular, how to be an artist who explores an experience of female subjecthood through abstraction. We can read her abstraction allegorically as picturing a dynamic between interiority and exteriority. I can see now how much she is thinking through lineage and cross-generational culture in her paintings—an experience of which she is increasingly attuned to as someone who transmits and passes down knowledge (as a teacher and parent-to-be), in addition to continuing to be an ever- eager recipient. She wants to be in conversation through her work and she knows who with.</p>
+
+
+<p>Katherine Porter has been painting for over half a century, navigating the cresting of multiple art historical eras and circulating in and out of some high-powered painting scenes on the East Coast. The grid—wobbly, worried, quivering, and hand-drawn—is her most enduring approach for mapping action, mark, and color across large picture planes. An immediacy and being- worked quality often comes through her layers of mixed and muddied patches of color. Arcs, circles, spirals, targets, and curlicues hover over, vibrate, and weave across the gridded spans with playfulness and lyricism. Almost all elements convey motion, often speedy and swirling. Squares and Xs pin her planes down and grab our attention. Her gridding often produces the sensation of an overhead view, like that of an aerial urban landscape or tabletop, one in the show called Arabesque (2014) even has sections painted with a kind of wood grain. Manny Farber’s scatter-field tabletop still-lives come to my mind there, while at different points there are resonances with peers like Elizabeth Murray or Lee Krasner and historical figures like Lissitzky or Bonnard. But just as often the grid, if it’s there at all, is buried and obscured below a jittery, buzzing conflagration of activity. In fact, even when absent, the grid’s promise of structure persists as an underlying stability and cohesion that makes all the overlaid movement possible and sustainable. Something grounded and foundational to hold on to, to stand on top of, to keep coming back to. And that’s what this exhibition’s pairing shows Porter’s practice to be, taken as a whole, for Olson, who has said that Porter was, formatively, one of the first artists she was aware of in her youth whose example made it possible to imagine a future for herself in paint.</p>
+
+
+<em>Sarah Lehrer-Graiwer is an art writer and curator based in Los Angeles, where she publishes Pep Talk, and co-runs the experimental art venue The Finley Gallery. Her writing has appeared in such publications as Artforum, ArtReview, Art in America, Artonpaper, ArtSlant, Frieze Magazine, Mousse, and numerous exhibition catalogs. She is the author of Lee Lozano: Dropout Piece (Afterall, 2014).</em>
+
+
+              </div>
+
 
 
             </div>

@@ -9,7 +9,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
     <filter id="filter">
     <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
-    <feDisplacementMap scale="80"/>
+    <feDisplacementMap scale="80" in2="" />
     <feColorMatrix values="1 0 0 0 0
                        0 1 0 0 0
                        0 0 1 0 0
@@ -20,12 +20,12 @@
                        0 0 0 1 0" result="n"/>
     <feTurbulence baseFrequency=".2" result="s"/>
     <feTurbulence baseFrequency=".1"/>
-    <feBlend in="s"/>
+    <feBlend in="s" in2="" />
     <feColorMatrix values="0 0 0 9 -6
                        0 0 0 9 -6
                        0 0 0 9 -6
                        0 0 0 0 1"/>
-    <feBlend in="n"/>
+    <feBlend in="n" in2="" />
     </filter>
     <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
     </svg>
@@ -42,19 +42,19 @@
 
   <div class="row justify-content-md-center">
     <div class="col-lg-10 text-center">
-      <p class="fs-3"><em>Maria Antelman & Mark Armijo McKnight</em></p>
-      <p>Opening October 28th</p>
+      <p class="fs-3"><em>Polly Apfelbaum & Alice Mackler</em></p>
+      <p>Opening February 2024</p>
     </div>
   </div>
 
 <div class="row justify-content-md-center my-4">
   <div class="col-lg-7 text-center upcoming">
-    <img src="/img/upcoming/img-0303.jpg" class="w-75" alt="Mark Armijo McKnight">
-    <p class="my-1">Mark Armijo McKnight</p>
+    <img src="/img/upcoming/PollyApfelbaum.jpg" class="w-50" alt="Polly Apfelabaum">
+    <p class="my-1">Polly Apfelbaum</p>
   </div>
   <div class="col-lg-5 text-center upcoming">
-    <img src="/img/upcoming/img-0306.jpg" class="w-75" alt="Maria Antelman">
-    <p class="my-1">Maria Antelman</p>
+    <img src="/img/upcoming/AliceMackler.jpg" class="w-75" alt="Alice Mackler">
+    <p class="my-1">Alice Mackler</p>
   </div>
 </div>
 

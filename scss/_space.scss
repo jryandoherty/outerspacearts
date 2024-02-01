@@ -49,7 +49,7 @@ h1 {
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 7.55vw;
+    font-size: 8.55vw;
     animation: 2s ease-out 0s 1 slideInTop;
     letter-spacing: -2px;
     transition: 1s;
@@ -150,13 +150,41 @@ h2 {
 } /* end house */
 
 
-.credits svg:hover {
+.credits {
+  svg:hover {
   fill:$spacered;
 }
 
-.credits .col-lg-8 li {
-  padding-bottom:14px;
+  p {
+    margin-bottom:.5rem;
+  }
+
+  .col-lg-8 li {
+    padding-bottom:14px;
+  }
+
+  .row {
+    margin:3rem 0;
+
+    .col-sm-4 svg{
+
+    }
+
+    @media (max-width:575px){
+      margin:0;
+
+      .col-sm-4 {
+        margin:1rem 0;
+      }
+    }
+
+  }
+
+
 }
+
+
+
 
 #insta-contact svg  {
   fill:$gray-400;
@@ -169,14 +197,14 @@ h2 {
 
 .credits ul.artists-credits {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
     padding-left:0;
     li {
         display: inline-block;
         vertical-align: top;
         margin:20px 20px;
 
-        svg {margin-top:8px;}
+
     }
 
 }

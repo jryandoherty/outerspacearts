@@ -33,6 +33,7 @@
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
+  background:#fff;
   @include transition($carousel-transition);
 }
 
@@ -238,12 +239,21 @@
 }
 
 /* custom edits */
+
+.prev-next-container {
+  float:right;
+  margin-top:-40px;
+}
+
 .carousel-control-prev, .carousel-control-next {
 
   color:#ccc;
   opacity: 1;
-  top: 85%;
+  display: inline;
+  position: relative;
+
   width:auto;
+
 
   svg {
     fill:#000;
@@ -257,7 +267,7 @@
 }
 
 .carousel-control-prev {
-  right: 50px;
+  right: 10px;
   left: auto;
 }
 

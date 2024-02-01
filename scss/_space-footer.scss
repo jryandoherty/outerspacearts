@@ -42,12 +42,24 @@ footer {
     }
   }
 
+  @media (max-width: 600px){
+
+  .col-lg-2 {
+      margin-bottom:0;
+    }
+  .row > div:first-child, .row > div:nth-child(3),  .row > div:nth-child(4){
+      display:none;
+    }
+  }
+
   @media (max-width: 450px){
     background: #000;
-  img {
-    margin-right: 0;
-    margin-bottom: 30px;
-  }
+
+    img {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
     .col-lg-8 {
       display: block !important;
       text-align:center!important;

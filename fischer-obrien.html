@@ -1,44 +1,62 @@
 
 @@include('./header.html', {
-    "title": "Home",
-    "canonical": ""
+    "title": "Duplex Magic",
+    "canonical": "fischer-obrien"
   })
 
   <body>
 
-    <div class="welcome" style="height:50vh">
-    <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-    <filter id="filter">
-    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
-    <feDisplacementMap scale="80"/>
-    <feColorMatrix values="1 0 0 0 0
-                       0 1 0 0 0
-                       0 0 1 0 0
-                       0 0 0 1.2 -.75"/>
-    <feColorMatrix values="2 0 0 0 -.6
-                       .3 0 .5 .5 -.5
-                       0 0 .1 0 .1
-                       0 0 0 1 0" result="n"/>
-    <feTurbulence baseFrequency=".2" result="s"/>
-    <feTurbulence baseFrequency=".1"/>
-    <feBlend in="s"/>
-    <feColorMatrix values="0 0 0 9 -6
-                       0 0 0 9 -6
-                       0 0 0 9 -6
-                       0 0 0 0 1"/>
-    <feBlend in="n"/>
-    </filter>
-    <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
-    </svg>
+    <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+          <div class="welcome">
+            <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
+            <filter id="filter">
+            <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+            <feDisplacementMap scale="80" in2="" />
+            <feColorMatrix values="1 0 0 0 0
+                               0 1 0 0 0
+                               0 0 1 0 0
+                               0 0 0 1.2 -.75"/>
+            <feColorMatrix values="2 0 0 0 -.6
+                               .3 0 .5 .5 -.5
+                               0 0 .1 0 .1
+                               0 0 0 1 0" result="n"/>
+            <feTurbulence baseFrequency=".2" result="s"/>
+            <feTurbulence baseFrequency=".1"/>
+            <feBlend in="s" in2="" />
+            <feColorMatrix values="0 0 0 9 -6
+                               0 0 0 9 -6
+                               0 0 0 9 -6
+                               0 0 0 0 1"/>
+            <feBlend in="n" in2="" />
+            </filter>
+            <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
+            </svg>
 
-    <div class="splash">
-      <h2 class="name">past exhibitions</h2>
-    </div>
+            <div class="splash">
+              <h1 class="name">Past Exhibitions</h1>
+            </div>
+
+          </div>
+        </div>
+
+          <div class="carousel-item ">
+            <div class="welcome">
+              <img src="/img/installations/8-5/fischer/1A3A7753-Edit.jpg" class="d-block w-100 object-fit-cover" alt="gallery installation picture" style="height:50vh">
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <div class="welcome">
+              <img src="/img/installations/8-5/obrien/1A3A7811.jpg" class="d-block w-100 object-fit-cover" alt="gallery installation picture" style="height:50vh">
+            </div>
+          </div>
+
+      </div><!-- end inner carousel -->
 
     </div>
 
       @@include('./nav.html')
-
 
       <div class="container p-4" id="past-exhibition">
 
@@ -46,7 +64,7 @@
           <p class="fs-3 m-0">Matthew Fischer & William J. O'Brien</p>
           <p class="fs-4"><em>Duplex Magic</em></p>
           <p>August 5th - October 22nd 2023</p>
-      </div>
+        </div>
 
       <div class="row justify-content-md-center mb-5">
 
@@ -90,7 +108,7 @@
                         <p>He has shown widely in the United States, including at Left Field Gallery in Los Osos CA, ParisLondonHongKong Gallery in Chicago IL, JAG Projects in Hudson NY, and has exhibited extensively in New York City including at Louis B. James Gallery, &nbsp;Jack Hanley Gallery, &nbsp;Jack Tilton Gallery, &nbsp;Junior Projects, and the Flag Art Foundation.</p>
                         <p>He has completed residencies at Paint School, Shandaken Projects in New York NY, The Edward F. Albee Foundation in Montauk NY, and Lighthouse Works on Fisher's Island NY. His work has been written about in the <em>Brooklyn Rail</em>, <em>Art Forum</em>, <em>Hyperallergic</em>, <em>The New Yorker</em>, amongst other publications.  </p>
 
-                        <p><a href="MatthewFischerCV.pdf" target="_blank">view his full biography</a></p>
+                        <p><a href="/MatthewFischerCV.pdf" target="_blank">view his full biography</a></p>
 
                         <p>On behalf of Matthew, Outer Space will donate 5% of its profits from any sales of his work to <a href="https://www.kimballjenkins.com/about" target="_blank">Kimball Jenkins</a>. </p>
                     </div> <!-- end overview pane -->
@@ -100,7 +118,7 @@
                   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7772.jpg"><img src="/img/fishcher/shelter-1.webp" class="d-block w-100" alt="Shelf"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7772.jpg"><img src="/img/fishcher/shelter-1.webp" class="d-block w-100" alt="Shelf sculpture"></a>
                             <p>
                             Shelf II,  2023<br>
                           Glass, lead solder, copper foil, copper came, lead came<br>
@@ -108,7 +126,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7771.jpg"><img src="/img/fishcher/shelter-2.webp" class="d-block w-100" alt="shelf"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7771.jpg"><img src="/img/fishcher/shelter-2.webp" class="d-block w-100" alt="Shelf sculpture"></a>
                             <p>
                                 Shelf II,  2023<br>
                           Glass, lead solder, copper foil, copper came, lead came <br>
@@ -116,7 +134,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7775.jpg"><img src="/img/fishcher/ezel-1.webp" class="d-block w-100" alt="Ezel"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7775.jpg"><img src="/img/fishcher/ezel-1.webp" class="d-block w-100" alt="Ezel sculpture"></a>
                             <p>
                             Ezel, 2023<br>
                             Glass, lead solder, copper foil, copper came, lead came, found frame <br>
@@ -124,7 +142,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7798.jpg"><img src="/img/fishcher/ezel-2.webp" class="d-block w-100" alt="Ezel"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7798.jpg"><img src="/img/fishcher/ezel-2.webp" class="d-block w-100" alt="Ezel sculpture"></a>
                             <p>
                             Ezel, 2023<br>
                             Glass, lead solder, copper foil, copper came, lead came, found frame <br>
@@ -132,7 +150,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7807.jpg"><img src="/img/fishcher/morphic-figure-1.webp" class="d-block w-100" alt="Morphic Figure"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7807.jpg"><img src="/img/fishcher/morphic-figure-1.webp" class="d-block w-100" alt="Morphic Figure sculpture"></a>
                             <p>
                             Morphic Figure, 2013<br>
                             Glass, lead solder, copper foil<br>
@@ -140,7 +158,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7809.jpg"><img src="/img/fishcher/morphic-figure-2.webp" class="d-block w-100" alt="Morphic Figure"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7809.jpg"><img src="/img/fishcher/morphic-figure-2.webp" class="d-block w-100" alt="Morphic Figure sculpture"></a>
                             <p>
                             Morphic Figure, 2013<br>
                             Glass, lead solder, copper foil<br>
@@ -148,7 +166,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7801.jpg"><img src="/img/fishcher/lion-man-1.webp" class="d-block w-100" alt="Lion Man"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7801.jpg"><img src="/img/fishcher/lion-man-1.webp" class="d-block w-100" alt="Lion Man sculpture"></a>
                             <p>
                             Lion Man, 2018<br>
                             Glass, lead solder, copper foil, lead came<br>
@@ -156,7 +174,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7800.jpg"><img src="/img/fishcher/lion-man-2.webp" class="d-block w-100" alt="Lion Man"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7800.jpg"><img src="/img/fishcher/lion-man-2.webp" class="d-block w-100" alt="Lion Man sculpture"></a>
                             <p>
                             Lion Man, 2018<br>
                             Glass, lead solder, copper foil, lead came<br>
@@ -164,7 +182,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7785.jpg"><img src="/img/fishcher/taurus-1.webp" class="d-block w-100" alt="Taurus"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7785.jpg"><img src="/img/fishcher/taurus-1.webp" class="d-block w-100" alt="Taurus sculpture"></a>
                             <p>
                               Taurus, 2023<br>
                               Glass, lead solder, copper foil, copper came, lead came, found frame<br>
@@ -172,7 +190,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7783.jpg"><img src="/img/fishcher/taurus-2.webp" class="d-block w-100" alt="Taurus"></a>
+                            <a data-fslightbox="first-lightbox" href="/img/fishcher/1A3A7783.jpg"><img src="/img/fishcher/taurus-2.webp" class="d-block w-100" alt="Taurus sculpture"></a>
                             <p>
                               Taurus, 2023<br>
                               Glass, lead solder, copper foil, copper came, lead came, found frame<br>
@@ -181,6 +199,7 @@
 
                         </div><!-- end carousel innner -->
 
+                    <div class="prev-next-container">
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon"></span>
                         </button>
@@ -188,71 +207,58 @@
                           <span class="carousel-control-next-icon"></span>
                         </button>
                       </div>
+                    </div><!--end carousel -->
 
                     </div><!-- end works pane -->
-
 
                     <div class="tab-pane fade" id="pills-three" role="tabpanel" aria-labelledby="pills-three" tabindex="0">
 
                       <div id="carouselExampleFade-2" class="carousel slide carousel-fade installations" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-
-                                <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7818-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7818-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7818-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7818-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                               <p>Outer Space 2023</p>
                             </div>
 
                               <div class="carousel-item">
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7753-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7753-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7753-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7753-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                               <div class="carousel-item">
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7760-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7760-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7760-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7760-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                               <div class="carousel-item" >
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7765-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7765-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7765-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7765-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                               <div class="carousel-item" >
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7767-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7767-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7767-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7767-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                               <div class="carousel-item" >
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7770-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7770-Edit.webp" class="d-block w-100" alt="Outer Space 2023"></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7770-Edit.jpg"><img src="/img/installations/8-5/fischer/1A3A7770-Edit.webp" class="d-block w-100" alt="gallery installation of sculptures"></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                               <div class="carousel-item" >
-
-                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7820.jpg"><img src="/img/installations/8-5/fischer/1A3A7820.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                                  <a data-fslightbox="third-lightbox" href="/img/installations/8-5/fischer/1A3A7820.jpg"><img src="/img/installations/8-5/fischer/1A3A7820.webp" class="d-block w-100" alt="gallery installation of sculptures" ></a>
                                 <p>Outer Space 2023</p>
                               </div>
 
                         </div><!-- end carousel inner -->
-
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        </button>
+                        <div class="prev-next-container">
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                          </button>
+                        </div>
                   </div><!-- end carousel  -->
 
                 </div><!-- end installations pane -->
@@ -291,7 +297,6 @@
 
         </div><!-- end first artist -->
 
-
                 <!-- begin second artist -->
                 <div class="tab-pane fade" id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
                   <ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
@@ -320,30 +325,26 @@
                       <p>O'Brien has held solo exhibitions at the Madison Museum of Contemporary Art, Renaissance Society, Chicago, KMAC Museum, Louisville, MAD Museum, NYC, Witte De With, Rotterdam, and The Nerman Museum of Contemporary Art, Kansas City among others. In 2014 he had his first major museum survey at the Museum of Contemporary Art Chicago curated by Naomi Beckwith. </p>
                       <p>He has held residencies at the Vermont Studio Center and the U-Cross Foundation. O’Brien has received awards from the Louis Comfort Tiffany Foundation and Artadia. His work is included in the permanent collections of the Cleveland Clinic, New York Presbyterian Hospital, Miami Art Museum, Pérez Art Museum, Hammer Museum, Hara Museum of Contemporary Art, and The Art Institute of Chicago. O’Brien is also Professor, Chair of Ceramics at the School of the Art Institute of Chicago.</p>
 
-                      <p><a href="WilliamJOBrienCV.pdf" target="_blank">view his full biography</a></p>
+                      <p><a href="/WilliamJOBrienCV.pdf" target="_blank">view his full biography</a></p>
 
                       <p>On behalf of William, Outer Space will donate 5% of its profits from any sales of his work to <a href="https://www.seacoastoutright.org/about" target="_blank">Seacoast Outright</a>. </p>
 
                     </div><!-- end pane1 -->
 
-                    <div class="tab-pane fade show active" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
+              <div class="tab-pane fade show active" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
 
               <div id="carouselExampleFade-3" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/february-bloom.jpg"><img src="/img/obrien/february-bloom.webp" class="d-block w-100" alt="February Bloom"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/february-bloom.jpg"><img src="/img/obrien/february-bloom.webp" class="d-block w-100" alt="Colored pencil and ink drawing"></a>
                             <p>
                             February Bloom, 2021<br>
                             Colored pencil and ink on paper<br>
                             40 x 26 inches</p>
                           </div>
 
-                      <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/half-and-half.jpg"><img src="/img/obrien/half-and-half.webp" class="d-block w-100" alt="Half and Half"></a>
-
+                          <div class="carousel-item" data-bs-interval="4000">
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/half-and-half.jpg"><img src="/img/obrien/half-and-half.webp" class="d-block w-100" alt="Colored pencil and ink drawing"></a>
                             <p>
                             Half and Half, 2021<br>
                             Colored pencil and ink on paper<br>
@@ -351,33 +352,23 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/stages.jpg"><img src="/img/obrien/stages.webp" class="d-block w-100" alt="Stages"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/stages.jpg"><img src="/img/obrien/stages.webp" class="d-block w-100" alt="Colored pencil and ink drawing"></a>
                             <p>
                             Stages, 2018<br>
                             Ink and colored pencil on paper<br>
                             40 x 26 inches</p>
                           </div>
 
-
-
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/two-spaceships.jpg"><img src="/img/obrien/two-spaceships.webp" class="d-block w-100" alt="Two Spaceships"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/colored-pencil-works/two-spaceships.jpg"><img src="/img/obrien/two-spaceships.webp" class="d-block w-100" alt="Colored pencil and ink drawing"></a>
                             <p>
                             Two Spaceships, 2017<br>
                             Ink and colored pencil on paper<br>
                             40 x 26 inches</p>
                           </div>
 
-
-
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/book-of-love.jpg"><img src="/img/obrien/book-of-love.webp" class="d-block w-100" alt="Book of Love"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/book-of-love.jpg"><img src="/img/obrien/book-of-love.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
                             Book of Love, 2023<br>
                             Felt on felt<br>
@@ -385,9 +376,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/celebration-stance.jpg"><img src="/img/obrien/celebration-stance.webp" class="d-block w-100" alt="Celbration Stance"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/celebration-stance.jpg"><img src="/img/obrien/celebration-stance.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
                             Celebration Stance, 2018<br>
                             Felt on felt<br>
@@ -395,9 +384,7 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/eyes.jpg"><img src="/img/obrien/eyes.webp" class="d-block w-100" alt="Wide Open"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/eyes.jpg"><img src="/img/obrien/eyes.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
                             Wide Open, 2014<br>
                             Felt on felt<br>
@@ -405,29 +392,23 @@
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/flower.jpg"><img src="/img/obrien/flower.webp" class="d-block w-100" alt="Flower"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/flower.jpg"><img src="/img/obrien/flower.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
-                          Flower, 2013<br>
+                            Flower, 2013<br>
                             Felt on felt<br>
                             24 x 20 inches</p>
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/flowers-in-june.jpg"><img src="/img/obrien/flowers-in-june.webp" class="d-block w-100" alt="Flowers in June"></a>
-
+                            <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/flowers-in-june.jpg"><img src="/img/obrien/flowers-in-june.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
-                          Flowers in June, 2022<br>
+                              Flowers in June, 2022<br>
                             Felt on felt<br>
                             24 x 20 inches</p>
                           </div>
 
                           <div class="carousel-item" data-bs-interval="4000">
-
-                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/litle-big.jpg"><img src="/img/obrien/little-and-big.webp" class="d-block w-100" alt="Little and Big"></a>
-
+                              <a data-fslightbox="second-lightbox" href="/img/obrien/felt-works/litle-big.jpg"><img src="/img/obrien/little-and-big.webp" class="d-block w-100" alt="felt on felt artwork"></a>
                             <p>
                           Little and Big, 2019<br>
                             Felt on felt<br>
@@ -435,18 +416,19 @@
                           </div>
 
 
-                        </div>
+                        </div><!-- end carousel inner -->
 
-
+                        <div class="prev-next-container">
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon"></span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-3" data-bs-slide="next">
                           <span class="carousel-control-next-icon"></span>
                         </button>
-                      </div>
+                        </div>
+                      </div><!-- end carousel -->
 
-                    </div>
+                    </div><!-- end pane -->
 
                     <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="pane3" tabindex="0">
 
@@ -454,90 +436,66 @@
                       <div id="carouselExampleFade-4" class="carousel slide carousel-fade installations" data-bs-ride="carousel">
                         <div class="carousel-inner">
 
-                        <!--  <div class="carousel-item">
-                          <iframe class="video" src="https://www.youtube.com/embed/G2c8dDHlSAU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
-                          <p>
-                        Installation Video</p>
-                        </div>-->
                         <div class="carousel-item active">
-
-                            <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7811.jpg"><img src="/img/installations/8-5/obrien/1A3A7811.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                            <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7811.jpg"><img src="/img/installations/8-5/obrien/1A3A7811.webp" class="d-block w-100" alt="gallery installation of felt artwork" ></a>
                           <p>Outer Space 2023</p>
                         </div>
 
                           <div class="carousel-item">
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7717.jpg"><img src="/img/installations/8-5/obrien/1A3A7717.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7717.jpg"><img src="/img/installations/8-5/obrien/1A3A7717.webp" class="d-block w-100" alt="gallery installation of colored pencil drawings" ></a>
                             <p>Outer Space 2023</p>
                           </div>
 
                           <div class="carousel-item">
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7724-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7724-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7724-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7724-Edit.webp" class="d-block w-100" alt="gallery installation of colored pencil drawings" ></a>
                             <p>Outer Space 2023</p>
                           </div>
 
                           <div class="carousel-item" >
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7727-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7727-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7727-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7727-Edit.webp" class="d-block w-100" alt="gallery installation of colored pencil drawings" ></a>
                             <p>Outer Space 2023</p>
                           </div>
 
                           <div class="carousel-item" >
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7728-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7728-Edit.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7728-Edit.jpg"><img src="/img/installations/8-5/obrien/1A3A7728-Edit.webp" class="d-block w-100" alt="gallery installation of colored pencil drawings" ></a>
                             <p>Outer Space 2023</p>
                           </div>
 
                           <div class="carousel-item" >
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7731.jpg"><img src="/img/installations/8-5/obrien/1A3A7731.webp" class="d-block w-100" alt="Outer Space 2023"></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7731.jpg"><img src="/img/installations/8-5/obrien/1A3A7731.webp" class="d-block w-100" alt="gallery installation of felt artwork"></a>
                             <p>Outer Space 2023</p>
                           </div>
 
                           <div class="carousel-item" >
-
-                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7742.jpg"><img src="/img/installations/8-5/obrien/1A3A7742.webp" class="d-block w-100" alt="Outer Space 2023" ></a>
-
+                              <a data-fslightbox="fourth-lightbox" href="/img/installations/8-5/obrien/1A3A7742.jpg"><img src="/img/installations/8-5/obrien/1A3A7742.webp" class="d-block w-100" alt="gallery installation of felt artwork" ></a>
                             <p>Outer Space 2023</p>
                           </div>
 
-
-
+                        </div><!-- end carousel inner -->
+                        <div class="prev-next-container">
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                          </button>
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </button>
-                      </div>
+                      </div><!-- end carousel -->
 
                     </div><!-- end pane 3 -->
 
 
-
                     <div class="tab-pane fade" id="pane4" role="tabpanel" aria-labelledby="pane4" tabindex="0">
-
-
                       <iframe class="video" src="https://www.youtube.com/embed/K4sNWNqU7Yw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-                      </div>
+                    </div>
 
                     <div class="tab-pane fade" id="pane5" role="tabpanel" aria-labelledby="pane5" tabindex="0">
                       <p>I like repetition. Mantra. The sound of objects, people, and the world. The fuzziness of things. I‘d like to think that these qualities shine through in my pieces.</p>
 
-              <p>Layers. Feeling color. Feeling line. Feeling Shape. How something visual can be a dance, tell a story, be nothing, be everything, be funny. I love how art can be a refuge, a true refuge.</p>
+                      <p>Layers. Feeling color. Feeling line. Feeling Shape. How something visual can be a dance, tell a story, be nothing, be everything, be funny. I love how art can be a refuge, a true refuge.</p>
 
-              <p>The best pieces I have made are when I am not thinking, goofing around and many times make something as a joke. Direct experience. Being surprised. Startled.</p>
+                      <p>The best pieces I have made are when I am not thinking, goofing around and many times make something as a joke. Direct experience. Being surprised. Startled.</p>
 
                     </div><!-- end pane 5-->
 

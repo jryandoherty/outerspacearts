@@ -70,6 +70,10 @@ canvas {
   }
 }
 
+.show-title {
+  color: white;
+  text-shadow: 1px 1px 1px $black;
+}
 
 .welcome {
   height:100%;
@@ -79,9 +83,20 @@ canvas {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  background:$black;
   /*margin-top: 60px;*/
   @media (max-width:900px) {
     overflow-x:hidden;
+  }
+
+  img {
+    height:50vh;
+    @media (max-width:900px){
+      height:40vh;
+    }
+    @media (max-width:600px){
+      height:30vh;
+    }
   }
 
   h2.artist-name {

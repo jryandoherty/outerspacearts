@@ -17,25 +17,17 @@ gulp.task('serve', function() {
     // sass
 
 
-    function scssTask(){
-      return src('scss/**/*.scss', { sourcemaps: true })
-          .pipe(sass())
-          .pipe(postcss([cssnano()]))
-          .pipe(dest('dist/css', { sourcemaps: '.' }));
-    }
-
-
 
     gulp.task('sass', function(){
       return gulp.src('scss/**/*.scss', { sourcemaps: true })
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
         .pipe(postcss([cssnano()]))
-        .pipe(gulp.dest('dist/css'))
+        .pipe(gulp.dest('dist/css', { sourcemaps: '.' }))
         .pipe(browserSync.stream());
     });
 
     gulp.watch('./scss/**/*.scss', gulp.series(['sass']));
-    gulp.watch("dist/*.html").on('change', browserSync.reload);
+    gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 
