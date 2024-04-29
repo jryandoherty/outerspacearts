@@ -32,8 +32,6 @@ gulp.task('serve', function() {
 
 
 
-
-
 // html includes
 
 const paths = {
