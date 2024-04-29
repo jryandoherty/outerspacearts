@@ -1,8 +1,8 @@
 footer {
 
-  background:$black;
-  color:#fff!important;
-  font-size: .88em;
+
+  color:$black;
+  font-size: .72em;
 
 
   @media (max-width:992px){
@@ -35,7 +35,7 @@ footer {
   }
 
   a {
-    color:#fff;
+    color:$black;
     text-decoration: none;
     &:hover {
       color:$spaceredlight;
@@ -48,12 +48,11 @@ footer {
       margin-bottom:0;
     }
   .row > div:first-child, .row > div:nth-child(3),  .row > div:nth-child(4){
-      display:none;
+
     }
   }
 
   @media (max-width: 450px){
-    background: #000;
 
     img {
       margin-right: 0;
@@ -68,16 +67,16 @@ footer {
 } /* end footer */
 
 #insta-footer svg  {
-  fill:$white;
-  width:30px;
+  fill:$black;
+  width:20px;
   &:hover{
     fill: $spaceredlight;
   }
 }
 
 #email-footer svg  {
-  fill:$white;
-  width:30px;
+  fill:$black;
+  width:20px;
   &:hover{
     fill: $spaceredlight;
   }

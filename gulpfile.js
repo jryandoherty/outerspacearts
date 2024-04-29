@@ -50,6 +50,7 @@ async function includeHTML(){
     '!install.html', // ignore
     '!nav-new.html', // ignore
     '!current-ex.html', // ignore
+    '!current-ex-new.html', // ignore
     '!header.html', // ignore
     '!footer.html' // ignore
     ])

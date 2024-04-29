@@ -8,48 +8,16 @@
 
     <div id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel" >
       <div class="carousel-inner">
-        <div class="carousel-item active" >
-          <div class="welcome">
-            <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
-            <filter id="filter">
-            <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
-            <feDisplacementMap scale="80" in2="" />
-            <feColorMatrix values="1 0 0 0 0
-                               0 1 0 0 0
-                               0 0 1 0 0
-                               0 0 0 1.2 -.75"/>
-            <feColorMatrix values="2 0 0 0 -.6
-                               .3 0 .5 .5 -.5
-                               0 0 .1 0 .1
-                               0 0 0 1 0" result="n"/>
-            <feTurbulence baseFrequency=".2" result="s"/>
-            <feTurbulence baseFrequency=".1"/>
-            <feBlend in="s" in2="" />
-            <feColorMatrix values="0 0 0 9 -6
-                               0 0 0 9 -6
-                               0 0 0 9 -6
-                               0 0 0 0 1"/>
-            <feBlend in="n" in2="" />
-            </filter>
-            <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
-            </svg>
 
-            <div class="splash">
-              <h1 class="name">Past Exhibitions</h1>
-            </div>
-
-          </div>
-        </div>
-
-          <div class="carousel-item ">
+          <div class="carousel-item active">
             <div class="welcome">
-              <img src="/img/installations/5-13/installation2.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+              <img src="/img/installations/5-13/installation2.jpg" class="d-block w-100 object-fit-cover" alt="oil paintings on a gallery wall" style="height:50vh">
             </div>
 
           </div>
           <div class="carousel-item" >
             <div class="welcome">
-              <img src="/img/installations/5-13/installation4.jpg" class="d-block w-100 object-fit-cover" alt="..." style="height:50vh">
+              <img src="/img/installations/5-13/installation4.jpg" class="d-block w-100 object-fit-cover" alt="oil paintings on a gallery wall" style="height:50vh">
             </div>
           </div>
 
@@ -124,7 +92,7 @@
             <div class="tab-pane fade show active" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
 
 
-       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
                           <a data-fslightbox="first-lightbox" href="/img/alex-olson/1A3A9010-crop.jpg"><img src="/img/alex-olson/img-1.jpg" class="d-block w-100" alt="Transfer 2023"></a>
@@ -196,10 +164,10 @@
 
                   </div>
                   <div class="prev-next-container">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button aria-label="Previous Image" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button aria-label="Next Image" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
                       <span class="carousel-control-next-icon"></span>
                     </button>
                   </div>
@@ -215,7 +183,16 @@
               </div>
 
               <div class="tab-pane fade" id="pills-four" role="tabpanel" aria-labelledby="pills-four" tabindex="0">
-                <iframe class="video" src="https://www.youtube.com/embed/l8Yg2hTk_uI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                     <iframe
+                         style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                         src="https://tube.rvere.com/embed?v=l8Yg2hTk_uI"
+                         title="YouTube video player"
+                         frameBorder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowFullScreen>
+                     </iframe>
+                   </div>
                 </div>
 
               <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five" tabindex="0">
@@ -230,15 +207,15 @@
 
                 <h3>Alex Olson and Katherine Porter at Outer Space</h3>
                  <h4 class="mb-3">by Sarah Lehrer-Graiwer</h4>
-      <p>I’ve been looking at, getting lost in, and dazzled by Alex Olson’s paintings for as long as she’s been showing them. And throughout that time most of the pictorial principles and material fundaments of her practice have been present, to varying degrees: the interest in ‘reading’ imagery and calligraphic script as abstracted painterly mark; the layered, peekaboo conception of the picture plane as a deep stack of sheets to be lifted, folded, unfurled, peeled, or squeegeed away one by one; the strategic use of illusion and textural surface effects within abstraction to generate perceptual whiplash, discovery, and surprise; the elegance, restraint, intelligence, and chicness of her sensibility; the things she can do with and against the color gray; the uncanny of her other, often-garish colors; the imbrication of literary and sartorial influences; the strength of geometry and abundance of patterns, usually paired in clashing juxtaposition with each other. I’ve long loved how she deftly manipulates the directionality of her brushstrokes to effect tone and contrast, exaggerating how the painting changes according to viewing position. I’ve noted how reveals and cut-outs have grown in clarity and importance across her compositions.</p>
+            <p>I’ve been looking at, getting lost in, and dazzled by Alex Olson’s paintings for as long as she’s been showing them. And throughout that time most of the pictorial principles and material fundaments of her practice have been present, to varying degrees: the interest in ‘reading’ imagery and calligraphic script as abstracted painterly mark; the layered, peekaboo conception of the picture plane as a deep stack of sheets to be lifted, folded, unfurled, peeled, or squeegeed away one by one; the strategic use of illusion and textural surface effects within abstraction to generate perceptual whiplash, discovery, and surprise; the elegance, restraint, intelligence, and chicness of her sensibility; the things she can do with and against the color gray; the uncanny of her other, often-garish colors; the imbrication of literary and sartorial influences; the strength of geometry and abundance of patterns, usually paired in clashing juxtaposition with each other. I’ve long loved how she deftly manipulates the directionality of her brushstrokes to effect tone and contrast, exaggerating how the painting changes according to viewing position. I’ve noted how reveals and cut-outs have grown in clarity and importance across her compositions.</p>
 
-      <p>But more recently, and as her pictures have evolved alongside her, I’ve also become aware of another related angle cutting through it all on the bias which has to do with a persistent and growing commitment to transmission, dialogue, and bonds among women. While the range of her tastes and what she looks at is broad, she also consistently demonstrates a preference for working with and in relation to other women artists. In connection to this show, she has explained that “(m)y paintings have aspirational qualities, often being bolder, louder and more colorful than myself... They are aware of how they self-present but likewise show that they have multiple, alternative layers to choose from.” In other words, she is thinking about aesthetic manners of self-presentation (including concealment and withholding, on our bodies and on the page), in ways that relate to self-perception and experiment with how to be and, in particular, how to be an artist who explores an experience of female subjecthood through abstraction. We can read her abstraction allegorically as picturing a dynamic between interiority and exteriority. I can see now how much she is thinking through lineage and cross-generational culture in her paintings—an experience of which she is increasingly attuned to as someone who transmits and passes down knowledge (as a teacher and parent-to-be), in addition to continuing to be an ever- eager recipient. She wants to be in conversation through her work and she knows who with.</p>
-
-
-      <p>Katherine Porter has been painting for over half a century, navigating the cresting of multiple art historical eras and circulating in and out of some high-powered painting scenes on the East Coast. The grid—wobbly, worried, quivering, and hand-drawn—is her most enduring approach for mapping action, mark, and color across large picture planes. An immediacy and being- worked quality often comes through her layers of mixed and muddied patches of color. Arcs, circles, spirals, targets, and curlicues hover over, vibrate, and weave across the gridded spans with playfulness and lyricism. Almost all elements convey motion, often speedy and swirling. Squares and Xs pin her planes down and grab our attention. Her gridding often produces the sensation of an overhead view, like that of an aerial urban landscape or tabletop, one in the show called Arabesque (2014) even has sections painted with a kind of wood grain. Manny Farber’s scatter-field tabletop still-lives come to my mind there, while at different points there are resonances with peers like Elizabeth Murray or Lee Krasner and historical figures like Lissitzky or Bonnard. But just as often the grid, if it’s there at all, is buried and obscured below a jittery, buzzing conflagration of activity. In fact, even when absent, the grid’s promise of structure persists as an underlying stability and cohesion that makes all the overlaid movement possible and sustainable. Something grounded and foundational to hold on to, to stand on top of, to keep coming back to. And that’s what this exhibition’s pairing shows Porter’s practice to be, taken as a whole, for Olson, who has said that Porter was, formatively, one of the first artists she was aware of in her youth whose example made it possible to imagine a future for herself in paint.</p>
+            <p>But more recently, and as her pictures have evolved alongside her, I’ve also become aware of another related angle cutting through it all on the bias which has to do with a persistent and growing commitment to transmission, dialogue, and bonds among women. While the range of her tastes and what she looks at is broad, she also consistently demonstrates a preference for working with and in relation to other women artists. In connection to this show, she has explained that “(m)y paintings have aspirational qualities, often being bolder, louder and more colorful than myself... They are aware of how they self-present but likewise show that they have multiple, alternative layers to choose from.” In other words, she is thinking about aesthetic manners of self-presentation (including concealment and withholding, on our bodies and on the page), in ways that relate to self-perception and experiment with how to be and, in particular, how to be an artist who explores an experience of female subjecthood through abstraction. We can read her abstraction allegorically as picturing a dynamic between interiority and exteriority. I can see now how much she is thinking through lineage and cross-generational culture in her paintings—an experience of which she is increasingly attuned to as someone who transmits and passes down knowledge (as a teacher and parent-to-be), in addition to continuing to be an ever- eager recipient. She wants to be in conversation through her work and she knows who with.</p>
 
 
-      <em>Sarah Lehrer-Graiwer is an art writer and curator based in Los Angeles, where she publishes Pep Talk, and co-runs the experimental art venue The Finley Gallery. Her writing has appeared in such publications as Artforum, ArtReview, Art in America, Artonpaper, ArtSlant, Frieze Magazine, Mousse, and numerous exhibition catalogs. She is the author of Lee Lozano: Dropout Piece (Afterall, 2014).</em>
+            <p>Katherine Porter has been painting for over half a century, navigating the cresting of multiple art historical eras and circulating in and out of some high-powered painting scenes on the East Coast. The grid—wobbly, worried, quivering, and hand-drawn—is her most enduring approach for mapping action, mark, and color across large picture planes. An immediacy and being- worked quality often comes through her layers of mixed and muddied patches of color. Arcs, circles, spirals, targets, and curlicues hover over, vibrate, and weave across the gridded spans with playfulness and lyricism. Almost all elements convey motion, often speedy and swirling. Squares and Xs pin her planes down and grab our attention. Her gridding often produces the sensation of an overhead view, like that of an aerial urban landscape or tabletop, one in the show called Arabesque (2014) even has sections painted with a kind of wood grain. Manny Farber’s scatter-field tabletop still-lives come to my mind there, while at different points there are resonances with peers like Elizabeth Murray or Lee Krasner and historical figures like Lissitzky or Bonnard. But just as often the grid, if it’s there at all, is buried and obscured below a jittery, buzzing conflagration of activity. In fact, even when absent, the grid’s promise of structure persists as an underlying stability and cohesion that makes all the overlaid movement possible and sustainable. Something grounded and foundational to hold on to, to stand on top of, to keep coming back to. And that’s what this exhibition’s pairing shows Porter’s practice to be, taken as a whole, for Olson, who has said that Porter was, formatively, one of the first artists she was aware of in her youth whose example made it possible to imagine a future for herself in paint.</p>
+
+
+            <em>Sarah Lehrer-Graiwer is an art writer and curator based in Los Angeles, where she publishes Pep Talk, and co-runs the experimental art venue The Finley Gallery. Her writing has appeared in such publications as Artforum, ArtReview, Art in America, Artonpaper, ArtSlant, Frieze Magazine, Mousse, and numerous exhibition catalogs. She is the author of Lee Lozano: Dropout Piece (Afterall, 2014).</em>
 
               </div>
 
@@ -404,10 +381,10 @@
 
                   </div>
                   <div class="prev-next-container">
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
+                    <button aria-label="Previous Image" lass="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
+                    <button aria-label="Next Image" class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade-4" data-bs-slide="next">
                       <span class="carousel-control-next-icon"></span>
                     </button>
                   </div>
@@ -417,7 +394,16 @@
 
 
               <div class="tab-pane fade" id="pane4" role="tabpanel" aria-labelledby="pane4" tabindex="0">
-                  <iframe class="video" src="https://www.youtube.com/embed/l8Yg2hTk_uI" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
+                     <iframe
+                         style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
+                         src="https://tube.rvere.com/embed?v=l8Yg2hTk_uI"
+                         title="YouTube video player"
+                         frameBorder="0"
+                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                         allowFullScreen>
+                     </iframe>
+                 </div>
               </div><!-- end pane4 -->
 
               <div class="tab-pane fade" id="pane5" role="tabpanel" aria-labelledby="pane5" tabindex="0">

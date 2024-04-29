@@ -332,7 +332,7 @@ $danger-text:             $red-600 !default;
 $light-text:              $gray-600 !default;
 $dark-text:               $gray-700 !default;
 
-$primary-bg-subtle:       $blue-100 !default;
+$primary-bg-subtle:       #2b3035 !default;
 $secondary-bg-subtle:     $gray-100 !default;
 $success-bg-subtle:       $green-100 !default;
 $info-bg-subtle:          $cyan-100 !default;
@@ -604,7 +604,7 @@ $font-weight-bolder:          bolder !default;
 
 $font-weight-base:            $font-weight-normal !default;
 
-$line-height-base:            1.5 !default;
+$line-height-base:            1.7 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
@@ -1336,14 +1336,14 @@ $accordion-button-color:                  var(--#{$prefix}body-color) !default;
 $accordion-button-bg:                     var(--#{$prefix}accordion-bg) !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
 $accordion-button-active-bg:              var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color:           var(--#{$prefix}primary-text) !default;
+$accordion-button-active-color:           $white !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
 $accordion-icon-width:                    1.25rem !default;
 $accordion-icon-color:                    $body-color !default;
-$accordion-icon-active-color:             $primary-text !default;
+$accordion-icon-active-color:             $white !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 

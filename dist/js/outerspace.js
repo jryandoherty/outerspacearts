@@ -48,3 +48,19 @@ if (window.location.href == host + 'index.html') {
     }
 
 }
+
+
+var hash = location.hash.replace(/^#/, ""); // ^ means starting, meaning only match the first hash
+if (hash) {
+  var someTabTriggerEl = document.querySelector("#" + hash + "");
+  var tab = new bootstrap.Tab(someTabTriggerEl);
+
+  tab.show();
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const trigger = document.querySelector('#pills-tab-1 button[data-bs-target="${window.location.hash}"]')
+  const tab = new bootstrap.Tab(trigger)
+  tab.show()
+})

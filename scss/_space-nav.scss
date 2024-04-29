@@ -35,8 +35,11 @@ nav {
 
 }
 
-.home .navbar .container-fluid {
-  justify-content: left;
+nav .container-fluid {
+  @media (max-width:767px){
+    flex-direction: row-reverse;
+  }
+  /*justify-content: left;*/
 }
 
 .navbar-brand img{
@@ -44,7 +47,7 @@ nav {
 }
 
 .home .navbar-brand {
-  display:none;
+  /*display:none;*/
 }
 
 canvas {
@@ -140,7 +143,7 @@ canvas {
   }
 
   .nav-item{
-    margin-bottom:10px;
+    /*margin-bottom:10px;*/
     &:first-child {
 
     }
