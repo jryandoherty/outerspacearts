@@ -1,4 +1,3 @@
-
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const cssnano = require('cssnano');
@@ -17,7 +16,6 @@ gulp.task('serve', function() {
     // sass
 
 
-
     gulp.task('sass', function(){
       return gulp.src('scss/**/*.scss', { sourcemaps: true })
         .pipe(sass()) // Converts Sass to CSS with gulp-sass
@@ -28,8 +26,8 @@ gulp.task('serve', function() {
 
     gulp.watch('./scss/**/*.scss', gulp.series(['sass']));
     gulp.watch('*.html').on('change', browserSync.reload);
-});
 
+});
 
 
 // html includes
