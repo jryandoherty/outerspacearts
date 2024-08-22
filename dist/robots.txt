@@ -1,1 +1,7 @@
-Disallow: /pdfs/*/
+User-agent: *
+Disallow: /pdfs
+Disallow: /*.pdf$
+Disallow: /*.Pdf$
+Disallow: /*.PDF$
+
+Disallow: /exhibitions

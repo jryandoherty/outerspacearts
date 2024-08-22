@@ -1,0 +1,160 @@
+.exhibitions {
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+  .row {
+    margin:6rem 0;
+    @media(max-width: 575px){
+      margin:2rem 0;
+    }
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  height:100vh;
+  background:url('/img/riley-breininger/installations/_MMP7244-Edit.jpg') center center / cover no-repeat #000;
+  align-items: flex-start;
+
+
+  @media(max-width: 1024px){
+    height:50vh;
+  }
+
+
+  @media(max-width: 575px){
+    height:35vh;
+
+  }
+
+  .logo {
+    max-width:120px;
+      @media(max-width: 575px){
+        max-width: 70px;
+      }
+  }
+
+  .headline {
+    max-width:360px;
+
+    @media(max-width: 1024px){
+      max-width:230px;
+    }
+
+    
+    @media(max-width: 575px){
+      max-width:230px;
+    }
+  }
+
+
+}
+
+  .one {
+    span {
+      padding-left:12px;
+      padding-top:5px;
+      display:block;
+      @media(max-width:575px){
+        display:none;
+        background-color:rgba(0,0,0, 0.6);
+        color:#fff;
+        padding:6px;
+
+
+      }
+    }
+
+    @media(max-width: 575px){
+
+      height:32vh;
+
+      .logo {
+        display:none;
+      }
+
+
+      div {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:100%;
+      }
+        text-align:center;
+        justify-content:center;
+        padding-top:10px;
+    }
+
+  } /* end one */
+
+  .two {
+    background-image:url('/img/riley-breininger/installations/_MMP7272-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .three {
+    background-image:url('/img/riley-breininger/installations/_MMP7568-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .four {
+    background-image:url('/img/riley-breininger/installations/_MMP7466-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .five {
+    background-image:url('/img/riley-breininger/installations/_MMP7439-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .six {
+    background-image:url('/img/riley-breininger/installations/_MMP7691-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+
+  .seven {
+    background-image:url('/img/riley-breininger/installations/_MMP7560-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .eight {
+    background-image:url('/img/riley-breininger/installations/_MMP7606-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .nine {
+    background-image:url('/img/riley-breininger/installations/_MMP7240-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .ten {
+    background-image:url('/img/riley-breininger/installations/_MMP7290-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .eleven {
+    background-image:url('/img/riley-breininger/installations/_MMP7254-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .twelve {
+    background-image:url('/img/riley-breininger/installations/_MMP7568-Edit2.jpg');
+    justify-content: flex-end;
+  }
+
+footer {
+  .row {
+    margin:0
+  }
+}
+
+
+.ex-description p{
+  text-align:justify;
+}
+
+}

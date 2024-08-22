@@ -1,18 +1,19 @@
 body {
-  font-family: bookmania, serif;
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
+  font-family: bookmania, serif;
+  font-style: normal;
+  font-weight: 400;
 
   a {
-    color:$spacered;
+    color: #901;
     text-decoration: none;
-   &:hover {
-        color:$spaceredlight;
-      }
-
+    &:hover {
+      color: #de0019
     }
   }
+
+}
+
 
 @keyframes slideInTop {
   0% {
@@ -72,6 +73,34 @@ h2 {
   @media screen and (min-width: 1300px) {
     font-size:3em;
   }
+}
+
+.ap-mack #hero {
+  display:flex;
+  justify-content:end;
+  flex-direction:column;
+  height:80vh;
+  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.0)75%, rgba(0, 0, 0, 1.8)), url('/img/polly-apfelbaum/hero-install.jpg') center center / cover no-repeat #000;
+}
+
+#hero {
+  .show-title {
+    align-self: start;
+    padding:0 2rem;
+    font-size:1.6rem;
+    color: $white;
+    text-shadow: 1px 1px 1px $black;
+    line-height:2rem;
+  }
+
+  .show-date {
+    align-self: start;
+    padding:0 2rem 1rem;
+    font-size:1.3rem;
+    color: $white;
+    text-shadow: 1px 1px 1px $black;
+  }
+
 }
 
 .home > canvas {
