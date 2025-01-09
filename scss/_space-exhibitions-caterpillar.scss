@@ -1,0 +1,173 @@
+.exhibitions-caterpillar {
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+  .row {
+    margin:6rem 0;
+    @media(max-width: 575px){
+      margin:2rem 0;
+    }
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  height:100vh;
+  background:url('/img/cook-kettner/final/installations/OuterSpace-9.jpg') center center / cover no-repeat #000;
+  align-items: flex-start;
+
+
+  @media(max-width: 1024px){
+    height:70vh;
+  }
+
+
+  @media(max-width: 575px){
+    height:35vh;
+
+
+  }
+
+  .logo {
+    max-width:120px;
+      @media(max-width: 575px){
+        max-width: 50px;
+      }
+  }
+
+  .headline-container{
+    text-align: center;
+  }
+
+  .headline {
+    max-width:260px;
+
+    @media(max-width: 1024px){
+      max-width:190px;
+
+    }
+
+
+    @media(max-width: 575px){
+      max-width:130px;
+    }
+  }
+
+
+}
+
+  .one {
+    span {
+
+      padding-top:5px;
+      display:block;
+      @media(max-width:575px){
+        display:none;
+        background-color:rgba(0,0,0, 0.6);
+        color:#fff;
+        padding:6px;
+
+
+      }
+    }
+
+    @media(max-width: 767px){
+
+
+
+      .logo {
+        display:none;
+      }
+
+
+      div {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height:100%;
+      }
+        text-align:center;
+        justify-content:right;
+        padding-top:3%;
+        padding-right:10%;
+    }
+
+  } /* end one */
+
+  .two {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-44.jpg');
+    justify-content: flex-end;
+  }
+
+  .three {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-45.jpg');
+    justify-content: flex-end;
+  }
+
+  .four {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-50.jpg');
+    justify-content: flex-end;
+  }
+
+  .five {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-46.jpg');
+    justify-content: flex-end;
+  }
+
+  .six {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-2.jpg');
+    justify-content: flex-end;
+  }
+
+
+  .seven {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-33.jpg');
+    justify-content: flex-end;
+  }
+
+  .eight {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-40.jpg');
+    justify-content: flex-end;
+  }
+
+  .nine {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-75.jpg');
+    justify-content: flex-end;
+  }
+
+  .ten {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-77.jpg');
+    justify-content: flex-end;
+  }
+
+  .eleven {
+    background-image:url('/img/cook-kettner/final/installations/_MMP0307-Edit.jpg');
+    background-position:top;
+    justify-content: flex-end;
+
+  }
+
+  .twelve {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-44.jpg');
+    justify-content: flex-end;
+  }
+
+  .thirteen {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-12.jpg');
+    justify-content: flex-end;
+  }
+
+footer {
+  .row {
+    margin:0
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}

@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="description" content="Outer Space is an artist-run exhibition venue.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title id="title">Outer Space | Home</title>
+    <title id="title">Outer Space Arts | Home</title>
     <link rel="author" href="humans.txt">
-    <link href="/css/bootstrap.css?v=87677" rel="stylesheet">
+    <link href="/css/bootstrap.css?v=2043" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/jel1pya.css">
     <link rel="canonical" href="https://www.outerspacearts.xyz/" >
 
@@ -33,15 +33,14 @@
 
   <body class="home">
     <style>
-    .row {margin-top:5 rem;}
+    .row {margin-top:5rem!important;}
     </style>
   <div style="color:#fff;display:flex;justify-content:end;flex-direction:column;height:60vh;
-  background:linear-gradient(to bottom, rgba(0, 0, 0, 0.0)75%, rgba(0, 0, 0, 1.8)), url('/img/polly-apfelbaum/final/MMK-3183.jpg') center center / cover no-repeat #000;
+  background:url('/img/polly-apfelbaum/final/MMK-3183.jpg') center center / cover no-repeat #000;
    ">
 
 
-    <div style="align-self: start;padding:0 2rem;font-size:1.8rem">Polly Apfelbaum and Alice Mackler <em>The Potential of Women in Outer Space</em> </div>
-    <div style="align-self: start;padding:0 2rem;font-size:1.8rem">April 5th - July 1st</div>
+
 
     </div>
 
@@ -102,18 +101,24 @@
   <div class="container-fluid" id="current-exhibition">
 
 
+    <div class="row text-center">
+      <p class="fs-3 mb-0">Polly Apfelbaum & Alice Mackler:<br><em>The Potential of Women in Outer Space</em> </p>
+      <p class="m-0">April 5th - July 1st 2024</p>
+    </div>
+
+
 
     <div class="row justify-content-md-center" id="artists">
 
 
-      <div class="col-lg-5 px-4" >
+      <div class="col-lg-5 px-4 mt-5" >
 
-          <p class="fs-4 artists">Polly Apfelbaum</p>
+          <p class="fs-4 artists text-center">Polly Apfelbaum</p>
 
           <div class="tab-pane fade show active" id="artist-1" role="tabpanel" aria-labelledby="artist-1" tabindex="0">
 
             <!-- begin first tab -->
-            <ul class="nav mb-3 nav-pills" id="pills-tab-1" role="tablist">
+            <ul class="nav mb-3 nav-pills justify-content-center" id="pills-tab-1" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">works</button>
               </li>
@@ -121,9 +126,7 @@
               <li class="nav-item" role="presentation">
                 <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">overview</button>
               </li>
-              <!--<li class="nav-item" role="presentation">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-three" type="button" role="tab" aria-controls="pills-three" aria-selected="false">installations</button>
-              </li>-->
+
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" aria-selected="false">artist statement</button>
               </li>
@@ -144,28 +147,200 @@
                   <p>On behalf of Polly, Outer Space will donate 5% of its profits from any sales of her work to <a href="https://www.plannedparenthood.org/health-center/new-hampshire/manchester/03104/manchester-health-center-2740-91770" target="_blank">Planned Parenthood</a>. </p>
               </div> <!-- end overview pane -->
 
-            <div class="tab-pane fade show active" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0" style="flex-basis:200">
+            <div class="tab-pane fade show active" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
 
 
-<div class="d-flex flex-wrap">
-                        <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-1.jpg"><img src="/img/polly-apfelbaum/final/full/img-1.jpg" class="d-block w-100" alt="red and white repeated pattern on a rug"></a>
-                        <p>
-                        </p>
 
-                        <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-2.jpg"><img src="/img/polly-apfelbaum/final/full/img-2.jpg" class="d-block w-100" alt="red and white repeated pattern on a rug"></a>
-                        <p>
-                        </p>
+              <style>
+                ul {
+ display: flex;
+ flex-wrap: wrap;
+}
 
-                        <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-3.jpg"><img src="/img/polly-apfelbaum/final/full/img-3.jpg" class="d-block w-100" alt="red and white repeated pattern on a rug"></a>
-                        <p>
+li {
+ height: 40vh;
+ flex-grow: 1;
+}
 
-                        </p>
+li:last-child {
+ flex-grow: 10;
+}
+
+img {
+ max-height: 100%;
+ min-width: 100%;
+ object-fit: cover;
+ vertical-align: bottom;
+}
+
+@media (max-aspect-ratio: 1/1) {
+ li {
+   height: 30vh;
+ }
+}
+@media (max-height: 480px) {
+ li {
+   height: 80vh;
+ }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+ ul {
+   flex-direction: row;
+ }
+
+ li {
+   height: auto;
+   width: 100%;
+ }
+
+ img {
+   width: 100%;
+   max-height: 75vh;
+   min-width: 0;
+ }
+}
+              </style>
 
 
-                        <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-4.jpg"><img src="/img/polly-apfelbaum/final/full/img-4.jpg" class="d-block w-100" alt="red and white repeated pattern on a rug"></a>
-                        <p>
 
-                        </p>
+<ul>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg" alt="A Toyota Previa covered in graffiti" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg" alt="Interesting living room light through a window" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg" alt="Sara on a red bike" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg" alt="XOXO venue in between talks" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg" alt="Trees lit by green light during dusk" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg" alt="Portrait of Justin Pervorse" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05465_dtkwef.jpg" alt="Empty bike racks outside a hotel" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05626_ytsf3j.jpg" alt="Heavy rain on an intersection" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05449_l9kukz.jpg" alt="Payam Rajabi eating peanut chicken" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05544_aczrb9.jpg" alt="Portland skyline sunset" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05447_mvffor.jpg" alt="Interior at Nong's" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05501_yirmq8.jpg" alt="A kimchi hotdog on a plate" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05624_f5b2ud.jpg" alt="Restaurant window with graffiti saying 'water'" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05623_dcpfva.jpg" alt="Portrait of Jeremy Tanner" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05515_d2gzut.jpg" alt="Jordan, Sarah and Sara on red bikes, waiting" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05581_ceocwv.jpg" alt="Barista wearing a hoodie saying 'Coffee Should Be Dope.'" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814784/photostream-photos/DSC05517_ni2k0p.jpg" alt="Payam crossing the street on a bike" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05620_qfwycq.jpg" alt="Lit trees reflected in a puddle" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05462_b33uvp.jpg" alt="Moody chair in my hotel room" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05489_mqzktl.jpg" alt="Tom and Jenn wearing sunglasses" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05476_dlkjza.jpg" alt="Jordan and Sarah in front of a restaurant window" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814783/photostream-photos/DSC05497_abbd3c.jpg" alt="Sarah reading the Double Dragon drink menu" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05487_fcdv7t.jpg" alt="Beer brewing equipment" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05493_q6njbk.jpg" alt="2 cocktails in the making" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05446_xj60ff.jpg" alt="Beverage fridge at Nong's" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05559_hu49zx.jpg" alt="Wood structure reflections" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05482_dtrj02.jpg" alt="Colorful garden equipment in a shop window" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05565_dx5rp6.jpg" alt="Sarah in front of a wooden wall" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05613_o9af2z.jpg" alt="A neon banana" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05469_fdxdzx.jpg" alt="Matt Sacks smiling while we're waiting for food" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814782/photostream-photos/DSC05558_yq2tnz.jpg" alt="A fixed-gear bike under some bright lights" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05483_dyiuya.jpg" alt="Panic's PlayDate being held by a tester" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05468_xzbtcd.jpg" alt="Window reflection of me and Payam" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05457_nloycw.jpg" alt="Upside down shopping carts" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05522_mekpec.jpg" alt="Payam riding a bike with no hands" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05611_lbwtmk.jpg" alt="A kid's pillow left on the bench of a bus stop" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05572_xfvij7.jpg" alt="My reflection in the mirror" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05481_gnljae.jpg" alt="Jordan holding an iced coffee against his head to cool down" loading="lazy">
+</li>
+<li>
+<img src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814781/photostream-photos/DSC05480_zkw8sm.jpg" alt="Jordan and Sarah looking at the menu in a coffee shop" loading="lazy">
+</li>
+<!--  Adding an empty <li> here so the final photo doesn't stretch like crazy. Try removing it and see what happens!  -->
+<li></li>
+</ul>
+
+
+
+              <div class="d-flex flex-wrap" style="gap: 10px 20px; align-content:strech">
+                    <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-1.jpg"><img src="/img/polly-apfelbaum/final/full/img-1.jpg" class="w-50" alt="red and white repeated pattern on a rug"></a>
+
+
+
+                    <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-2.jpg"><img src="/img/polly-apfelbaum/final/full/img-2.jpg" class="w-50" alt="red and white repeated pattern on a rug"></a>
+
+
+                    <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-3.jpg"><img src="/img/polly-apfelbaum/final/full/img-3.jpg" class="w-25" alt="red and white repeated pattern on a rug"></a>
+
+
+
+                    <a data-fslightbox="first-lightbox" href="/img/polly-apfelbaum/final/full/img-4.jpg"><img src="/img/polly-apfelbaum/final/full/img-4.jpg" class=" w-25" alt="red and white repeated pattern on a rug"></a>
+
 
                         </div>
 
@@ -217,33 +392,22 @@
 
       </div><!-- end left column -->
 
-
-      <div class="col-lg-5">
-        <!-- begin second artist -->
-
-        <p class="fs-4 artists">alice mackler</p>
+  <!-- begin second artist -->
+      <div class="col-lg-5 px-5 mt-5">
+        <p class="fs-4 artists text-center">alice mackler</p>
         <div class="tab-pane active" id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
-          <ul class="nav nav-pills mb-3" id="pills-tab-2" role="tablist">
+          <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab-2" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="false">works</button>
             </li>
-
             <li class="nav-item" role="presentation">
               <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">overview</button>
             </li>
-            <!--<li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane3" aria-selected="false">press</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane5" type="button" role="tab" aria-controls="pane5" aria-selected="false">artist statement</button>
-            </li>-->
           </ul>
-
           <div class="tab-content" id="artist-2-tabContent">
             <div class="tab-pane fade" id="pane1" role="tabpanel" aria-labelledby="pane1" tabindex="0">
 
               <p>Alice Mackler (1931 - 2024) lived and worked in New York City. She began making artwork in high school in Williamstown, MA and later attended the Art Students League New York, studying painting with Will Barnett from 1952-54. More than thirty years later, Mackler returned to her arts education and received a BFA from the School of Visual Arts, NY in 1988. In 1999, Mackler began working with clay at Greenwich House Pottery, where she was awarded the Residency and Fellowship program in 2016. In 2013, Mackler had her first solo exhibition hosted by Kerry Schuss Gallery, NY, and in 2018, Kaufmann Repetto presented a solo exhibition of Mackler's ceramics in Milan, IT. Mackler's work has been included in numerous group exhibitions most recently at Kerry Schuss Gallery (2024), Xavier Hufkens, Brussels, Belgium (2023), The Aldrich Contemporary Art Museum, Ridgefield, CT (2018), Maccarone, NY (2016), The Museum of Contemporary Art Tucson, AZ (2016), Nicelle Beauchene Gallery, NY (2016), Blum & Poe, Los Angeles (2015) ; The Jewish Museum, NY (2015), The Box, Los Angeles (2015), Kerry Schuss Gallery, NY,  Klaus von Nichtssagend, NY (2014); The Box, Los Angeles (2014), among others.</p>
-
 
               <p>Mackler, who referred to herself as "a painter who makes sculptures," created intuitive sculptural forms activated by loose, expressionistic brush strokes of glaze which she freely applied with a sensitive hand. Alongside her sculptural practice, she focused on figure drawing and painting, created in life drawing sessions with live models, which also served as the basis of her sculptural work.</p>
 
@@ -255,11 +419,11 @@
 
             <div class="tab-pane fade show active" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
               <div id="carouselExampleFade-3" class="carousel slide carousel-fade">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                              <a data-fslightbox="second-lightbox" href="/img/upcoming/AliceMackler2.jpg"><img src="/img/alice-mackler/sculpture-home.jpg" class="d-block w-100" alt="artistic sculpture"></a>
-                            <p></p>
-                          </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <a data-fslightbox="second-lightbox" href="/img/upcoming/AliceMackler2.jpg"><img src="/img/alice-mackler/sculpture-home.jpg" class="d-block w-100" alt="artistic sculpture"></a>
+                    <p></p>
+                  </div>
 
 
                       </div><!-- end carousel inner -->
@@ -295,15 +459,13 @@
         </div><!-- end artist-2 -->
 
 
-
-
     </div> <!-- end artists row -->
 
 
 <div class="row justify-content-md-center"  id="press">
 
 <div class="mt-5 col-lg-8">
-  <h1> PRESS </h1>
+  <h1>PRESS</h1>
     <p class="fs-5 m-0">Alice Mackler, Artist Who Had a Late-Career Rise, Dies at 92</p>
     <p><a href="https://www.nytimes.com/2024/02/02/arts/alice-mackler-dead.html" target="_blank">Read full story on the New York Times</a></p>
 
@@ -440,7 +602,13 @@
       </div>
 
       <div class="col-lg-6 text-center text-lg-end">
-        <a href="mailto:info@outerspacearts.xyz" id="email-footer" aria-label="Send an email to Outer Space"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" /></svg></a>
+
+        <a title="Follow Outer Space Arts  on Artsy" href="https://www.artsy.net/partner/outer-space-arts?utm_campaign=artsy-embedded-widget&utm_source=volt&utm_medium=embedded-widget" target="_top" style="margin-right:15px">
+          <img src="https://files.artsy.net/images/artsy-follow-us-186x64_0.png" width="73" height="25" alt="Follow Outer Space Arts  on Artsy"  />
+        </a>
+
+        <!--<a href="mailto:info@outerspacearts.xyz" id="email-footer" aria-label="Send an email to Outer Space"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" /></svg></a>-->
+
         <a href="https://www.instagram.com/outerspacearts.xyz/" target="_blank" id="insta-footer" aria-label="Go to Outer Space's Instagram">
         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
@@ -448,6 +616,9 @@
 
         <a href="https://www.youtube.com/@outerspacearts/" target="_blank" id="youtube-footer" aria-label="Go to Outer Space's Youtube page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0-2.165.148-2.419 1.456-2.436 4.898.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zm-6.23 7.12v-4.444l4.778 2.218-4.778 2.226zm2-12.222c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></a>
         <a href="https://www.facebook.com/outerspacearts/" target="_blank" id="facebook-footer" aria-label="Go to Outer Space's Facebook page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+
+
+
 
       </div>
 

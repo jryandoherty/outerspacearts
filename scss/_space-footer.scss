@@ -21,6 +21,16 @@ footer {
     }
   }
 
+  .col-lg-6:nth-child(2) {
+    svg  {
+     fill:$black;
+     width:20px;
+     &:hover{
+       fill: $spaceredlight;
+     }
+    }
+  }
+
   svg {
     margin:15px 5px;
   }
@@ -64,20 +74,7 @@ footer {
       text-align:center!important;
     }
   }
+
+
+
 } /* end footer */
-
-#insta-footer svg  {
-  fill:$black;
-  width:20px;
-  &:hover{
-    fill: $spaceredlight;
-  }
-}
-
-#email-footer svg  {
-  fill:$black;
-  width:20px;
-  &:hover{
-    fill: $spaceredlight;
-  }
-}
