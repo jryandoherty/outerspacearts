@@ -1,0 +1,174 @@
+.artists-2025 {
+  font-family: bdr-mono, sans-serif;
+  z-index:100;
+  text-transform: uppercase;
+
+  a {
+    color:$black;
+  }
+
+  a:hover {
+    color:$spaceredlight;
+  }
+
+  a.active {
+    /*border-top:1px solid #b2b2b2;
+    border-bottom:1px solid #b2b2b2;
+    border-right:6px solid $white;*/
+    color:$spacered;
+    font-weight:700;
+  }
+
+  @media (max-width:992px){
+    margin-bottom:0!important;
+
+    .nav {
+      flex-direction: row!important;
+    }
+
+    a.active {
+      /*border:1px solid #d1d1d3;
+      border-bottom:6px solid $white;*/
+      /*margin-bottom: -2px;*/
+    }
+
+  }
+
+  @media (max-width:992px){
+    a {
+      font-size:1rem;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background:$white;
+    }
+
+    a.active {
+      margin-bottom:-1px!important;
+      border-top:1px solid #d2d2d2;
+      border-right:1px solid #d2d2d2;
+      border-left:1px solid #d2d2d2;
+    }
+  }
+
+  @media (max-width:992px){
+    a {
+      width:150px;
+      text-align:center;
+    }
+  }
+
+
+}/* end artists */
+
+.col-lg-9 > .tab-content {
+  /*border-left:1px solid #b2b2b2;*/
+  @media (max-width:992px){
+    border-top:1px solid #d2d2d2;
+    border-left:0;
+  }
+}
+
+.panel {
+  margin:3rem 0;
+}
+
+
+.tab-pane span {
+  margin-left: 25px;
+}
+
+
+.tab-content {
+
+  @media (max-width:992px){
+
+  }
+
+  .tab-content {
+
+    @media (max-width: 992px){
+
+    }
+  }
+
+  button {
+    padding: 0 16px 0 0;
+  }
+}
+
+@media(max-width:768px){
+  .nav-item {
+    padding: .5rem 0 .5rem;
+  }
+}
+
+
+hr {
+  opacity:1;
+}
+
+.nav-pills .nav-link{
+ border-radius: 0!important;
+}
+
+
+
+.title-work {
+  font-size:.75em;
+  margin-top:8px;
+}
+
+
+
+.fslightbox-svg-path {
+  fill:$black!important;
+}
+
+.fslightbox-slide-number-container {
+  display:none!important;
+}
+
+div[title="Enter fullscreen"] {
+  display: none;
+}
+
+@media (max-width:600px){
+
+.fslightbox-slide-btn-container {
+  display:none!important;
+}
+
+}
+
+
+
+.installations .carousel-control-prev, .installations .carousel-control-next {
+  color:#ccc;
+  opacity: 1;
+  top: 95%;
+  width:auto;
+
+  svg {
+    fill:#000;
+  }
+
+}
+
+object {
+  width:100%;
+  height:600px;
+  @media (max-width:992px){
+
+  }
+}
+
+.bookmania {
+
+  font-family: bookmania, serif!important;
+  font-style: normal;
+  font-weight: 400;
+  text-transform:lowercase;
+
+}

@@ -75,6 +75,15 @@ h2 {
   }
 }
 
+
+.cook-kettner #hero {
+  display:flex;
+  justify-content:end;
+  flex-direction:column;
+  height:80vh;
+  background:url('/img/cook-kettner/final/installations/OuterSpace-46.jpg') center center / cover no-repeat #000;
+}
+
 .ap-mack #hero {
   display:flex;
   justify-content:end;
@@ -92,13 +101,13 @@ h2 {
 }
 
 @media (max-width:1024px){
-  .brein-riley #hero, .ap-mack #hero {
+  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero {
     height:60vh;
   }
 }
 
 @media (max-width:768px){
-  .brein-riley #hero, .ap-mack #hero {
+  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero {
     height:40vh;
   }
 }
