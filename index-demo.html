@@ -6,21 +6,22 @@
 
   <body>
     <style>
-    .bg-body-tertiary {
-      background:#333!important;
 
-    }
     </style>
 
 
-
-
    <div id="hero" style="background:#000;">
-     <img src="/img/kent-kohlmann/banner.jpg" class="d-none d-md-block" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
-     <img src="/img/kent-kohlmann/banner-mobile.jpg" class="d-block d-md-none" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
+     <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner-mobile2_tw7gq4.webp" class="d-block d-md-none" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
+     <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
    </div>
 
 
+   <nav class="nav nav-pills flex-column flex-sm-row">
+     <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#artists">Active</a>
+     <a class="flex-sm-fill text-sm-center nav-link" href="#installation">INSTALLS</a>
+     <a class="flex-sm-fill text-sm-center nav-link" href="#press">press</a>
+     <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
+   </nav>
 
 @@include('./nav.html')
 
@@ -44,7 +45,7 @@
 
 <div class="row justify-content-center">
 
-      <div class="col-lg-6 col-xl-5 px-3 navbar-expand-md d-block border-primary border-4 rounded-4">
+      <div class="col-md-6 col-lg-5 px-3 navbar-expand-md d-block">
 
         <button class="navbar-toggler text-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#artist-1">
 
@@ -88,11 +89,18 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
 
               </div> <!-- end overview pane -->
 
-            <div class="tab-pane fade show active text-center" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
-                    <a data-fslightbox="first-lightbox" href="/img/kent-kohlmann/julian1.jpg"><img src="/img/kent-kohlmann/julian1.jpg" class="w-sm-50 w-75" alt="oil painting of a Black woman looking "></a>
+            <div class="tab-pane fade show active text-center d-lg-flex" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
+<div>
+                    <a data-fslightbox="first-lightbox" data-foo="bar" data-alt="An example description." href="/img/kent-kohlmann/julian1.jpg"><img src="/img/kent-kohlmann/julian1.jpg" class="w-50" alt="oil painting of a Black woman looking "></a>
                     <p style="font-size: .75em;"><em>Minocqua, WI, 54548</em>, 2023<br>
-                      Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches
-                  </p>
+                      Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches</p>
+</div>
+<div>
+                      <a data-fslightbox="first-lightbox" href="/img/kent-kohlmann/julian1.jpg"><img src="/img/kent-kohlmann/julian1.jpg" class="w-50" alt="oil painting of a Black woman looking "></a>
+                      <p style="font-size: .75em;"><em>Minocqua, WI, 54548</em>, 2023<br>
+                        Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches</p>
+</div>
+
               </div><!-- end works pane -->
 
 
@@ -107,6 +115,8 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
           </div><!-- end statement pane -->
 
         </div><!-- end tabbed-content -->
+
+
 </div><!-- end first artist -->
 
 </div><!-- end left column -->
@@ -208,12 +218,10 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
        <div id="carouselInstall-1" class="carousel slide carousel-fade" data-bs-ride="carousel">
          <div class="carousel-inner">
 
-
                <div class="carousel-item active">
                    <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7272-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7272-Edit.jpg" class="d-block w-100" alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
                  <p>Outer Space 2024<br><br><br></p>
                </div>
-
 
                <div class="carousel-item">
                    <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7466-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7466-Edit.jpg" class="d-block w-100 " alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
@@ -261,8 +269,7 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
 </div><!-- end video row -->
 
 
-
-    </div> <!-- end container -->
+</div> <!-- end container -->
 
 
 @@include('./footer.html')
