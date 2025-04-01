@@ -8,7 +8,8 @@
     <link rel="author" href="humans.txt">
     <link href="/css/bootstrap.css?v=2043" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/jel1pya.css">
-    <link rel="canonical" href="https://www.outerspacearts.xyz/" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="canonical" href="https://www.outerspacearts.xyz/">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M99WXRGMTL"></script>
@@ -29,24 +30,44 @@
 
 
 
-  <body>
-    <style>
+<style>
 
-    </style>
+  @media (min-width: 769px) {
+  .goverlay {
+    background: rgba(255,255,255, 1);
+  }
+}
+
+.glightbox-clean .gclose, .glightbox-clean .gnext, .glightbox-clean .gprev {
+
+ }
+
+.glightbox-clean .gslide-title {
+  font-display: swap;
+  font-family: bookmania, serif;
+}
+
+.glightbox-clean .gslide-desc{
+  font-display: swap;
+  font-family: bookmania, serif;
+}
 
 
-   <div id="hero" style="background:#000;">
-     <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner-mobile2_tw7gq4.webp" class="d-block d-md-none" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
-     <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block" style="max-width:100%;" alt="Caterpillar:featuring Emma CC Cook and Em Kettner">
-   </div>
+.glightbox-clean .gslide-media {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+</style>
 
 
-   <nav class="nav nav-pills flex-column flex-sm-row">
-     <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#artists">Active</a>
-     <a class="flex-sm-fill text-sm-center nav-link" href="#installation">INSTALLS</a>
-     <a class="flex-sm-fill text-sm-center nav-link" href="#press">press</a>
-     <a class="flex-sm-fill text-sm-center nav-link disabled" aria-disabled="true">Disabled</a>
-   </nav>
+<body data-bs-spy="scroll" data-bs-target="show-nav">
+
+<div id="hero" style="background:#000;">
+  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1742062600/banner-mobile2_mngqrg.webp" class="d-block d-md-none show-graphic-mobile" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block show-graphic-banner" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+</div>
+
 
 <nav class="navbar navbar-expand bg-body-tertiary" data-bs-theme="dark">
   <div class="container-fluid">
@@ -93,83 +114,264 @@
 </nav>
 
 
-<nav class="navbar bg-body-tertiary sticky-top navbar-nav-scroll justify-content-md-center">
-  <div class="row text-center">
-    <p class="fs-3 mb-0 bookmania">Julian Kent & Emma Kohlmann: <em>Worlds</em></p>
-    <p class="m-0 bookmania">March 14th - May 18th 2025</p>
+<div class="text-center mt-5 mb-4 mb-md-0">
+  <h1 class="fs-2 mb-0 px-5">Julian Kent & Emma Kohlmann: <em>Worlds</em></h1>
+  <p class="m-0">March 14th - May 18th 2025</p>
+</div>
+
+<div class="sticky-top" style="z-index:999;background:#fff;">
+
+<nav id="show-nav" class="nav nav-pills d-flex py-xs-5 py-md-3 justify-content-center">
+
+  <div role="tablist" class="d-flex flex-wrap align-items-center justify-content-center">
+    <a class="nav-link nav-item" href="#first-section">works</a>
+    <a class="nav-link nav-item" href="#second-section">artists</a>
+    <a class="nav-link nav-item" href="#press">press</a>
+    <a class="nav-link nav-item"  href="#installs">installations</a>
+    <a class="nav-link nav-item" href="#video">video</a>
   </div>
-  <div class="container w-md-75 ">
-    <a href="#artists">artists</a> | <a href="#installs">installations</a> | <a href="#press">press</a> | <a href="#video">video</a>
-  </div>
+
 </nav>
 
+</div><!-- end sticky menu -->
 
 
 
+<div class="container-fluid">
+  <section id="first-section" class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="d-flex align-items-center works-artist overflow-x-auto">
 
-<div class="container-fluid" id="artists" style="padding-top:10rem">
+        <div id="work6">
+                <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016899/outer-space-arts/kent-kohlmann/kohlmann/portals-2_g2glvg.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc6; descPosition:right" data-height="100vh" data-width="auto" data-effect="fade">
+                    <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016890/outer-space-arts/kent-kohlmann/kohlmann/portals-2-thumb_ye5uoi.jpg"  alt="abstract painting of two humanlike faces above a wolf-like creature">
+                </a>
 
-<div class="row justify-content-md-center">
+                <div class="glightbox-desc custom-desc6">
 
-<div class="row justify-content-center">
+                  <p><em>Portals 2</em>, 2023<br> Acrylic on linen, woodburnt frame
+                    <br>
+                  80 x 60 inches
+                    </p>
+                </div>
+        </div>
 
-      <div class="col-md-6 col-lg-5 px-3 navbar-expand-md d-block">
+        <div id="work2">
 
-        <button class="navbar-toggler text-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#artist-1">
+            <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016869/outer-space-arts/kent-kohlmann/kent/elegy_zriltp.jpg" class="glightbox2" data-glightbox="title: JULIAN KENT; description: .custom-desc2; descPosition:right" data-height="100vh" data-width="auto">
+                <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016867/outer-space-arts/kent-kohlmann/kent/elegy-thumb_zmc680.jpg"  alt="oil painting of a boy kneeling by a dead deer">
+            </a>
 
-          <h2>Julian Kent</h2>
+            <div class="glightbox-desc custom-desc2">
 
-        </button>
+              <p><em>Elegy</em>, 2023<br>
+                Oil on canvas <br>72 x 60 inches</p>
 
-          <h2 class="fs-4 artists-2025 text-center d-none d-md-block">Julian Kent</h2>
+            <p>This scene presents an elegy in two ways: one for the tragic, yet banal, roadside death of a deer; and another for the interior shift within the child after encountering the deceased creature. For the subject, death is now a tangible, physical interaction, no longer merely an abstract concept. Kent depicts this loss of innocence tenderly, but without sentimentality.</p>
 
-          <div class="collapse d-md-block" id="artist-1" role="tabpanel" aria-labelledby="artist-1" tabindex="0">
+            </div>
 
-            <!-- begin first tab -->
-            <ul class="nav nav-pills justify-content-center" id="pills-tab-1" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-two" type="button" role="tab" aria-controls="pills-two" aria-selected="false">works</button>
-              </li>
+        </div>
 
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one" aria-selected="true">overview</button>
-              </li>
+      <div id="work8">
 
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" aria-selected="false">artist statement</button>
-              </li>
-            </ul>
+        <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016898/outer-space-arts/kent-kohlmann/kohlmann/in-the-tiger-eye_gr4pk6.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc8; descPosition:right" data-height="100vh" data-width="auto">
+            <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016891/outer-space-arts/kent-kohlmann/kohlmann/in-the-tiger-eye-thumb_ulhjrl.jpg"  alt="abstract painting of many human-like faces in a circle">
+        </a>
 
-            <div class="tab-content" id="artist-1-tabContent">
-              <div class="tab-pane fade" id="pills-one" role="tabpanel" aria-labelledby="pills-one" tabindex="0">
+        <div class="glightbox-desc custom-desc8">
+          <p><em>In the Tiger's Eye</em>, 2023<br> Acrylic on linen, frame
+            <br>
+          48 x 36 inches
+            </p>
+        </div>
 
-                <p>A self-taught artist in his early twenties, Kent makes imagined portraits of people caught in the complexities of everyday realities, within the scope of the Black experience. Kent sees his work as "sociological studies of human emotions."</p>
+      </div>
 
-                <p>Kent paints specific scenes, mostly of domestic settings, celebrating quiet moments of everyday black people, friends, and family. Using thick, flat planes of oil pigments, Kent makes intimate paintings. Although self-taught, Kent is a sophisticated artist who finds artistic inspiration in films by Mike Leighand Edward Yang; writings by Dostoyevsky and Toni Morrison; and paintings by Jacob Lawrence, Chaim Soutine and Alice Neel.</p>
+      <div id="work3">
 
-                <p>Kent has had solo exhibitions at Kerry Schuss Gallery in New York city as well as a solo booth at The Independent Art Fair. He currently lives and works in Cleveland Ohio.</p>
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016870/outer-space-arts/kent-kohlmann/kent/johnannes_smk5ko.jpg" class="glightbox2" data-glightbox="title: JULIAN KENT; description: .custom-desc3; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016869/outer-space-arts/kent-kohlmann/kent/johnannes-thumb_syauyf.jpg"  alt="oil painting of a Black woman">
+          </a>
 
-                <p>On behalf of Julian, Outer Space will donate 5% of its profits from any sales of his work to <a href="https://www.plannedparenthood.org/health-center/new-hampshire/manchester/03104/manchester-health-center-2740-91770" target="_blank">Planned Parenthood</a>.</p>
+          <div class="glightbox-desc custom-desc3">
+            <p><em>Johnannes 13.33</em>, 2023<br>
+              Oil on canvas <br>60 x 40 inches
+            </p>
+            <p>
+                Inspired by the character Johannes in Dreyer’s film 'Ordet', who, believing himself to be Jesus, departs from home, Kent was struck by the idea of self-imposed exile.
+            </p>
 
-                <p>
-                Outer Space would like to thank the <a href="https://kerryschussgallery.com/" target="_blank">
-Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
+          </div>
+      </div>
 
-              </div> <!-- end overview pane -->
 
-            <div class="tab-pane fade show active text-center d-lg-flex" id="pills-two" role="tabpanel" aria-labelledby="pills-two" tabindex="0">
-<div>
-                    <a data-fslightbox="first-lightbox" data-foo="bar" data-alt="An example description." href="/img/kent-kohlmann/julian1.jpg"><img src="/img/kent-kohlmann/julian1.jpg" class="w-50" alt="oil painting of a Black woman looking "></a>
-                    <p style="font-size: .75em;"><em>Minocqua, WI, 54548</em>, 2023<br>
-                      Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches</p>
-</div>
-<div>
-                      <a data-fslightbox="first-lightbox" href="/img/kent-kohlmann/julian1.jpg"><img src="/img/kent-kohlmann/julian1.jpg" class="w-50" alt="oil painting of a Black woman looking "></a>
-                      <p style="font-size: .75em;"><em>Minocqua, WI, 54548</em>, 2023<br>
-                        Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches</p>
-</div>
+    <div id="work7">
 
-              </div><!-- end works pane -->
+        <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016898/outer-space-arts/kent-kohlmann/kohlmann/ifall_xmv4fo.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc7; descPosition:right" data-height="100vh" data-width="auto">
+            <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016891/outer-space-arts/kent-kohlmann/kohlmann/ifall-thumb_kv70ij.jpg"  alt="abstract painting of a spider, two figurines above a yellow face">
+        </a>
+
+        <div class="glightbox-desc custom-desc7">
+
+          <p><em>I Fall, I Crawl, I Found You</em>, 2023<br> Acrylic on linen, frame
+            <br>
+          48 x 36 inches
+            </p>
+        </div>
+
+      </div>
+
+
+      <div id="work4">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016874/outer-space-arts/kent-kohlmann/kent/untitled_kewt22.jpg" class="glightbox2" data-glightbox="title: JULIAN KENT; description: .custom-desc4; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016870/outer-space-arts/kent-kohlmann/kent/untitled-thumb_t5fgan.jpg"  alt="oil painting of a gutter on the side of a house" >
+          </a>
+
+          <div class="glightbox-desc custom-desc4">
+
+            <p><em>Untitled</em>, 2024<br>
+              Oil on canvas <br>48 x 36 inches
+            </p>
+
+
+          </div>
+
+      </div>
+
+
+      <div id="work12">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016894/outer-space-arts/kent-kohlmann/kohlmann/urn_s57nrp.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc12; descPosition:right" data-height="70vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016888/outer-space-arts/kent-kohlmann/kohlmann/urn-thumb_prl0gy.jpg"  alt="abstract painting of a red urn" >
+          </a>
+
+          <div class="glightbox-desc custom-desc12">
+            <p><em>Urn</em>, 2024<br> Oil on canvas
+              <br>
+            23 x 17 inches
+              </p>
+          </div>
+
+      </div>
+
+      <div id="work10">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016896/outer-space-arts/kent-kohlmann/kohlmann/tree_ps4u0r.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc10; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016889/outer-space-arts/kent-kohlmann/kohlmann/tree-thumb_jiilrz.jpg"  alt="abstract painting of human figures in a tree" >
+          </a>
+
+          <div class="glightbox-desc custom-desc10">
+            <p><em>Unbroken Family Tree</em>, 2023<br> Acrylic on linen, frame
+              <br>
+            48 x 36 inches
+              </p>
+          </div>
+
+      </div>
+
+
+      <div id="work1">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016867/outer-space-arts/kent-kohlmann/kent/devotion_hvhlok.jpg" class="glightbox2" data-glightbox="title: JULIAN KENT; description: .custom-desc1; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016865/outer-space-arts/kent-kohlmann/kent/devotion_thumb_ydpuko.jpg" alt="oil painting of a Black woman crying under a portrait of Jesus" >
+          </a>
+
+          <div class="glightbox-desc custom-desc1">
+
+            <p><em>Devotion</em>, 2023<br>
+              Oil on canvas <br>72 x 60 inches
+          </p>
+
+          <p>Inspired by a scene from Andrzej Zulawski's <em>Possession</em>, Kent contemplates a desperate person begging for reason or a sign from a higher power. While faith cannot be deduced to mere routine habit, devotion takes on that form when it becomes grounded in ritual. Kent investigates how belief manifests as an interaction with an icon, versus an intangible presence.</p>
+          </div>
+
+      </div>
+
+      <div id="work5">
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016870/outer-space-arts/kent-kohlmann/kent/morning_bwkml8.jpg" class="glightbox2" data-glightbox="title: JULIAN KENT; description: .custom-desc5; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016869/outer-space-arts/kent-kohlmann/kent/morning-thumb_si6kp3.jpg"  alt="oil painting of a naked Black woman" >
+          </a>
+
+          <div class="glightbox-desc custom-desc5">
+            <p><em>Morning Routine</em>, 2023<br>
+              Oil on canvas <br>60 x 30 inches
+            </p>
+
+            <p>Questioning how to present a nude figure without the mechanics of projected sensuality, Kent renders a woman caught mid-motion, performing the familiar act of putting up her hair. A tribute to quotidian rhythms and repetitive gestures, Kent captures the subject in a natural state, grounded in humanness rather than desire.</p>
+          </div>
+
+      </div>
+
+      <div id="work9">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016896/outer-space-arts/kent-kohlmann/kohlmann/twisted_ranily.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc9; descPosition:right" data-height="100vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016888/outer-space-arts/kent-kohlmann/kohlmann/twisted-thumb_aktlz5.jpg"  alt="abstract painting of human-like figures shaped like leaves on a stem" >
+          </a>
+
+          <div class="glightbox-desc custom-desc9">
+            <p><em>Twisted Turned</em>, 2023<br> Acrylic on linen, frame
+              <br>
+            48 x 36 inches
+              </p>
+          </div>
+
+      </div>
+
+      <div id="work11">
+
+          <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016893/outer-space-arts/kent-kohlmann/kohlmann/symbolists_kpvm4q.jpg" class="glightbox2" data-glightbox="title: EMMA KOHLMANN; description: .custom-desc11; descPosition:right" data-height="70vh" data-width="auto">
+              <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016890/outer-space-arts/kent-kohlmann/kohlmann/symbolists-thumb_nr63xw.jpg"  alt="abstract painting of a human face with a dog-like figure above" >
+          </a>
+
+          <div class="glightbox-desc custom-desc11">
+            <p><em>Symbolists</em>, 2024<br> Oil on canvas
+              <br>
+            20 x 16 inches
+              </p>
+          </div>
+
+      </div>
+
+      </div><!-- end works pane -->
+
+    </div><!-- end col-10 -->
+
+</section>
+
+
+<section id="second-section" class="row justify-content-center" style="margin-top:5rem">
+
+  <div class="col-lg-6 col-xl-5">
+
+      <h2 class="fs-4 artists-2025 text-center">Julian Kent</h2>
+
+      <div id="artist-1" role="tabpanel" aria-labelledby="artist-1" tabindex="0">
+
+        <!-- begin first tab -->
+        <ul class="nav nav-pills justify-content-center" id="pills-tab-1" role="tablist">
+
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-one" type="button" role="tab" aria-controls="pills-one">overview</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-five-tab" data-bs-toggle="pill" data-bs-target="#pills-five" type="button" role="tab" aria-controls="pills-five" ">artist statement</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="artist-1-tabContent">
+          <div class="tab-pane show fade active" id="pills-one" role="tabpanel" aria-labelledby="pills-one" tabindex="0">
+
+            <p>A self-taught artist in his early twenties, Kent makes imagined portraits of people caught in the complexities of everyday realities, within the scope of the Black experience. Kent sees his work as "sociological studies of human emotions."</p>
+
+            <p>Kent paints specific scenes, mostly of domestic settings, celebrating quiet moments of everyday black people, friends, and family. Using thick, flat planes of oil pigments, Kent makes intimate paintings. Although self-taught, Kent is a sophisticated artist who finds artistic inspiration in films by Mike Leighand Edward Yang; writings by Dostoyevsky and Toni Morrison; and paintings by Jacob Lawrence, Chaim Soutine and Alice Neel.</p>
+
+            <p>Kent has had solo exhibitions at Kerry Schuss Gallery in New York city as well as a solo booth at The Independent Art Fair. He currently lives and works in Cleveland Ohio.</p>
+
+            <p>Outer Space would like to thank the <a href="https://kerryschussgallery.com/" target="_blank">Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
+
+          </div> <!-- end overview pane -->
 
 
           <div class="tab-pane fade" id="pills-five" role="tabpanel" aria-labelledby="pills-five" tabindex="0">
@@ -182,133 +384,140 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
 
           </div><!-- end statement pane -->
 
-        </div><!-- end tabbed-content -->
+
+    </div><!-- end tabbed-content -->
 
 
-</div><!-- end first artist -->
+  </div><!-- end first artist -->
 
-</div><!-- end left column -->
+  </div><!-- end left column -->
+
 
   <!-- begin second artist -->
-      <div class="col-lg-6 col-xl-5 px-3 navbar-expand-lg d-block">
-        <button class="navbar-toggler text-center w-100" type="button" data-bs-toggle="collapse" data-bs-target="#artist-2">
+  <div class="col-lg-6 col-xl-5">
 
-          <h2>emma kohlmann</h2>
+    <h2 class="fs-4 artists-2025 text-center">emma kohlmann</h2>
 
-        </button>
-        <h2 class="fs-4 text-center d-none d-lg-block">emma kohlmann</h2>
-        <div class="collapse d-lg-block" id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
-          <ul class="nav nav-pills justify-content-center" id="pills-tab-2" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="false">works</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">overview</button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane3" aria-selected="true">artist statement</button>
-            </li>
-          </ul>
-          <div class="tab-content" id="artist-2-tabContent">
-            <div class="tab-pane fade" id="pane1" role="tabpanel" aria-labelledby="pane1" tabindex="0">
+    <div class="" id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
+      <ul class="nav nav-pills justify-content-center" id="pills-tab-2" role="tablist">
 
-              <p>For the past decade, Emma Kohlmann has been primarily working in watercolor and painting, creating a distinct universe in which anthropomorphous figures, flora and fauna peacefully coexist in spiritual spheres. Visually informed by a variety of cultural references encompassing Greek and Roman mythology, modern painting history, folk art and DIY punk ephemera, her paintings manifest a cosmos free from hierarchies. Stylistically naive and folksy, the absence of perspectives and lack of relational scales translates the egalitarian belief system Kohlmann's practice is rooted in. Considering not only human beings, but every living organism, a sense of togetherness and community is palpable throughout her work. In evocative color schemes, Kohlmann's palettes transcend from nature's elements to the spiritual, mirroring the unique spaces she creates at the intersection of the earthly and fantastical</p>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active"  data-bs-toggle="pill" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">overview</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link"  data-bs-toggle="pill" data-bs-target="#pane3" type="button" role="tab" aria-controls="pane3" aria-selected="true">artist statement</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="artist-2-tabContent">
+        <div class="tab-pane show fade active" id="pane1" role="tabpanel" aria-labelledby="pane1" tabindex="0">
 
-              <p><em>Emma Kohlmann (b. 1989 in The Bronx, NY) lives and works in Western Massachusetts. She received a B.A. from Hampshire College and has exhibited in the United States and internationally. Most recently she has had solo exhibitions at Silke Lindner (New York), Cooper Cole (Toronto), Jack Hanley Gallery (New York, NY) and V1 (Copenhagen, DK). She has been included in numerous group exhibitions including shows at the Museum of Contemporary Art Tucson, (Tucson, AZ) Venus over Manhattan (New York, NY) and Andrew Edlin (New York, NY). Her work is in the collection of the Santa Barbara Museum of Art. She publishes her own zines, and frequently collaborates with artists, writers, musicians and designers. She co-founded and co-runs Mundus Press with her sister Charlotte Kohlmann</em></p>
+          <p>For the past decade, Emma Kohlmann has been primarily working in watercolor and painting, creating a distinct universe in which anthropomorphous figures, flora and fauna peacefully coexist in spiritual spheres. Visually informed by a variety of cultural references encompassing Greek and Roman mythology, modern painting history, folk art and DIY punk ephemera, her paintings manifest a cosmos free from hierarchies. Stylistically naive and folksy, the absence of perspectives and lack of relational scales translates the egalitarian belief system Kohlmann's practice is rooted in. Considering not only human beings, but every living organism, a sense of togetherness and community is palpable throughout her work. In evocative color schemes, Kohlmann's palettes transcend from nature's elements to the spiritual, mirroring the unique spaces she creates at the intersection of the earthly and fantastical</p>
 
-              <p>On behalf of Emma, Outer Space will donate 5% of its profits from any sales of her work to a non-profit of the <a href="https://awionline.org/" target="_blank">artist's choosing</a>.</p>
+          <p><em>Emma Kohlmann (b. 1989 in The Bronx, NY) lives and works in Western Massachusetts. She received a B.A. from Hampshire College and has exhibited in the United States and internationally. Most recently she has had solo exhibitions at Silke Lindner (New York), Cooper Cole (Toronto), Jack Hanley Gallery (New York, NY) and V1 (Copenhagen, DK). She has been included in numerous group exhibitions including shows at the Museum of Contemporary Art Tucson, (Tucson, AZ) Venus over Manhattan (New York, NY) and Andrew Edlin (New York, NY). Her work is in the collection of the Santa Barbara Museum of Art. She publishes her own zines, and frequently collaborates with artists, writers, musicians and designers. She co-founded and co-runs Mundus Press with her sister Charlotte Kohlmann</em></p>
 
-              <p><a href="/pdfs/Eccc_2024_CV.pdf" target="_blank">view Emma's full biography</a></p>
+          <p>On behalf of Emma, Outer Space will donate 5% of its profits from any sales of her work to a non-profit of the <a href="https://awionline.org/" target="_blank">artist's choosing</a>.</p>
 
-              <p>
-              Outer Space would like to thank <a href="https://www.silkelindner.com/" target="_blank">Silke Lindner</a> for their support in organizing this exhibition.</p>
+          <p><a href="/pdfs/Eccc_2024_CV.pdf" target="_blank">view Emma's full biography</a></p>
+
+          <p>
+          Outer Space would like to thank <a href="https://www.silkelindner.com/" target="_blank">Silke Lindner</a> for their support in organizing this exhibition.</p>
 
 
-            </div><!-- end pane1 -->
-
-            <div class="tab-pane fade show active text-center" id="pane2" role="tabpanel" aria-labelledby="pane2" tabindex="0">
-
-                <a data-fslightbox="second-lightbox" href="/img/kent-kohlmann/emma1.jpg"><img src="/img/kent-kohlmann/emma1.jpg" class="w-75" alt="abstract painting with human-like faces, leaves, and fox-like creature"></a>
-
-                <p style="font-size: .75em;"><em>Minocqua, WI, 54548</em>, 2023<br>
-                  Oil, acrylic, upholstery, walnut <br>22 x 35.25 x 1.5 inches
-              </p>
-
-            </div> <!-- end pane 2 -->
-
-            <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="pane3" tabindex="0">
-                <p>I think there is a dance between humans and the natural world. I see that dance within my own work. I have my own visual language that works within this. Each plant, animal, and shape feels alive within this world.</p>
-                <p>- Emma Kohlmann</p>
-            </div><!-- end pane 3 -->
+        </div><!-- end pane1 -->
 
 
-          </div> <!-- end artist-2-tabContent -->
+        <div class="tab-pane fade" id="pane3" role="tabpanel" aria-labelledby="pane3" tabindex="0">
+            <p>I think there is a dance between humans and the natural world. I see that dance within my own work. I have my own visual language that works within this. Each plant, animal, and shape feels alive within this world.</p>
+            <p>- Emma Kohlmann</p>
+        </div><!-- end pane 3 -->
 
-        </div><!-- end right column -->
+      </div> <!-- end artist-2-tabContent -->
+
+    </div><!-- end collapse -->
 
 
-    </div> <!-- end artist-2 -->
-
-    </div><!-- end artists row -->
+</div> <!-- end right column for artist 2-->
 
 
-<div class="row justify-content-md-center" id="press" style="padding-top:5rem">
-<h3 class="mt-5 text-center">PRESS</h3>
-<div class="mt-5 col-lg-5">
 
-    <p class="fs-5 m-0">Julian Kent: Drama of Silence</p>
-    <p><a href="https://www.mutualart.com/Exhibition/Julian-Kent--Drama-of-Silence/F63E2D635E429583" target="_blank">Read full story on Mutual Art</a></p>
+</section>
 
-    <p class="fs-5 m-0">Julian Kent: Black History on Canvas</p>
-    <p><a href="https://medium.com/@mfschuss/julian-kent-black-history-on-canvas-ec0f43d283d2" target="_blank">Read full story on Medium</a></p>
+<section id="press" class="row justify-content-md-center" style="margin-top:5rem">
+<h2 class="text-center artists-2025">PRESS</h2>
+<div class="col-lg-7">
 
-    <p class="fs-5 m-0">The Independent, More Inclusive Than Ever</p>
-    <p><a href="https://www.nytimes.com/2023/06/01/arts/design/arts-design-nyc-art-galleries-june.html" target="_blank">Read full story on The New York Times</a></p>
+  <p class="fs-5 m-0">Julian Kent</p>
+  <p><a href="/pdfs/JulianKent-NYTimes.pdf" target="_blank">Read full story from The New York Times</a></p>
 
-</div>
-<div class="mt-5 col-lg-5">
-    <p class="fs-5 m-0">Emma Kohlmann's Dance Between Humans and the Natural World</p>
-    <p><a href="https://coveteur.com/artist-emma-kohlmann" target="_blank">Read full story on Coveteur</a></p>
+  <p class="fs-5 m-0">Julian Kent: Drama of Silence</p>
+  <p><a href="https://www.mutualart.com/Exhibition/Julian-Kent--Drama-of-Silence/F63E2D635E429583" target="_blank">Read full story on Mutual Art</a></p>
 
-    <p class="fs-5 m-0">Emma Kohlmann: A Watercolour Journey into Form, Gender and Sensuality</p>
-    <p><a href="https://artplugged.co.uk/emma-kohlmann-a-watercolour-journey-into-form-gender-and-sensuality/" target="_blank">Read full story on Art Plugged</a></p>
+  <p class="fs-5 m-0">Julian Kent: Black History on Canvas</p>
+  <p><a href="https://medium.com/@mfschuss/julian-kent-black-history-on-canvas-ec0f43d283d2" target="_blank">Read full story on Medium</a></p>
+
+  <p class="fs-5 m-0">Emma Kohlmann's Dance Between Humans and the Natural World</p>
+  <p><a href="https://coveteur.com/artist-emma-kohlmann" target="_blank">Read full story on Coveteur</a></p>
+
+  <p class="fs-5 m-0">Emma Kohlmann: A Watercolour Journey into Form, Gender and Sensuality</p>
+  <p><a href="https://artplugged.co.uk/emma-kohlmann-a-watercolour-journey-into-form-gender-and-sensuality/" target="_blank">Read full story on Art Plugged</a></p>
+
+  <p class="fs-5 m-0">Emma Kohlmann’s New Exhibition Is an Otherworldly Oasis in the Heart of the City</p>
+  <p><a href="https://www.vogue.com/article/emma-kohlmann-jack-hanley-gallery-exhibition" target="_blank">Read full story on Vogue</a></p>
 
 </div>
 
-</div> <!-- end press row -->
+</section> <!-- end press row -->
 
 
-<div class="row justify-content-md-center" id="installs" style="padding-top:5rem">
+<section id="installs" class="row justify-content-md-center" style="margin-top:5rem">
 
-     <div class="col-lg-9 mt-5">
-       <h4 class="text-center"> INSTALLATIONS </h4>
+     <div class="col-lg-7 mt-5">
+       <h2 class="text-center artists-2025"> INSTALLATIONS </h2>
 
        <div id="carouselInstall-1" class="carousel slide carousel-fade" data-bs-ride="carousel">
          <div class="carousel-inner">
 
                <div class="carousel-item active">
-                   <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7272-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7272-Edit.jpg" class="d-block w-100" alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
-                 <p>Outer Space 2024<br><br><br></p>
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743017312/outer-space-arts/kent-kohlmann/installs/_MMP8218-Edit_ejce82.jpg" class="glightbox" data-effect="fade"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743017312/outer-space-arts/kent-kohlmann/installs/_MMP8218-Edit_ejce82.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
                </div>
 
                <div class="carousel-item">
-                   <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7466-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7466-Edit.jpg" class="d-block w-100 " alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
-                 <p>Outer Space 2024<br><br><br></p>
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743017312/outer-space-arts/kent-kohlmann/installs/_MMP8203-Edit_i5h8af.jpg" class="glightbox" data-effect="fade"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743017312/outer-space-arts/kent-kohlmann/installs/_MMP8203-Edit_i5h8af.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
                </div>
 
                <div class="carousel-item">
-                   <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7485-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7485-Edit.jpg" class="d-block w-100" alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
-                 <p>Outer Space 2024<br><br><br></p>
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743017314/outer-space-arts/kent-kohlmann/installs/_MMP8296-Edit_oqxqc8.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743017314/outer-space-arts/kent-kohlmann/installs/_MMP8296-Edit_oqxqc8.jpg" class="d-block w-100" alt="gallery installation of an oil painting on a wall" ></a>
                </div>
 
                <div class="carousel-item">
-                   <a data-fslightbox="third-lightbox" href="/img/riley-breininger/installations/_MMP7568-Edit.jpg"><img src="/img/riley-breininger/installations/_MMP7568-Edit.jpg" class="d-block w-100" alt="gallery installation of terracotta works on striped walls and woven rug" ></a>
-                 <p>Outer Space 2024<br><br><br></p>
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743017148/outer-space-arts/kent-kohlmann/installs/_MMP8150-Edit_pw0u8o.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743017148/outer-space-arts/kent-kohlmann/installs/_MMP8150-Edit_pw0u8o.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
                </div>
+
+               <div class="carousel-item">
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743017263/outer-space-arts/kent-kohlmann/installs/_MMP8155-Edit_rukm9c.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743017263/outer-space-arts/kent-kohlmann/installs/_MMP8155-Edit_rukm9c.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
+               </div>
+
+               <div class="carousel-item">
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016919/outer-space-arts/kent-kohlmann/installs/_MMP7950-Edit_gx7i5b.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016919/outer-space-arts/kent-kohlmann/installs/_MMP7950-Edit_gx7i5b.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
+               </div>
+
+               <div class="carousel-item">
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016923/outer-space-arts/kent-kohlmann/installs/_MMP7996-Edit_x0rmx2.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016923/outer-space-arts/kent-kohlmann/installs/_MMP7996-Edit_x0rmx2.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
+               </div>
+
+               <div class="carousel-item">
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016922/outer-space-arts/kent-kohlmann/installs/_MMP7984-Edit_khueuy.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016922/outer-space-arts/kent-kohlmann/installs/_MMP7984-Edit_khueuy.jpg" class="d-block w-100" alt="gallery installation of oil paintings on a wall" ></a>
+               </div>
+
+               <div class="carousel-item">
+                   <a href="https://res.cloudinary.com/jryandoherty/image/upload/v1743016921/outer-space-arts/kent-kohlmann/installs/_MMP7971-Edit_yn9qzg.jpg" class="glightbox"><img src="https://res.cloudinary.com/jryandoherty/image/upload/v1743016921/outer-space-arts/kent-kohlmann/installs/_MMP7971-Edit_yn9qzg.jpg" class="d-block w-100" alt="gallery installation of an oil painting on a wall" ></a>
+               </div>
+
 
              </div><!-- end carousel innner -->
 
-
+             <p class="mt-2 text-center">Outer Space 2025</p>
+             <div class="d-flex justify-content-center artists-2025">
                <button aria-label="Previous Image" class="carousel-control-prev" type="button" data-bs-target="#carouselInstall-1" data-bs-slide="prev">
                  <span class="carousel-control-prev-icon"></span>
                </button>
@@ -316,29 +525,38 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
                <button aria-label="Next Image" class="carousel-control-next" type="button" data-bs-target="#carouselInstall-1" data-bs-slide="next">
                  <span class="carousel-control-next-icon"></span>
                </button>
-
+             </div>
            </div><!-- end carousel -->
        </div>
-  </div> <!-- end installations row -->
+  </section> <!-- end installations row -->
 
-<div class="row justify-content-md-center" id="video">
+<section class="row justify-content-md-center" id="video" style="margin-top:5rem;margin-bottom:10rem">
   <div class="col-lg-7 mt-5">
-    <h4 class="text-center">VIDEO</h4>
+    <h2 class="text-center artists-2025">VIDEO</h2>
+
     <div style="height: 0px; overflow: hidden; padding-top: 56.25%; position: relative; width: 100%;">
          <iframe
              style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"
-             src="https://www.youtube.com/embed/F4QLSABkrKM?si=5CG72TnP2Y5lBYUo"
+             src="https://www.youtube.com/embed/9f1758v5sL0?si=uq8uTLR2qulU18K4"
              title="YouTube video player"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowFullScreen>
          </iframe>
      </div><!-- end video pane -->
    </div>
-</div><!-- end video row -->
-
+</section><!-- end video row -->
 
 </div> <!-- end container -->
-
+<script>
+  // add class to sticky menu
+  window.onscroll = function() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      document.querySelector(".nav").classList.add("active-menu");
+    } else {
+      document.querySelector(".nav").classList.remove("active-menu");
+    }
+  };
+  </script>
 
 <footer class="text-center mt-5">
   <div class="container-fluid">
@@ -384,6 +602,79 @@ Kerry Schuss Gallery</a> for their support in organizing this exhibition.</p>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 <script src="/js/fslightbox.js"></script>
 <script src="/js/outerspace.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+
+
+
+<script>
+            var lightbox = GLightbox({
+              slideEffect:'fade',
+              loop:true
+            });
+
+            lightbox.on('open', (target) => {
+                console.log('lightbox opened');
+            });
+            var lightboxDescription = GLightbox({
+                selector: '.glightbox2',
+                slideEffect:'fade',
+                loop: true
+            });
+            var lightboxVideo = GLightbox({
+                selector: '.glightbox3'
+            });
+            lightboxVideo.on('slide_changed', ({ prev, current }) => {
+                console.log('Prev slide', prev);
+                console.log('Current slide', current);
+
+                const { slideIndex, slideNode, slideConfig, player } = current;
+
+                if (player) {
+                    if (!player.ready) {
+                        // If player is not ready
+                        player.on('ready', (event) => {
+                            // Do something when video is ready
+                        });
+                    }
+
+                    player.on('play', (event) => {
+                        console.log('Started play');
+                    });
+
+                    player.on('volumechange', (event) => {
+                        console.log('Volume change');
+                    });
+
+                    player.on('ended', (event) => {
+                        console.log('Video ended');
+                    });
+                }
+            });
+
+            var lightboxInlineIframe = GLightbox({
+                selector: '.glightbox4'
+            });
+
+            /* var exampleApi = GLightbox({ selector: null });
+            exampleApi.insertSlide({
+                href: 'https://picsum.photos/1200/800',
+            });
+            exampleApi.insertSlide({
+                width: '500px',
+                content: '<p>Example</p>'
+            });
+            exampleApi.insertSlide({
+                href: 'https://www.youtube.com/watch?v=WzqrwPhXmew',
+            });
+            exampleApi.insertSlide({
+                width: '200vw',
+                content: document.getElementById('inline-example')
+            });
+            exampleApi.open(); */
+        </script>
+
 </body>
 </html>
 

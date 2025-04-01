@@ -57,10 +57,3 @@ if (hash) {
 
   tab.show();
 }
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const trigger = document.querySelector('#pills-tab-1 button[data-bs-target="${window.location.hash}"]')
-  const tab = new bootstrap.Tab(trigger)
-  tab.show()
-})

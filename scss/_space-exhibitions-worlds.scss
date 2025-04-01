@@ -1,0 +1,202 @@
+.exhibitions-worlds {
+
+  section {
+      background:url('/img/logo-black.svg') top 20px right 20px / 120px no-repeat;
+      padding:5rem 0;
+      @media(max-width: 1024px){
+        background-size:50px;
+        background-position: top 10px right 12px;
+      }
+
+
+      @media(max-width: 575px){
+        padding:3rem 0 1rem 0;
+      }
+
+.container .row {
+
+  &:nth-child(2){
+    margin-top:2.5rem;
+  }
+}
+
+    .logo {
+      max-width:120px;
+        @media(max-width: 575px){
+          max-width: 50px;
+        }
+    }
+  }
+
+
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+
+
+  .logo {
+    max-width:120px;
+      @media(max-width: 575px){
+        max-width: 50px;
+      }
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  height:100vh;
+  background:url('/img/kent-kohlmann/final/installs/_MMP8218-Edit.jpg') center center / cover no-repeat #000;
+  align-items: flex-start;
+
+
+  @media(max-width: 575px){
+    height:35vh;
+
+
+  }
+
+
+
+  .headline-container{
+    text-align: center;
+  }
+
+  .headline {
+    max-width:370px;
+    margin-top:10%;
+
+    @media(max-width: 1024px){
+      max-width:310px;
+
+    }
+
+
+    @media(max-width: 575px){
+      max-width:180px;
+    }
+  }
+
+
+}
+
+  .one {
+    span {
+
+      padding-top:5px;
+      display:block;
+      @media(max-width:575px){
+        display:none;
+        background-color:rgba(0,0,0, 0.6);
+        color:#fff;
+        padding:6px;
+
+
+      }
+    }
+
+
+
+  } /* end one */
+
+  .two {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP7984-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .three {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8320-Edit.jpg');
+    justify-content: flex-end;
+
+  }
+
+  .four {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8232-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .five {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP7971-Edit.jpg');
+    justify-content: flex-end;
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('/img/kent-kohlmann/final/installs/_MMP7971-Edit-crop.jpg');
+
+    }
+  }
+
+  .six {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8155-Edit.jpg');
+    justify-content: flex-end;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('/img/kent-kohlmann/final/installs/_MMP8434-Edit.jpg');
+
+    }
+  }
+
+
+  .seven {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8284-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .eight {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8203-Edit.jpg');
+    justify-content: flex-end;
+  }
+
+  .nine {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP8296-Edit.jpg');
+    justify-content: flex-end;
+
+      @media (max-width:768px){
+        height:100vh;
+        background-image:url('/img/kent-kohlmann/final/installs/_MMP8353-Edit.jpg');
+      }
+
+  }
+
+  .ten {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP7950-Edit.jpg');
+    justify-content: flex-end;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('/img/kent-kohlmann/final/installs/_MMP8029-Edit.jpg');
+    }
+  }
+
+
+
+  .eleven {
+    background-image:url('/img/kent-kohlmann/final/installs/_MMP7996-Edit.jpg');
+
+    justify-content: flex-end;
+
+  }
+
+  .twelve {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-44.jpg');
+    justify-content: flex-end;
+  }
+
+  .thirteen {
+    background-image:url('/img/cook-kettner/final/installations/OuterSpace-12.jpg');
+    justify-content: flex-end;
+  }
+
+footer {
+  .row {
+    margin:0;
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}

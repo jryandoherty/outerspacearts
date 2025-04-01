@@ -1,0 +1,29 @@
+@@include('./header.html', {
+    "title": "Home",
+    "canonical": ""
+  })
+
+  <body class="home" data-bs-spy="scroll" data-bs-target="show-nav">
+
+    <div id="hero" style="background:#000;">
+      <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1742062600/banner-mobile2_mngqrg.webp" class="d-block d-md-none show-graphic-mobile" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+      <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block show-graphic-banner" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+    </div>
+      @@include('./nav.html')
+
+    <div class="container mt-5 px-md-5">
+
+      <div class="row text-center">
+        <p class="fs-3 mb-0">Julian Kent & Emma Kohlmann: <em>Worlds</em></p>
+        <p>March 14th 2025 - May 18th 2025</p>
+
+      </div>
+
+
+      @@include('./current-ex.html')
+
+
+    </div> <!-- end container -->
+
+
+@@include('./footer.html')

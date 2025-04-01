@@ -6,11 +6,11 @@
 
   <body>
 
-    <div class="welcome" style="height:50vh">
+    <div class="welcome" style="height:30vh" class="d-flex flex-end">
     <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
     <filter id="filter">
-    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
-    <feDisplacementMap scale="80" in2=""/>
+    <feTurbulence type="fractalNoise" baseFrequency=".002" numOctaves="0"/>
+    <feDisplacementMap scale="80" in2="" />
     <feColorMatrix values="1 0 0 0 0
                        0 1 0 0 0
                        0 0 1 0 0
@@ -21,7 +21,7 @@
                        0 0 0 1 0" result="n"/>
     <feTurbulence baseFrequency=".2" result="s"/>
     <feTurbulence baseFrequency=".1"/>
-    <feBlend in="s" in2=""/>
+    <feBlend in="s" in2="" />
     <feColorMatrix values="0 0 0 9 -6
                        0 0 0 9 -6
                        0 0 0 9 -6
@@ -32,10 +32,11 @@
     </svg>
 
     <div class="splash">
-      <h2 class="name">Charities</h2>
+
+      <h1 class="space-headline">charities</h1>
     </div>
 
-    </div>
+  </div>
 
 @@include('./nav.html')
 

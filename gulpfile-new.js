@@ -6,42 +6,8 @@ const gulp = require('gulp');
 const browserSync = require('browser-sync').create();
 
 
-// html includes
-
-const paths = {
-  scripts: {
-    src: './',
-    dest: './dist/'
-  }
-};
-
-async function includeHTML(){
-  return gulp.src([
-    '*.html',
-    '!nav.html', // ignore
-    '!install.html', // ignore
-    '!index-old.html', // ignore
-    '!nav-new.html', // ignore
-    '!current-ex.html', // ignore
-    '!current-ex-new.html', // ignore
-    '!header.html', // ignore
-    '!footer.html' // ignore
-    ])
-    .pipe(fileinclude({
-      prefix: '@@',
-      basepath: '@file'
-
-    }))
 
 
-
-    .pipe(gulp.dest(paths.scripts.dest));
-
-
-}
-
-
-exports.default = includeHTML;
 
 
 // Static Server + watching scss/html files
@@ -52,6 +18,29 @@ gulp.task('serve', function() {
     });
     // sass
 
+    // html includes
+
+
+
+    gulp.task('fileinclude', function() {
+      gulp.src(['*.html',
+      '!nav.html', // ignore
+      '!install.html', // ignore
+      '!nav-new.html', // ignore
+      '!current-ex.html', // ignore
+      '!current-ex-new.html', // ignore
+      '!header.html', // ignore
+      '!footer.html' // ignore
+
+
+    ])
+
+        .pipe(fileinclude({
+          prefix: '@@',
+          basepath: '@file'
+        }))
+        .pipe(gulp.dest('./dist'));
+    });
 
 
     gulp.task('sass', function(){

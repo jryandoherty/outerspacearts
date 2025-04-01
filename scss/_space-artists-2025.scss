@@ -1,7 +1,10 @@
+html {scroll-padding-top: 90px;}
+
 .artists-2025 {
   font-family: bdr-mono, sans-serif;
   z-index:100;
   text-transform: uppercase;
+
 
   a {
     color:$black;
@@ -20,7 +23,7 @@
   }
 
   @media (max-width:992px){
-    margin-bottom:0!important;
+    
 
     .nav {
       flex-direction: row!important;
@@ -58,6 +61,11 @@
       text-align:center;
     }
   }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+  height: 2.7rem;
+  width: 3.4rem;
+}
 
 
 }/* end artists */
@@ -99,8 +107,8 @@
 }
 
 @media(max-width:768px){
-  .nav-item {
-    padding: .5rem 0 .5rem;
+ #show-nav .nav-item {
+    padding: .55rem;
   }
 }
 
@@ -145,10 +153,7 @@ div[title="Enter fullscreen"] {
 
 
 .installations .carousel-control-prev, .installations .carousel-control-next {
-  color:#ccc;
-  opacity: 1;
-  top: 95%;
-  width:auto;
+
 
   svg {
     fill:#000;
@@ -164,11 +169,24 @@ object {
   }
 }
 
-.bookmania {
 
-  font-family: bookmania, serif!important;
-  font-style: normal;
-  font-weight: 400;
-  text-transform:lowercase;
+.works-artist div {
+  flex-grow: 1;
+  transform: scale(0.7);
+  /*max-width: 140px;*/
+  margin:0 -20px;
 
+  &:first-child {
+    margin-left:-45px;
+  }
+
+}
+
+#show-nav {
+
+
+}
+.active-menu {
+
+  border-bottom:1px solid #bbb;
 }

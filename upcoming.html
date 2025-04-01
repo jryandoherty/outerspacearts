@@ -5,10 +5,10 @@
 
   <body>
 
-    <div class="welcome" style="height:50vh">
+    <div class="welcome" style="height:30vh" class="d-flex flex-end">
     <svg xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%">
     <filter id="filter">
-    <feTurbulence type="fractalNoise" baseFrequency=".006" numOctaves="8"/>
+    <feTurbulence type="fractalNoise" baseFrequency=".002" numOctaves="0"/>
     <feDisplacementMap scale="80" in2="" />
     <feColorMatrix values="1 0 0 0 0
                        0 1 0 0 0
@@ -25,16 +25,17 @@
                        0 0 0 9 -6
                        0 0 0 9 -6
                        0 0 0 0 1"/>
-    <feBlend in="n" in2="" />
+    <feBlend in="n" in2=""/>
     </filter>
     <rect width="100%" height="100%" filter="url(#filter)" style="overflow:hidden" />
     </svg>
 
     <div class="splash">
-      <h2 class="name">upcoming exhibitions</h2>
+
+      <h1 class="space-headline">upcoming exhibitions</h1>
     </div>
 
-    </div>
+  </div>
 
 @@include('./nav.html')
 

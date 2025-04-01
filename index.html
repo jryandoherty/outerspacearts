@@ -3,27 +3,49 @@
     "canonical": ""
   })
 
-  <body class="home">
+<body data-bs-spy="scroll" data-bs-target="show-nav">
 
-    <div id="hero" style="background:#000;">
-      <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner-mobile2_tw7gq4.webp" class="d-block d-md-none" style="max-width:100%;" alt="Worlds: Featuring Julian Kent and Emma Kohlmann">
-      <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block" style="max-width:100%;" alt="Worlds: Featuring Julian Kent and Emma Kohlmann">
-    </div>
-      @@include('./nav.html')
-
-    <div class="container mt-5 px-md-5">
-
-      <div class="row text-center">
-        <p class="fs-3 mb-0">Julian Kent & Emma Kohlmann: <em>Worlds</em></p>
-        <p>March 14th 2025 - May 18th 2025</p>
-        <p class="m-0">Join us for an opening reception on Friday, March 14th at 5pm!<br>35 Pleasant Street Concord NH</p>
-      </div>
+<div id="hero">
+  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1742062600/banner-mobile2_mngqrg.webp" class="d-block d-md-none show-graphic-mobile" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block show-graphic-banner" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+</div>
 
 
-      @@include('./current-ex.html')
+@@include('./nav.html')
+
+<div class="text-center mt-5 mb-4 mb-md-0" id="current-exhibition">
+  <h1 class="fs-2 mb-0 px-5">Julian Kent & Emma Kohlmann: <em>Worlds</em></h1>
+  <p class="m-0">March 14th - May 18th 2025</p>
+</div>
+
+<div class="sticky-top" style="z-index:999;background:#fff;">
+
+<nav id="show-nav" class="nav nav-pills d-flex py-xs-5 py-md-3 justify-content-center">
+
+  <div role="tablist" class="d-flex flex-wrap align-items-center justify-content-center">
+    <a class="nav-link nav-item" href="#first-section">works</a>
+    <a class="nav-link nav-item" href="#second-section">artists</a>
+    <a class="nav-link nav-item" href="#press">press</a>
+    <a class="nav-link nav-item"  href="#installs">installations</a>
+    <a class="nav-link nav-item" href="#video">video</a>
+  </div>
+
+</nav>
+
+</div><!-- end sticky menu -->
+
+@@include('./current-ex-new.html')
 
 
-    </div> <!-- end container -->
-
+<script>
+  // add class to sticky menu
+  window.onscroll = function() {
+  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+      document.querySelector(".nav").classList.add("active-menu");
+    } else {
+      document.querySelector(".nav").classList.remove("active-menu");
+    }
+  };
+  </script>
 
 @@include('./footer.html')
