@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Multiple Backgrounds</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image:
+        url('https://www.transparenttextures.com/patterns/asfalt-dark.png'),
+        linear-gradient(45deg, #ff9a9e, #fad0c4);
+      background-repeat: repeat, no-repeat;
+      background-size: auto, 400% 400%;
+      background-position: 0 0, 0% 50%;
+      animation: moveBackground 10s linear infinite;
+    }
+
+    @keyframes moveBackground {
+      0% {
+        background-position: 0 0, 0% 50%;
+      }
+      50% {
+        background-position: 100px 100px, 100% 50%;
+      }
+      100% {
+        background-position: 0 0, 0% 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div><p style="font-size:50vw">TEXTY</p></div>
+</body>
+</html>

@@ -1,10 +1,50 @@
-html {scroll-padding-top: 90px;}
+html {scroll-padding-top: 96px;}
+
+
+.overflow-x-auto{
+  scrollbar-color: #ececec #fafafa;
+}
+
+
+.painting-desc {
+display:none;
+}
+
 
 .artists-2025 {
-  font-family: bdr-mono, sans-serif;
-  z-index:100;
-  text-transform: uppercase;
 
+
+
+
+section:first-child {
+  margin-top:4rem;
+  margin-bottom:5rem;
+  @media (max-width:768px){
+      margin-top:2rem;
+      margin-bottom:0
+  }
+}
+
+section:nth-child(2) {
+  margin-top:2rem;
+  margin-bottom:10rem;
+}
+
+
+section:nth-child(3) {
+  margin-top:10rem;
+  margin-bottom:4rem;
+}
+
+  z-index:100;
+
+
+ h2 {
+     font-family: bdr-mono, sans-serif;
+     text-transform: uppercase;
+
+
+ }
 
   a {
     color:$black;
@@ -19,11 +59,10 @@ html {scroll-padding-top: 90px;}
     border-bottom:1px solid #b2b2b2;
     border-right:6px solid $white;*/
     color:$spacered;
-    font-weight:700;
   }
 
   @media (max-width:992px){
-    
+
 
     .nav {
       flex-direction: row!important;
@@ -37,30 +76,30 @@ html {scroll-padding-top: 90px;}
 
   }
 
-  @media (max-width:992px){
-    a {
-      font-size:1rem;
-      text-align: left;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background:$white;
-    }
 
-    a.active {
-      margin-bottom:-1px!important;
-      border-top:1px solid #d2d2d2;
-      border-right:1px solid #d2d2d2;
-      border-left:1px solid #d2d2d2;
-    }
+  @media (max-width: 768px) {
+  .nav-item {
+    padding:0;
+  }
+}
+
+.tab-content {
+  min-height: none;
+  padding:0;
+  a {
+    color:$spacered;
+  }
+
+  a:hover {
+    color:$spaceredlight;
   }
 
   @media (max-width:992px){
-    a {
-      width:150px;
-      text-align:center;
-    }
+
   }
+
+
+}
 
   .carousel-control-next-icon, .carousel-control-prev-icon {
   height: 2.7rem;
@@ -78,9 +117,6 @@ html {scroll-padding-top: 90px;}
   }
 }
 
-.panel {
-  margin:3rem 0;
-}
 
 
 .tab-pane span {
@@ -88,23 +124,21 @@ html {scroll-padding-top: 90px;}
 }
 
 
-.tab-content {
+  @media (max-width:768px){
+    .nav-link {
+      padding:0;
 
-  @media (max-width:992px){
+    }
 
-  }
-
-  .tab-content {
-
-    @media (max-width: 992px){
-
+    .nav-item {
+      margin-right:10px;
+      &:last-child {
+        margin-right:0;
+      }
     }
   }
 
-  button {
-    padding: 0 16px 0 0;
-  }
-}
+
 
 @media(max-width:768px){
  #show-nav .nav-item {
@@ -130,36 +164,13 @@ hr {
 
 
 
-.fslightbox-svg-path {
-  fill:$black!important;
-}
-
-.fslightbox-slide-number-container {
-  display:none!important;
-}
-
-div[title="Enter fullscreen"] {
-  display: none;
-}
-
-@media (max-width:600px){
-
-.fslightbox-slide-btn-container {
-  display:none!important;
-}
-
-}
 
 
 
-.installations .carousel-control-prev, .installations .carousel-control-next {
 
 
-  svg {
-    fill:#000;
-  }
 
-}
+
 
 object {
   width:100%;
@@ -171,21 +182,31 @@ object {
 
 
 .works-artist div {
+  margin-right:2rem;
+  margin-bottom:1rem;
   flex-grow: 1;
-  transform: scale(0.7);
-  /*max-width: 140px;*/
-  margin:0 -20px;
 
-  &:first-child {
-    margin-left:-45px;
+  &:last-child {
+    margin-right:0;
   }
 
-}
-
-#show-nav {
-
+  img {max-height:185px}
 
 }
+
+.installs-artist div {
+  margin-right:2rem;
+  margin-bottom:1rem;
+  flex-grow: 1;
+  &:last-child {
+    margin-right:0;
+  }
+  img  {
+    min-width:200px;
+  }
+}
+
+
 .active-menu {
 
   border-bottom:1px solid #bbb;

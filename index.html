@@ -5,14 +5,15 @@
 
 <body data-bs-spy="scroll" data-bs-target="show-nav">
 
-<div id="hero">
+<header id="hero">
   <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1742062600/banner-mobile2_mngqrg.webp" class="d-block d-md-none show-graphic-mobile" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
-  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1741712896/outer-space-arts/banner2_k2fhrg.webp" class="d-none d-md-block show-graphic-banner" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
-</div>
+  <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1744230930/outer-space-arts/banner-32x9_cd4tkz.webp" class="d-none d-md-block show-graphic-banner" alt="Poster image for Worlds Exhibition. Featuring artists Julian Kent and Emma Kohlmann.">
+</header>
 
 
 @@include('./nav.html')
 
+<main>
 <div class="text-center mt-5 mb-4 mb-md-0" id="current-exhibition">
   <h1 class="fs-2 mb-0 px-5">Julian Kent & Emma Kohlmann: <em>Worlds</em></h1>
   <p class="m-0">March 14th - May 18th 2025</p>
@@ -23,11 +24,11 @@
 <nav id="show-nav" class="nav nav-pills d-flex py-xs-5 py-md-3 justify-content-center">
 
   <div role="tablist" class="d-flex flex-wrap align-items-center justify-content-center">
-    <a class="nav-link nav-item" href="#first-section">works</a>
-    <a class="nav-link nav-item" href="#second-section">artists</a>
-    <a class="nav-link nav-item" href="#press">press</a>
-    <a class="nav-link nav-item"  href="#installs">installations</a>
-    <a class="nav-link nav-item" href="#video">video</a>
+    <a class="nav-link nav-item" href="#first-section" role="tab">exhibition</a>
+  <!--  <a class="nav-link nav-item d-none d-md-block" href="#first-section" role="tab">works</a>
+    <a class="nav-link nav-item d-none d-md-block"  href="#second-section" role="tab">installations</a>
+    <a class="nav-link nav-item" href="#video">video</a>-->
+    <a class="nav-link nav-item" href="#artists-new" role="tab">artists</a>
   </div>
 
 </nav>
@@ -36,11 +37,12 @@
 
 @@include('./current-ex-new.html')
 
+</main>
 
 <script>
   // add class to sticky menu
   window.onscroll = function() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
       document.querySelector(".nav").classList.add("active-menu");
     } else {
       document.querySelector(".nav").classList.remove("active-menu");
