@@ -1,19 +1,26 @@
 html {scroll-padding-top: 96px;}
 
-
+#current-exhibition {
+  margin-top:5rem;
+}
 .overflow-x-auto{
   scrollbar-color: #ececec #fafafa;
 }
 
 
 .painting-desc {
-display:none;
+  display:none;
 }
 
 
 .artists-2025 {
 
 
+  .btn {
+    &:hover {
+       background-color:$spaceredlight;
+   }
+  }
 
 
 section:first-child {
@@ -32,6 +39,11 @@ section:nth-child(2) {
 
 
 section:nth-child(3) {
+  margin-top:10rem;
+  margin-bottom:4rem;
+}
+
+section:nth-child(4) {
   margin-top:10rem;
   margin-bottom:4rem;
 }
@@ -167,17 +179,36 @@ hr {
 
 
 
-
-
-
-
-
 object {
   width:100%;
   height:600px;
   @media (max-width:992px){
 
   }
+}
+
+
+.works-ce div {
+
+
+  &:last-child {
+    margin-right:0;
+  }
+
+
+
+  img {
+
+    max-height:185px
+
+
+  }
+
+  img:hover {
+    scale:105%;
+    transition: .3s ease-in;
+  }
+
 }
 
 
@@ -192,6 +223,32 @@ object {
 
   img {max-height:185px}
 
+}
+
+
+.works-artist-ce div {
+  margin-right:2rem;
+  margin-bottom:1rem;
+  flex-grow: 1;
+
+  &:last-child {
+    margin-right:0;
+  }
+
+  img {max-height:135px}
+
+}
+
+.installs-artist-ce div {
+  margin-right:2rem;
+  margin-bottom:1rem;
+  flex-grow: 1;
+  &:last-child {
+    margin-right:0;
+  }
+  img  {
+    max-height:135px;
+  }
 }
 
 .installs-artist div {

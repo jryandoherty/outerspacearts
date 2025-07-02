@@ -16,16 +16,15 @@ body {
 
 
 .show-graphic-banner {
-
   aspect-ratio: 32 / 9;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .show-graphic-mobile {
   aspect-ratio: 7 / 6;
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 
@@ -119,14 +118,20 @@ font-weight:400;
   background:linear-gradient(to bottom, rgba(0, 0, 0, 0.0)75%, rgba(0, 0, 0, 1.8)), url('/img/riley-breininger/installations/_MMP7244-Edit.jpg') center center / cover no-repeat #000;
 }
 
+.kent-kohlmann #hero {
+  height:80vh;
+  background:url('/img/kent-kohlmann/cover-page.jpg') center center / cover no-repeat #000;
+
+}
+
 @media (max-width:1024px){
-  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero {
+  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero, .kent-kohlmann #hero {
     height:60vh;
   }
 }
 
 @media (max-width:768px){
-  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero {
+  .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero, .kent-kohlmann #hero {
     height:40vh;
   }
 }

@@ -1,0 +1,288 @@
+.exhibitions-ce {
+
+  .artist-headline {
+
+    font-size:1.63rem;
+    color:#661004;
+
+  }
+
+  .buy-button {
+
+    text-align:center;
+    border:none;
+    border-radius:1.5rem;
+    min-width:11.625rem;
+    padding:0 2rem;
+    height:3.125rem;
+    font-weight:bold;
+    background-color:#000000;
+    color:#ffffff;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:1.125rem;
+    line-height:1.5rem;
+    cursor:pointer;
+
+    @media(max-width:1199px){
+        min-width:9.625rem;
+    }
+  }
+
+  section {
+      background:url('/img/logo-black.svg') top 20px right 20px / 120px no-repeat;
+      padding:5rem 0;
+      @media(max-width: 1024px){
+        background-size:50px;
+        background-position: top 10px right 12px;
+      }
+
+      @media(max-width: 575px){
+        padding:3rem 0 1rem 0;
+      }
+
+.container .row {
+
+
+    margin-top:2.5rem;
+
+}
+
+    .logo {
+      max-width:120px;
+        @media(max-width: 575px){
+          max-width: 50px;
+        }
+    }
+  }
+
+
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+
+
+  .logo {
+    max-width:120px;
+      @media(max-width: 575px){
+        max-width: 50px;
+      }
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  height:100vh;
+  background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653849/outer-space-arts/ce/installation/CreativityExplored-76_qg47kc.jpg') center center / cover no-repeat #000;
+  align-items: flex-start;
+  @media(max-width:500px){
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+
+
+  .headline-container{
+    margin:2% 0 0 3%;
+  }
+
+  .headline {
+    max-width:320px;
+
+
+    @media(max-width: 1024px){
+      max-width:170px;
+
+    }
+
+
+    @media(max-width: 575px){
+      max-width:130px;
+    }
+  }
+
+
+}
+
+  .one {
+    @media(max-width: 575px){
+
+      background-position: 70% -30px;
+    }
+
+
+
+  } /* end one */
+
+  .two {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653789/outer-space-arts/ce/installation/CreativityExplored-6_b1t38h.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('  https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653802/outer-space-arts/ce/installation/CreativityExplored-21_wfhkum.jpg');
+
+    }
+
+  }
+
+  .three {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653792/outer-space-arts/ce/installation/CreativityExplored-12_wjkv5b.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749694590/outer-space-arts/ce/installation/CreativityExplored-20_wev2ed.jpg');
+
+    }
+
+
+
+  }
+
+  .four {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653803/outer-space-arts/ce/installation/CreativityExplored-14_abekvb.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653807/outer-space-arts/ce/installation/CreativityExplored-18_xrjxaw.jpg');
+
+    }
+
+
+  }
+
+  .five {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653786/outer-space-arts/ce/installation/CreativityExplored-8_odkuyt.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653807/outer-space-arts/ce/installation/CreativityExplored-23_nrhewh.jpg');
+
+    }
+  }
+
+  .six {
+   background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653858/outer-space-arts/ce/installation/CreativityExplored-92_xwv9hr.jpg');
+
+
+    @media (max-width:768px){
+      height:100vh;
+    }
+  }
+
+
+  .seven {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653789/outer-space-arts/ce/installation/CreativityExplored-9_tiwfx9.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+    }
+
+  }
+
+  .eight {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749746613/outer-space-arts/ce/installation/CreativityExplored-41_eza3gc.jpg');
+    @media (max-width:768px){
+      height:100vh;
+    }
+
+
+  }
+
+
+
+
+  .nine {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653839/outer-space-arts/ce/installation/CreativityExplored-71_ep78vp.jpg');
+
+
+      @media (max-width:1024px){
+        height:100vh;
+        background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1751476145/outer-space-arts/ce/installation/CreativityExplored-95_cgdjch_6c1491.jpg');
+      }
+
+  }
+
+  .ten {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653857/outer-space-arts/ce/installation/CreativityExplored-91_vioeua.jpg');
+
+
+    @media (max-width:1024px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653817/outer-space-arts/ce/installation/CreativityExplored-60_axfzwu.jpg');
+    }
+  }
+
+
+
+  .eleven {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653821/outer-space-arts/ce/installation/CreativityExplored-52_ccfrna.jpg');
+
+    @media (max-width:1024px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749694929/outer-space-arts/ce/installation/CreativityExplored-53_q1qtqp.jpg');
+    }
+
+
+
+  }
+
+  .twelve {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653862/outer-space-arts/ce/installation/CreativityExplored-93_pfumub.jpg');
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653823/outer-space-arts/ce/installation/CreativityExplored-45_nh7vgo.jpg');
+    }
+
+  }
+
+  .thirteen {
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653820/outer-space-arts/ce/installation/CreativityExplored-46_xzzxke.jpg');
+
+  }
+
+.fifteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1750101703/outer-space-arts/ce/installation/CreativityExplored-35_ytzgtb.jpg');
+
+}
+
+.sixteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1750957896/outer-space-arts/ce/installation/CreativityExplored-37_mbo2dn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749746610/outer-space-arts/ce/installation/CreativityExplored-28_hov9ex.jpg');
+  }
+
+}
+
+
+.seventeen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653853/outer-space-arts/ce/installation/CreativityExplored-84_pelspn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-position: 10%;
+  }
+
+
+
+}
+
+
+
+
+
+footer {
+  .row {
+    margin:0;
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}

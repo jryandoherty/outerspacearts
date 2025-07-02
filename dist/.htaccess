@@ -13,3 +13,5 @@ RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
 
 
 ErrorDocument 404 /error.html
+
+Redirect 301 /charities/ /about/
