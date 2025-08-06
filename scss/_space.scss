@@ -22,7 +22,7 @@ body {
 }
 
 .show-graphic-mobile {
-  aspect-ratio: 7 / 6;
+/*  aspect-ratio: 7 / 6;*/
   width: 100%;
   object-fit: cover;
 }
@@ -122,6 +122,15 @@ font-weight:400;
   height:80vh;
   background:url('/img/kent-kohlmann/cover-page.jpg') center center / cover no-repeat #000;
 
+}
+
+.creativity-explored #hero {
+  height:70vh;
+  background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653849/outer-space-arts/ce/installation/CreativityExplored-76_qg47kc.jpg') center center / cover no-repeat #000;
+  @media(max-width: 575px){
+
+    background-position: 70% 0;
+  }
 }
 
 @media (max-width:1024px){
