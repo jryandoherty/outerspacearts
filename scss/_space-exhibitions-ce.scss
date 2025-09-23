@@ -13,7 +13,7 @@
     border:none;
     border-radius:1.5rem;
     min-width:11.625rem;
-    padding:0 2rem;
+    padding:.8rem 2rem;
     height:3.125rem;
     font-weight:bold;
     background-color:#000000;
@@ -22,6 +22,10 @@
     font-size:1.125rem;
     line-height:1.5rem;
     cursor:pointer;
+
+    &:hover {
+      background-color:#3184dd;
+    }
 
     @media(max-width:1199px){
         min-width:9.625rem;

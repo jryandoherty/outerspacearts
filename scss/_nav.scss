@@ -110,7 +110,7 @@
   // scss-docs-end nav-pills-css-vars
 
   .nav-link {
-    background: none;
+    
     border: 0;
     color:$black;
     @include border-radius(var(--#{$prefix}nav-pills-border-radius));
@@ -133,7 +133,7 @@
 
     text-decoration: underline;
     color:$spacered;
-    font-weight:700; 
+    font-weight:700;
 
     /*&:hover {
       background:#de0019;

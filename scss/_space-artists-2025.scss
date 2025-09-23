@@ -156,6 +156,8 @@ section:nth-child(4) {
  #show-nav .nav-item {
     padding: .55rem;
   }
+
+
 }
 
 
@@ -164,7 +166,15 @@ hr {
 }
 
 .nav-pills .nav-link{
- border-radius: 0!important;
+
+ background:none;
+}
+
+
+.btn-primary {
+  padding: .55rem .65rem!important;
+  background:$spacered!important;
+  border-radius: 5px!important;
 }
 
 
@@ -173,9 +183,6 @@ hr {
   font-size:.75em;
   margin-top:8px;
 }
-
-
-
 
 
 
@@ -190,11 +197,9 @@ object {
 
 .works-ce div {
 
-
   &:last-child {
     margin-right:0;
   }
-
 
 
   img {

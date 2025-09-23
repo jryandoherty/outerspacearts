@@ -1,0 +1,295 @@
+.exhibitions-ce-2 {
+
+  .artist-headline {
+
+    font-size:1.63rem;
+    color:#661004;
+
+  }
+
+  .buy-button {
+
+    text-align:center;
+    border:none;
+    border-radius:1.5rem;
+    min-width:11.625rem;
+    padding:.8rem 2rem;
+
+    font-weight:bold;
+    background-color:#6aadf6;
+    color:#ffffff;
+    font-family:"Helvetica Neue",Arial,sans-serif;
+    font-size:1.125rem;
+    line-height:1.5rem;
+    cursor:pointer;
+    &:hover {
+      background-color:#3184dd;
+    }
+
+    @media(max-width:1199px){
+        min-width:9.625rem;
+    }
+  }
+
+  section {
+      background:url('/img/logo-black.svg') top 20px right 20px / 120px no-repeat;
+      padding:5rem 0;
+      @media(max-width: 1024px){
+        background-size:50px;
+        background-position: top 10px right 12px;
+      }
+
+      @media(max-width: 575px){
+        padding:3rem 0 1rem 0;
+      }
+
+.container .row {
+
+
+    margin-top:2.5rem;
+
+}
+
+    .logo {
+      max-width:120px;
+        @media(max-width: 575px){
+          max-width: 50px;
+        }
+    }
+  }
+
+
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+
+
+  .logo {
+    max-width:120px;
+      @media(max-width: 575px){
+        max-width: 50px;
+      }
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  height:100vh;
+
+  align-items: flex-start;
+  @media(max-width:500px){
+    flex-direction: column;
+    justify-content:flex-end;
+    padding-bottom:22%;
+  }
+
+
+
+  .headline-container{
+    margin:1% 0 0 2%;
+
+  }
+
+  .headline {
+    width:380px;
+    height:295px;
+
+
+    @media(max-width: 1024px){
+      max-width:220px;
+      height:171px;
+    }
+
+  }
+
+
+}
+
+  .one {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_xl-2800/v1756825041/outer-space-arts/ce/installation/part2/_MMP7829-Edit_zfcjta.jpg') center center / cover no-repeat #000;
+    @media(max-width: 575px){
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_1920/v1756925444/outer-space-arts/ce/installation/part2/_MMP7768-Edit_szyipf.webp') center center / cover no-repeat;
+      height:100vh;
+      background-position: 70% 0;
+    }
+
+
+
+  } /* end one */
+
+  .two {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825041/outer-space-arts/ce/installation/part2/_MMP7755-Edit_yxgdf1.jpg') center center / cover no-repeat #000;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825050/outer-space-arts/ce/installation/part2/_MMP7984-Edit_ilw24u.jpg');
+      background-position: 12% 0;
+    }
+
+  }
+  .three {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825037/outer-space-arts/ce/installation/part2/_MMP7832-Edit_urin4i.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756843865/outer-space-arts/ce/installation/part2/_MMP7981-Edit_waev9w.jpg');
+    }
+  }
+
+  .four {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825052/outer-space-arts/ce/installation/part2/_MMP7878-Edit_dv1ty6.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756925688/outer-space-arts/ce/installation/part2/_MMP8044-Edit_oucmca.jpg') center center / cover no-repeat;
+
+    }
+  }
+
+  .five {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825040/outer-space-arts/ce/installation/part2/_MMP7749-Edit_khoslc.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825040/outer-space-arts/ce/installation/part2/_MMP7749-Edit_khoslc.jpg');
+background-position: top 12%;
+    }
+  }
+
+  .six {
+   background-image:url('');
+
+    @media (max-width:768px){
+      height:100vh;
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931342/outer-space-arts/ce/installation/part2/star/_MMP8040-Edit_newtf1.jpg') center center / cover no-repeat;
+
+
+    }
+  }
+
+
+  .seven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931428/outer-space-arts/ce/installation/part2/star/_MMP8049-Edit_iblmo6.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931424/outer-space-arts/ce/installation/part2/star/_MMP8013-Edit_osbw01.jpg');
+
+          height:100vh;
+    }
+
+  }
+
+  .eight {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756826526/outer-space-arts/ce/installation/part2/_MMP8034-Edit_ar8ole.jpg') center center / cover no-repeat;
+    @media (max-width:768px){
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931342/outer-space-arts/ce/installation/part2/star/_MMP8040-Edit_newtf1.jpg');
+      height:100vh;
+    }
+
+  }
+
+  .nine {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/v1756843970/outer-space-arts/ce/installation/part2/_MMP8031-Edit_sodes2.jpg') center center / cover no-repeat;
+
+      @media (max-width:1024px){
+        height:100vh;
+
+      }
+
+  }
+
+  .ten {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756825050/outer-space-arts/ce/installation/part2/_MMP7955-Edit_caqwiw.jpg') center center / cover no-repeat;
+
+
+    @media (max-width:1024px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/v1756925444/outer-space-arts/ce/installation/part2/_MMP7768-Edit_szyipf.png');
+    }
+  }
+
+
+
+  .eleven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931340/outer-space-arts/ce/installation/part2/star/_MMP7945-Edit_rezdzz.jpg') center center / cover no-repeat;
+
+    @media (max-width:1024px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756834491/outer-space-arts/ce/installation/part2/_MMP8091-Edit_zn7dao.jpg');
+    }
+
+
+
+  }
+
+  .twelve {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931426/outer-space-arts/ce/installation/part2/star/_MMP8078-Edit_br8dqt.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756834488/outer-space-arts/ce/installation/part2/_MMP8085-Edit_wzoq83.jpg');
+    }
+
+  }
+
+  .thirteen {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931338/outer-space-arts/ce/installation/part2/star/_MMP7895-Edit_mvuwn0.jpg') center center / cover no-repeat;
+    @media (max-width:768px){
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931348/outer-space-arts/ce/installation/part2/star/_MMP8064-Edit_xsral9.jpg');
+
+
+      height:100vh;
+    }
+
+  }
+
+.fifteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931340/outer-space-arts/ce/installation/part2/star/_MMP7945-Edit_rezdzz.jpg');
+  @media (max-width:768px){
+    height:100vh;
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931424/outer-space-arts/ce/installation/part2/star/_MMP8013-Edit_osbw01.jpg');
+  }
+
+}
+
+.sixteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1750957896/outer-space-arts/ce/installation/CreativityExplored-37_mbo2dn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/v1756834490/outer-space-arts/ce/installation/part2/_MMP8088-Edit_kjhacu.jpg');
+  }
+
+}
+
+
+.seventeen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653853/outer-space-arts/ce/installation/CreativityExplored-84_pelspn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-position: 10%;
+  }
+
+
+
+}
+
+
+
+
+
+footer {
+  .row {
+    margin:0;
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}
