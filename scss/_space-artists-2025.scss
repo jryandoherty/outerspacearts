@@ -1,4 +1,16 @@
-html {scroll-padding-top: 96px;}
+html {
+  scroll-padding-top: 110px;
+
+  @media (max-width:768px){
+    scroll-padding-top: 160px;
+  }
+
+  @media (max-width:390px){
+    scroll-padding-top: 260px;
+  }
+}
+
+
 
 #current-exhibition {
   margin-top:5rem;
@@ -142,12 +154,7 @@ section:nth-child(4) {
 
     }
 
-    .nav-item {
-      margin-right:10px;
-      &:last-child {
-        margin-right:0;
-      }
-    }
+  
   }
 
 
@@ -270,6 +277,5 @@ object {
 
 
 .active-menu {
-
   border-bottom:1px solid #bbb;
 }
