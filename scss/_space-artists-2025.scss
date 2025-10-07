@@ -1,22 +1,16 @@
 html {
   scroll-padding-top: 110px;
 
-  @media (max-width:768px){
-    scroll-padding-top: 160px;
-  }
-
-  @media (max-width:390px){
-    scroll-padding-top: 260px;
-  }
+  
 }
-
 
 
 #current-exhibition {
   margin-top:5rem;
 }
+
+
 .overflow-x-auto{
-  scrollbar-color: #ececec #fafafa;
 }
 
 
@@ -27,6 +21,7 @@ html {
 
 .artists-2025 {
 
+  z-index:100;
 
   .btn {
     &:hover {
@@ -60,14 +55,12 @@ section:nth-child(4) {
   margin-bottom:4rem;
 }
 
-  z-index:100;
+
 
 
  h2 {
      font-family: bdr-mono, sans-serif;
      text-transform: uppercase;
-
-
  }
 
   a {
@@ -125,9 +118,9 @@ section:nth-child(4) {
 
 }
 
-  .carousel-control-next-icon, .carousel-control-prev-icon {
-  height: 2.7rem;
-  width: 3.4rem;
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    height: 2.7rem;
+    width: 3.4rem;
 }
 
 
@@ -151,10 +144,7 @@ section:nth-child(4) {
   @media (max-width:768px){
     .nav-link {
       padding:0;
-
     }
-
-  
   }
 
 
@@ -163,8 +153,6 @@ section:nth-child(4) {
  #show-nav .nav-item {
     padding: .55rem;
   }
-
-
 }
 
 
@@ -173,7 +161,6 @@ hr {
 }
 
 .nav-pills .nav-link{
-
  background:none;
 }
 
@@ -184,13 +171,10 @@ hr {
   border-radius: 5px!important;
 }
 
-
-
 .title-work {
   font-size:.75em;
   margin-top:8px;
 }
-
 
 
 object {
@@ -210,17 +194,13 @@ object {
 
 
   img {
-
     max-height:185px
-
-
   }
 
   img:hover {
     scale:105%;
     transition: .3s ease-in;
   }
-
 }
 
 
@@ -234,7 +214,6 @@ object {
   }
 
   img {max-height:185px}
-
 }
 
 
@@ -242,6 +221,10 @@ object {
   margin-right:2rem;
   margin-bottom:1rem;
   flex-grow: 1;
+
+  @media (max-width: 500px){
+    margin-right:1.2rem;
+  }
 
   &:last-child {
     margin-right:0;

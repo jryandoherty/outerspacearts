@@ -14,6 +14,31 @@ body {
 
 }
 
+.show-graphic-bg {
+  width: 100%; /* Or any desired width */
+  aspect-ratio: 32 / 9;
+
+  background: url('/img/layton/bg-lines-purple.webp') #7f1c77;
+  background-size:cover;
+  display:flex;
+  align-items: center;
+  padding-left:.75rem;
+
+  svg {
+    width:50%;
+    @media (max-width:768px){
+      width:95%
+    }
+  }
+
+  @media (max-width:768px){
+    aspect-ratio: 4 / 3;
+    padding:1rem;
+    background-position: -70%;
+    justify-content: center;
+
+  }
+}
 
 .show-graphic-banner {
   aspect-ratio: 32 / 9;
@@ -48,6 +73,21 @@ animation: 1s ease-out 0s 1 slideInTop;
 font-weight:400;
 
 }
+
+.unblur-text {
+  filter: blur(5px); /* Initial blurred state */
+  animation: unblur 1.4s forwards; /* Apply the unblur animation */
+}
+
+@keyframes unblur {
+  from {
+    filter: blur(5px); /* Start with 5px blur */
+  }
+  to {
+    filter: blur(0); /* End with no blur */
+  }
+}
+
 
 .space-headline {
   letter-spacing: -2px;
@@ -133,6 +173,17 @@ font-weight:400;
   }
 }
 
+
+.creativity-explored-ii #hero {
+  height:70vh;
+  background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_2800/v1756825041/outer-space-arts/ce/installation/part2/_MMP7829-Edit_zfcjta.webp') center center / cover no-repeat #000;
+  @media(max-width: 575px){
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_1920/v1756925444/outer-space-arts/ce/installation/part2/_MMP7768-Edit_szyipf.webp') center center / cover no-repeat;
+    height:70vh;
+    background-position: 70% 0;
+  }
+}
+
 @media (max-width:1024px){
   .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero, .kent-kohlmann #hero {
     height:60vh;
@@ -146,7 +197,7 @@ font-weight:400;
 }
 
 #hero {
-  background: $black;
+
 
   .show-title {
     align-self: start;
@@ -165,6 +216,18 @@ font-weight:400;
     text-shadow: 1px 1px 1px $black;
   }
 
+}
+
+.ex-button {
+  color:#fff!important;
+  padding: 0.6rem .65rem 0.4rem!important;
+  background: $spacered;
+  &:hover{
+    background-color: #de0019;
+  }
+  @media (max-width:768px){
+    width:75%!important;
+  }
 }
 
 .home > canvas {
@@ -251,11 +314,10 @@ font-weight:400;
   .col-sm-4 a{
     display:block;
     margin:.6rem 0;
-
   }
 
 
-}/* end credits */
+} /* end credits */
 
 
 
@@ -265,11 +327,8 @@ font-weight:400;
   &:hover {
     fill: $spacered;
     transition: .1s ease-in;
-
   }
 }
-
-
 
 
 .credits ul.artists-credits {
@@ -280,8 +339,6 @@ font-weight:400;
         display: inline-block;
         vertical-align: top;
         margin:20px 20px;
-
-
     }
 
 }

@@ -40,6 +40,7 @@
   "style": "dist/css/bootstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
+    "generate-sitemap": "node build-sitemap.js",
     "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
@@ -150,6 +151,8 @@
     "rtlcss": "^4.0.0",
     "sass": "^1.60.0",
     "shelljs": "^0.8.5",
+    "sitemap": "^8.0.0",
+    "sitemap-generator": "^8.5.1",
     "stylelint": "^14.16.0",
     "stylelint-config-twbs-bootstrap": "^7.0.0",
     "terser": "5.16.0",
