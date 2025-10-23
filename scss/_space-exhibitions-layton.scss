@@ -1,0 +1,243 @@
+.exhibitions-layton {
+
+  .artist-headline {
+    font-size:1.63rem;
+    color:#661004;
+
+  }
+
+  .buy-button {
+
+    text-align:center;
+    border:none;
+    border-radius:1.5rem;
+    min-width:11.625rem;
+    padding:.5rem 2rem;
+    font-weight:bold;
+    background-color:#b9a1d6;
+    color:#fff;
+    font-size:.95rem;
+    line-height:1.5rem;
+    cursor:pointer;
+    &:hover {
+      background-color:#9e71d3;
+    }
+
+    @media(max-width:1199px){
+        min-width:9.625rem;
+    }
+  }
+
+  section {
+      background:url('/img/logo-black.svg') top 20px right 20px / 120px no-repeat;
+      padding:5rem 0;
+      @media(max-width: 1024px){
+        background-size:50px;
+        background-position: top 10px right 12px;
+      }
+
+      @media(max-width: 575px){
+        padding:3rem 0 1rem 0;
+      }
+
+.container .row {
+
+    margin-top:2.5rem;
+
+}
+
+    .logo {
+      max-width:120px;
+        @media(max-width: 575px){
+          max-width: 50px;
+        }
+    }
+  }
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+.cover {
+  display:flex;
+  justify-content:space-between;
+  flex-direction:column;
+  height:100vh;
+
+  align-items: flex-start;
+  @media (max-width:992px){
+      align-items: end;
+  }
+
+  .headline-container {
+    margin:15% 0 0 30%;
+    width:25%;
+
+    @media (max-width:992px){
+        width:50%;
+        margin-left:0;
+        margin-right:5%;
+        margin-top:5%;
+    }
+
+    @media(max-width:600px){
+        margin:0;
+        margin-top:5%;
+        width:100%;
+        padding:0 10%;
+    }
+  }
+
+}/* end cover */
+
+  .one {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_xl-2800/v1760546483/outer-space-arts/layton-braden/installs/_MMP6081-Edit_g7e6ci.jpg') center center / cover no-repeat #000;
+
+    @media (max-width:992px){
+    background-position: 20% 0;
+    }
+
+    @media(max-width: 600px){
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_1920/v1760744211/outer-space-arts/layton-braden/installs/mobile-cover_o9chuk.webp') center center / cover no-repeat;
+      height:100vh;
+    }
+
+  } /* end one */
+
+  .two {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546474/outer-space-arts/layton-braden/installs/_MMP5857-Edit_nl9ko0.jpg') center center / cover no-repeat #000;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-position: 66% 0;
+    }
+  }
+
+  .three {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546477/outer-space-arts/layton-braden/installs/_MMP5907-Edit_w7vgwh.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+    }
+  }
+
+  .four {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546471/outer-space-arts/layton-braden/installs/_MMP5802-Edit_elxiic.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546476/outer-space-arts/layton-braden/installs/_MMP5919-Edit_vygtwr.jpg') center center / cover no-repeat;
+    }
+  }
+
+  .five {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546470/outer-space-arts/layton-braden/installs/_MMP5755-Edit_eo3tls.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546476/outer-space-arts/layton-braden/installs/_MMP5886-Edit_uteybf.jpg');
+    }
+  }
+
+  .six {
+   background-image:url('');
+
+    @media (max-width:768px){
+      height:100vh;
+      background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931342/outer-space-arts/ce/installation/part2/star/_MMP8040-Edit_newtf1.jpg') center center / cover no-repeat;
+    }
+  }
+
+
+  .seven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546483/outer-space-arts/layton-braden/installs/_MMP6050-Edit_zbr5su.jpg') center center / cover no-repeat;
+    @media (max-width:768px){
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760632970/outer-space-arts/layton-braden/installs/_MMP5939-Edit_kdowbu.jpg');
+      height:100vh;
+    }
+
+  }
+
+  .eight {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546481/outer-space-arts/layton-braden/installs/_MMP5966-Edit_ofexcc.jpg') center center / cover no-repeat;
+    @media (max-width:768px){
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760632976/outer-space-arts/layton-braden/installs/_MMP5990-Edit_qg1kfe.jpg');
+      height:100vh;
+    }
+  }
+
+  .nine {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546480/outer-space-arts/layton-braden/installs/_MMP6038-Edit_vlmeqt.jpg') center center / cover no-repeat;
+
+    @media (max-width:768px){
+        background-image:url(' https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760632927/outer-space-arts/layton-braden/installs/_MMP6036-Edit_xr1arn.jpg');
+        height:100vh;
+    }
+  }
+
+  .ten {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546492/outer-space-arts/layton-braden/installs/_MMP6203-Edit_bpih9n.jpg') center center / cover no-repeat;
+  }
+
+
+  .eleven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546491/outer-space-arts/layton-braden/installs/_MMP6178-Edit_tro9i4.jpg') center center / cover no-repeat;
+
+    @media (max-width:1024px){
+      height:100vh;
+      background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760633360/outer-space-arts/layton-braden/installs/_MMP6013-Edit_cvgak5.jpg');
+    }
+  }
+
+  .twelve {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546484/outer-space-arts/layton-braden/installs/_MMP6084-Edit_bxcwmx.jpg') center center / cover no-repeat;
+  }
+
+  .thirteen {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1760546490/outer-space-arts/layton-braden/installs/_MMP6122-Edit_fox0wx.jpg') center center / cover no-repeat;
+    @media (max-width:768px){
+     background-position-x: 14%;
+      height:100vh;
+    }
+  }
+
+.fifteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931340/outer-space-arts/ce/installation/part2/star/_MMP7945-Edit_rezdzz.jpg');
+  @media (max-width:768px){
+    height:100vh;
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1756931424/outer-space-arts/ce/installation/part2/star/_MMP8013-Edit_osbw01.jpg');
+  }
+}
+
+.sixteen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1750957896/outer-space-arts/ce/installation/CreativityExplored-37_mbo2dn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/v1756834490/outer-space-arts/ce/installation/part2/_MMP8088-Edit_kjhacu.jpg');
+  }
+}
+
+
+.seventeen{
+  background-image:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653853/outer-space-arts/ce/installation/CreativityExplored-84_pelspn.jpg');
+
+  @media (max-width:768px){
+    height:100vh;
+    background-position: 10%;
+  }
+
+}
+
+
+footer {
+  .row {
+    margin:0;
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}

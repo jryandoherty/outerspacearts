@@ -17,7 +17,6 @@ body {
 .show-graphic-bg {
   width: 100%; /* Or any desired width */
   aspect-ratio: 32 / 9;
-
   background: url('/img/layton/bg-lines-purple.webp') #7f1c77;
   background-size:cover;
   display:flex;
@@ -69,22 +68,22 @@ body {
 
 h1 {
 
-animation: 1s ease-out 0s 1 slideInTop;
-font-weight:400;
+    animation: 1s ease-out 0s 1 slideInTop;
+    font-weight:400;
 
 }
 
 .unblur-text {
-  filter: blur(5px); /* Initial blurred state */
-  animation: unblur 1.4s forwards; /* Apply the unblur animation */
+  filter: blur(5px);
+  animation: unblur 1.4s forwards;
 }
 
 @keyframes unblur {
   from {
-    filter: blur(5px); /* Start with 5px blur */
+    filter: blur(5px);
   }
   to {
-    filter: blur(0); /* End with no blur */
+    filter: blur(0);
   }
 }
 
@@ -94,45 +93,6 @@ font-weight:400;
   font-family: bdr-mono, sans-serif;
   text-transform: uppercase;
 }
-
-
-
-/*@media screen and (min-width: 1300px) {
-  h1 {
-    font-size: 4.18em;
-    animation: 2s ease-out 0s 1 slideInTop;
-    letter-spacing: -4px;
-    transition: 1s;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  h1 {
-    font-size: 8.55vw;
-    animation: 2s ease-out 0s 1 slideInTop;
-    letter-spacing: -2px;
-    transition: 1s;
-  }
-}*/
-
-/*h2 {
-  font-family: bdr-mono, sans-serif;
-  font-size:6.5vw;
-  text-transform: uppercase;
-
-  @media screen and (min-width: 600px) {
-    font-size:4.5vw;
-  }
-
-  @media screen and (min-width: 992px) {
-    font-size:4vw;
-  }
-
-  @media screen and (min-width: 1300px) {
-    font-size:3em;
-  }
-}*/
-
 
 .cook-kettner #hero {
   display:flex;
@@ -161,14 +121,12 @@ font-weight:400;
 .kent-kohlmann #hero {
   height:80vh;
   background:url('/img/kent-kohlmann/cover-page.jpg') center center / cover no-repeat #000;
-
 }
 
 .creativity-explored #hero {
   height:70vh;
   background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653849/outer-space-arts/ce/installation/CreativityExplored-76_qg47kc.jpg') center center / cover no-repeat #000;
   @media(max-width: 575px){
-
     background-position: 70% 0;
   }
 }
@@ -197,8 +155,6 @@ font-weight:400;
 }
 
 #hero {
-
-
   .show-title {
     align-self: start;
     padding:0 2rem;

@@ -1,5 +1,5 @@
 @@include('./header.html', {
-    "title": "An artist-run gallery located in Concord, NH. Now showing works by Elizabeth Layton and Skuja Braden",
+    "title": "An artist-run gallery located in Concord, NH. Now showing works by Elizabeth Grandma Layton and Skuja Braden",
     "canonical": ""
   })
 
@@ -82,15 +82,12 @@
 <main>
 
 <div class="container" id="current-exhibition">
-
-<div class="row mb-5 justify-content-center">
-<div class="col-lg-6 text-center">
-  <h2 class="mb-0 unblur-text" style="font-size: clamp(1.5rem, 5vw, 1.9rem);">Elizabeth Layton & Skuja Braden: <em>Lines That Hold, Forms That Remember</em></h2>
-  <p class="m-0">October 4th - December 20th 2025</p>
-
-</div>
-
-</div>
+    <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+        <h2 class="mb-0 unblur-text" style="font-size: clamp(1.5rem, 5vw, 1.9rem);">Elizabeth Layton & Skuja Braden: <em>Lines That Hold, Forms That Remember</em></h2>
+        <p class="m-0">October 4th - December 20th 2025</p>
+        </div>
+    </div>
 </div>
 
 @@include('./current-ex-new.html')
@@ -98,14 +95,23 @@
 </main>
 
 <script>
-  // add class to sticky menu
-  window.onscroll = function() {
-  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
-      document.querySelector(".nav").classList.add("active-menu");
-    } else {
-      document.querySelector(".nav").classList.remove("active-menu");
-    }
-  };
-  </script>
+
+const el = document.querySelector(".sticky-top");
+
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    // Only mark as "stuck" if the page has actually scrolled
+    const isStuck = entry.intersectionRatio < 1 && window.scrollY > 0;
+    el.classList.toggle("stuck", isStuck);
+  },
+  { threshold: [1] }
+);
+
+observer.observe(el);
+
+
+</script>
+
+
 
 @@include('./footer.html')

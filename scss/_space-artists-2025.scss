@@ -1,18 +1,15 @@
 html {
   scroll-padding-top: 110px;
+    @media (max-width:577px){
+        scroll-padding-top: 250px;
+    }
 
-  
 }
 
 
 #current-exhibition {
   margin-top:5rem;
 }
-
-
-.overflow-x-auto{
-}
-
 
 .painting-desc {
   display:none;
@@ -28,7 +25,6 @@ html {
        background-color:$spaceredlight;
    }
   }
-
 
 section:first-child {
   margin-top:4rem;
@@ -75,12 +71,10 @@ section:nth-child(4) {
     /*border-top:1px solid #b2b2b2;
     border-bottom:1px solid #b2b2b2;
     border-right:6px solid $white;*/
-    color:$spacered;
+    color:$spacered!important;
   }
 
   @media (max-width:992px){
-
-
     .nav {
       flex-direction: row!important;
     }

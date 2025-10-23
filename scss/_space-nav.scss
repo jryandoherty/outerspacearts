@@ -1,9 +1,35 @@
+.sticky-top {
+    background:#fff;
+    top:-1px;
+}
+
+.sticky-top.stuck{
+    background:url('/img/layton/SVG/layton-logo.svg') no-repeat center left #2b3035;
+    background-size:100px;
+    background-position: 10px;
+    @media (max-width:768px){
+      background-image: none;
+    }
+}
+
+.sticky-top.stuck .nav-link {
+    color:#fff;
+}
+
+.sticky-top.stuck .navbar-toggler {
+    color:#fff;
+    border-color:#fff;
+}
+
+
+
 nav {
   font-family: bdr-mono, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size:1em;
   text-transform: uppercase;
+
 
   button {
     background:#000;
@@ -29,9 +55,7 @@ nav {
     padding:5px;
     display:inline-block;
   }
-  .navbar-toggler {
-    font-size:1.25rem;
-  }
+
 
 }
 
