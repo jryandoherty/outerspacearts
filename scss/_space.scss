@@ -15,8 +15,101 @@ body {
 
 }
 
+.logo-gallery {
+    fill:#fff;
+    width:200px;
+    height:200px;
+
+    @media (max-width:992px) {
+        width:150px;
+        height:150px;
+    }
+}
+
+
+.show-graphic-background-mink {
+    width: 100%;
+    aspect-ratio: 23 / 9;
+    background: url('https://res.cloudinary.com/jryandoherty/image/upload/v1772642863/outer-space-arts/all-kinds/bg-mink-narahashi_ququss.webp') #7f1c77;
+    background-size:cover;
+    display:flex;
+
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+    @media (max-width:768px){
+
+        aspect-ratio: 12 / 9;
+        background-position-x: -174%;
+    }
+
+    svg {
+        width:40%;
+        height:auto;
+        margin-left:5%;
+
+        @media (max-width:768px){
+            margin-left:1%;
+            width:70%
+
+        }
+    }
+
+.pre-pulse {
+    stroke: #ff80a1;
+
+
+}
+    .pulse{
+
+
+           stroke: #ff80a1;
+           fill:none;
+           stroke-width:1px;
+           filter:
+                drop-shadow(0 0 4px #ff80a1)
+                drop-shadow(0 0 8px #ff80a1);
+                animation: flicker 3.5s infinite ease-in-out;
+    }
+
+
+
+    /* Flickering animation */
+    @keyframes flicker {
+
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+
+          stroke-width:2px;
+
+      }
+
+      20%, 24%, 55% {
+          filter: none;
+          stroke-width:0;
+
+      }
+    }
+
+
+    .date {
+        width:30%;
+        height:auto;
+        margin-left:10%;
+
+        @media (max-width:768px){
+            margin:auto;
+            width:80%
+
+        }
+    }
+}
+
+
+
 .show-graphic-bg {
-  width: 100%; /* Or any desired width */
+  width: 100%;
   aspect-ratio: 32 / 9;
   background: url('/img/layton/bg-lines-purple.webp') #7f1c77;
   background-size:cover;
