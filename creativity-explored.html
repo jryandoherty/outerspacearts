@@ -18,7 +18,7 @@
     <p class="m-0">June 6th - July 19th 2025</p>
   </div>
 
-  <div class="sticky-top" style="z-index:999;background:#fff;">
+  <div class="sticky-top" style="z-index:999">
 
   <nav id="show-nav" class="nav nav-pills d-flex py-xs-5 py-md-3 justify-content-center">
 
@@ -785,14 +785,19 @@
   </section>
 
   <script>
-    // add class to sticky menu
-    window.onscroll = function() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.querySelector(".nav").classList.add("active-menu");
-      } else {
-        document.querySelector(".nav").classList.remove("active-menu");
-      }
-    };
+  const el = document.querySelector(".sticky-top");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      const isStuck =
+        entry.boundingClientRect.top < 0 && window.scrollY > 1;
+
+      el.classList.toggle("stuck", isStuck);
+    },
+    { threshold: [1] }
+  );
+
+  observer.observe(el);
     </script>
 
 @@include('./footer.html')

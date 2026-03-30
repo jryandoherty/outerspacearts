@@ -19,7 +19,7 @@
     <p class="m-0">March 14th - May 18th 2025</p>
   </div>
 
-  <div class="sticky-top" style="z-index:999;background:#fff;">
+  <div class="sticky-top" style="z-index:999;">
 
   <nav id="show-nav" class="nav nav-pills d-flex py-xs-5 py-md-3 justify-content-center">
 
@@ -361,10 +361,10 @@
       <div id="artist-2" role="tabpanel" aria-labelledby="artist-2" tabindex="0">
         <ul class="nav nav-pills justify-content-center my-3 my-md-2" id="pills-tab-2" role="tablist">
 
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" style="margin-right:10px">
             <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pane1" type="button" role="tab" aria-controls="pane1" aria-selected="true">overview</button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item" role="presentation" style="margin-right:10px">
             <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pane2" type="button" role="tab" aria-controls="pane2" aria-selected="true">artist statement</button>
           </li>
 
@@ -429,14 +429,19 @@
   </section>
 
   <script>
-    // add class to sticky menu
-    window.onscroll = function() {
-    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-        document.querySelector(".nav").classList.add("active-menu");
-      } else {
-        document.querySelector(".nav").classList.remove("active-menu");
-      }
-    };
+  const el = document.querySelector(".sticky-top");
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      const isStuck =
+        entry.boundingClientRect.top < 0 && window.scrollY > 1;
+
+      el.classList.toggle("stuck", isStuck);
+    },
+    { threshold: [1] }
+  );
+
+  observer.observe(el);
     </script>
 
 @@include('./footer.html')

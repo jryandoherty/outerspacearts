@@ -97,13 +97,13 @@
   }
 
   button {
-    padding: 0 16px 0 0;
+    padding: 0 16px 0 2px;
   }
 }
 
 @media(max-width:768px){
   .nav-item {
-    padding: .5rem 0 .5rem;
+    padding: .5rem .5rem 0 0;
   }
 }
 

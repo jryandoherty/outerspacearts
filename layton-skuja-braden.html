@@ -1,8 +1,8 @@
 
 @@include('./header.html', {
-    "title": "Elizabeth Layton & Skuja Braden: Lines That Hold, Forms That Remember. October 4th - December 20th 2025",
+    "title": "Elizabeth Layton and Skuja Braden: Lines That Hold, Forms That Remember. October 4th - December 20th 2025",
     "canonical": "layton-skuja-braden/",
-     "description": "Featuring Elizabeth Layton and Skuja Braden, this exhibition brings drawing and contemporary ceramic sculpture into dialogue around personal history, politics, and the human body."
+    "description":'Featuring Elizabeth Layton and Skuja Braden, this exhibition brings drawing and contemporary ceramic sculpture into dialogue around personal history, politics, and the human body.'
   })
 
   <body data-bs-spy="scroll" data-bs-target="show-nav">
@@ -845,7 +845,7 @@
   </section>
 
 
-<section id="hero" class="show-graphic-bg">
+<section id="hero" class="show-graphic-bg mt-5">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280.17 106.32">
     <g>
       <g>
@@ -923,8 +923,9 @@ const el = document.querySelector(".sticky-top");
 
 const observer = new IntersectionObserver(
   ([entry]) => {
-    // Only mark as "stuck" if the page has actually scrolled
-    const isStuck = entry.intersectionRatio < 1 && window.scrollY > 0;
+    const isStuck =
+      entry.boundingClientRect.top < 0 && window.scrollY > 1;
+
     el.classList.toggle("stuck", isStuck);
   },
   { threshold: [1] }

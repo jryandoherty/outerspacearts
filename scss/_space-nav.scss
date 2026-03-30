@@ -1,12 +1,13 @@
 .sticky-top {
-    background:#fff;
+
     top:-1px;
 }
 
 .sticky-top.stuck{
-    background:url('/img/layton/SVG/layton-logo.svg') no-repeat center left #2b3035;
+    /* background:url('/img/layton/SVG/layton-logo.svg') no-repeat center left #2b3035;
     background-size:100px;
-    background-position: 10px;
+    background-position: 10px;*/
+    background:#2b3035;
     @media (max-width:768px){
       background-image: none;
     }
@@ -21,6 +22,13 @@
     border-color:#fff;
 }
 
+
+.nav-link {
+    cursor:pointer;
+    &:hover{
+      text-decoration: underline;;
+    }
+}
 
 
 nav {

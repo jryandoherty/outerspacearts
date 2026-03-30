@@ -110,10 +110,9 @@
   // scss-docs-end nav-pills-css-vars
 
   .nav-link {
-    
+
     border: 0;
     color:$black;
-    @include border-radius(var(--#{$prefix}nav-pills-border-radius));
     font-family: bdr-mono, sans-serif;
     text-transform: uppercase;
 

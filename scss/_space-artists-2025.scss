@@ -1,7 +1,7 @@
 html {
   scroll-padding-top: 110px;
-    @media (max-width:577px){
-        scroll-padding-top: 260px;
+    @media (max-width:768px){
+        scroll-padding-top: 50px;
     }
 
 }
@@ -145,7 +145,8 @@ section:nth-child(4) {
 
 @media(max-width:768px){
  #show-nav .nav-item {
-    padding: .55rem;
+     padding: 0.35rem;
+     font-size: .85rem;
   }
 }
 

@@ -15,6 +15,15 @@ body {
 
 }
 
+
+.install-thumbs {
+  transition: filter 0.3s ease; /* Smooth transition */
+}
+
+.install-thumbs:hover {
+  filter: brightness(110%); /* Makes the image 50% brighter */
+}
+
 .logo-gallery {
     fill:#fff;
     width:200px;
@@ -218,7 +227,7 @@ h1 {
 }
 
 .creativity-explored #hero {
-  height:70vh;
+  height:60vh;
   background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_1920fit/v1749653849/outer-space-arts/ce/installation/CreativityExplored-76_qg47kc.jpg') center center / cover no-repeat #000;
   @media(max-width: 575px){
     background-position: 70% 0;
@@ -227,12 +236,12 @@ h1 {
 
 
 .creativity-explored-ii #hero {
-  height:70vh;
+  height:60vh;
   background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_2800/v1756825041/outer-space-arts/ce/installation/part2/_MMP7829-Edit_zfcjta.webp') center center / cover no-repeat #000;
   @media(max-width: 575px){
     background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_1920/v1756925444/outer-space-arts/ce/installation/part2/_MMP7768-Edit_szyipf.webp') center center / cover no-repeat;
-    height:70vh;
-    background-position: 70% 0;
+    height:60vh;
+    background-position: 70% 20%;
   }
 }
 
@@ -372,7 +381,7 @@ h1 {
 
 
 
-#insta-contact svg  {
+.contact svg  {
   fill:$black;
   &:hover {
     fill: $spacered;
