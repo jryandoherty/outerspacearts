@@ -197,6 +197,7 @@
     "gulp-terser": "^2.1.0",
     "gulp-token-replace": "^1.1.5",
     "gulp-uglify": "^3.0.2",
-    "hugo": "^0.0.3"
+    "hugo": "^0.0.3",
+    "webfontloader": "^1.6.28"
   }
 }

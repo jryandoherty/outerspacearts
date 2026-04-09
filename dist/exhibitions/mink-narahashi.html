@@ -6,7 +6,9 @@
     <meta name="robots" content="noindex, nofollow">
     <title>All Kinds of Everything: works by Lucy Mink and Keiko Narahashi</title>
     <link href="/css/exhibitions-mink-narahashi.css?v=9108" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/jel1pya.css">
+    <script src="https://use.typekit.net/jel1pya.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
 
     <!-- Begin Inspectlet Tracking Code -->
     <script type="text/javascript">
@@ -31,18 +33,78 @@
       gtag('config', 'G-M99WXRGMTL');
     </script>
 
+    <style>
+        .contact-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 180px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            z-index: 1050;
+            border-radius:3rem;
+            background:#fff;
+        }
+
+        @media (max-width: 991px) {
+            .contact-btn {
+
+                right:0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+    </style>
   </head>
   <!--[if lt IE 10]>
       <p class="chromeframe">Are you really using IE?! C'mon man/mam.  Please <a href="http://browsehappy.com/" target="_blank" onclick="s.tl(this,'e','AnotherSite',null)">upgrade your browser</a> right now! I'm not joking, this is my job.</p>
   <![endif]-->
   <body class="exhibitions-mink">
+  <div class="shadow contact-btn">
+      <a href="mailto:info@outerspacearts.xyz" id="email-footer" aria-label="Send an email to Outer Space"><svg viewBox="0 0 24 24" width="24" height="24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" /></svg></a>
 
+      <a href="https://www.instagram.com/outerspacearts.xyz/" target="_blank" id="insta-footer" aria-label="Go to Outer Space's Instagram">
+      <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+      </a>
+
+      <a href="https://www.youtube.com/@outerspacearts/" target="_blank" id="youtube-footer" aria-label="Go to Outer Space's Youtube page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0-2.165.148-2.419 1.456-2.436 4.898.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zm-6.23 7.12v-4.444l4.778 2.218-4.778 2.226zm2-12.222c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></a>
+
+      <a href="https://www.facebook.com/outerspacearts/" target="_blank" id="facebook-footer" aria-label="Go to Outer Space's Facebook page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
+  </div>
     <header class="cover one">
       <div class="headline-container p-3 p-md-5">
          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1774288044/outer-space-arts/all-kinds/preview-logo_ap3umw.png" alt="All Kinds of Everything" class="w-100">
       </div>
     </header>
 <main>
+
+<div class="container mt-5">
+    <div class="row justify-content-center py-5">
+        <div class="col-lg-6 px-4">
+            <p><strong>Lucy Mink (b.1968, Oakland, NJ)</strong> is an abstract painter whose colorful work utilizes pattern, forms, spatial distortions, and varied marks, creating nuanced paintings with fascinating depth and movement.</p>
+            <p>
+
+                Mink received her MFA from Minneapolis College of Art and Design in 1995. Her work has been included in numerous group exhibitions including, Halsey McKay Gallery, East Hampton, NY, Satchel Projects, New York, NY, Big Town Gallery, Rochester, VT, McGowan Fine Art in Concord, NH, Morgan Lehman Gallery, New York, NY (‘15), and Hoffman LaChance Contemporary, St. Louis, MO (‘15), Geoffrey Young Gallery, Great Barrington, MA (’14) and Outlet Fine Art, Brooklyn (’15). She is the recipient of a Pollock-Krasner Foundation Grant (‘12) and was the Artist in Residence at Dartmouth College, Fall, 2018. Mink currently teaches painting and drawing at Dartmouth College and lives and works in Contoocook, NH.
+            </p>
+        </div>
+         <div class="col-lg-6 px-4">
+            <p><strong>Keiko Narahashi (b.1969, Tokyo, Japan)</strong> is a ceramicist that creates intimate works that often challenge traditional volumetric dimensional space, normally utilized in sculpture by flattening out figures and forms, while also brilliantly applying color, shape, and line to her work, mixing paint with form. </p>
+
+            <p>
+                Keiko Narahashi received an MFA in Painting from Bard College, Annandale-On-Hudson, New York, and her BFA from Parsons School of Design, New York. Institutional exhibitions include those at the Art Institute of Chicago; Bronx Museum of the Arts, New York; Sheppard Contemporary Gallery, University of Nevada, Reno; Kuhn Fine Arts Gallery, Ohio State University, Marion; The College Art Gallery, The College of New Jersey; Educational Alliance, New York; Dumbo Arts Center, New York; Dallas Center of Contemporary Art, Texas; Visceglia Gallery, Caldwell College, New Jersey; Korean Cultural Center, Los Angeles; Bard College; Hofstra University, Hempstead, New York; and Usdan Gallery at Bennington College, Vermont. Narahashi's work is in the permanent collection of The Whitney Museum of American Art. She lives and works in New York City.
+            </p>
+
+          </div>
+        </div><!-- end row -->
+    </div>
+
+<div class="cover p-2 p-sm-5 two">
+
+</div><!-- end installation container -->
+
   <section>
     <div class="container">
         <div class="row d-flex justify-content-center">
@@ -53,9 +115,31 @@
           </div>
         </div><!-- end row -->
     </div>
-  </section><!-- end artwork section -->
 
-<div class="cover p-2 p-sm-5 two">
+  <div class="container">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-7 text-center">
+          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785076/outer-space-arts/all-kinds/narahashi/moonface_ucoos3.webp" class="d-block w-100" alt="stoneware sculpture">
+          <p class="mt-3">KEIKO NARAHASHI<br><em>Moonface</em>, 2023<br> glazed stoneware<br>13 x 19.5 x 6.75 inches</p>
+          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Moonface">Inquire</a>
+        </div>
+
+    </div><!-- END ROW-->
+
+    <div class="row d-flex justify-content-center mb-5">
+
+      <div class="col-lg-7 text-center">
+        <img src="https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_1920/v1773785080/outer-space-arts/all-kinds/narahashi/scapegoat_tx1qjs.webp" class="d-block w-100" alt="stoneware sculpture">
+        <p class="mt-3">KEIKO NARAHASHI<br><em>The Scapegoat</em>, 2026<br> glazed stoneware<br>12.5 x 21 x 6 inches</p>
+        <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=The Scapegoat">Inquire</a>
+      </div>
+      </div><!-- end row -->
+
+  </div><!-- end container -->
+</section><!-- end artwork section -->
+
+<div class="cover p-2 p-sm-5 ten">
 
 </div><!-- end installation container -->
 
@@ -119,6 +203,28 @@
     <div class="container">
 
         <div class="row d-flex justify-content-center">
+          <div class="col-lg-7 text-center">
+            <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1774038153/outer-space-arts/all-kinds/narahashi/burrow_rgjxzt.webp" class="d-block w-100" alt="stoneware sculpture">
+            <p class="mt-3">KEIKO NARAHASHI<br><em>Burrow</em>, 2026<br> glazed stoneware<br>6.5 x 9.75 x 9.75 inches</p>
+            <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Burrow">Inquire</a>
+          </div>
+
+      </div><!-- END ROW-->
+
+      <div class="row d-flex justify-content-center mb-5">
+
+        <div class="col-lg-7 text-center">
+          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785077/outer-space-arts/all-kinds/narahashi/mud-marsh_pnxq9e.webp" class="d-block w-100" alt="stoneware sculpture">
+          <p class="mt-3">KEIKO NARAHASHI<br><em>I Rose From Marsh Mud</em>, 2025<br> glazed stoneware<br>7 x 12 x 12 inches</p>
+          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=I Rose From Marsh Mud">Inquire</a>
+        </div>
+        </div><!-- end row -->
+
+    </div><!-- end container -->
+
+    <div class="container">
+
+        <div class="row d-flex justify-content-center">
 
           <div class="col-lg-7 text-center mb-5">
             <img src="https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_1920/v1773766511/outer-space-arts/all-kinds/mink/untitled_purple_green_2024_abjo7t.webp" class="d-block w-50 mx-auto" alt="abstract oil painting">
@@ -150,6 +256,37 @@
   </section><!-- end artwork section -->
 
   <div class="cover p-2 p-sm-5 four">
+
+  </div><!-- end installation container -->
+  <section>
+    <div class="container">
+        <div class="row justify-content-center flex-column-reverse flex-md-row">
+          <div class="col-md-4 col-lg-2 text-center text-md-start pt-4 p-md-0">
+          <p>KEIKO NARAHASHI<br><em>Big Eye</em>, 2020<br>glazed stoneware <br>12.5 x 11.5 x 3.5 inches</p>
+          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Big Eye">Inquire</a>
+
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785050/outer-space-arts/all-kinds/narahashi/big-eye_fzxswa.webp" class="d-block w-100" alt="stoneware sculpture">
+          </div>
+          <div class="d-none d-lg-block col-lg-2"></div>
+        </div><!-- end row -->
+
+        <div class="row justify-content-center flex-column-reverse flex-md-row mb-5">
+          <div class="col-md-4 col-lg-2 text-center text-md-start pt-4 p-md-0">
+          <p>KEIKO NARAHASHI<br><em>Noppera Bo</em>, 2026<br>glazed stoneware <br>12.5 x 8 x 8.25 inches</p>
+          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Noppera Bo">Inquire</a>
+          </div>
+          <div class="col-md-8 col-lg-6">
+            <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773783924/outer-space-arts/all-kinds/narahashi/_MMP4991-Edit-1_i5ghna.webp" class="d-block w-100" alt="stoneware sculpture">
+          </div>
+          <div class="d-none d-lg-block col-lg-2"></div>
+        </div><!-- end row -->
+
+    </div><!-- end container -->
+  </section><!-- end artwork section -->
+
+  <div class="cover p-2 p-sm-5 nine">
 
   </div><!-- end installation container -->
 
@@ -235,38 +372,6 @@
   <div class="container">
       <div class="row justify-content-center flex-column-reverse flex-md-row">
         <div class="col-md-4 col-lg-2 text-center text-md-start pt-4 p-md-0">
-        <p>KEIKO NARAHASHI<br><em>Big Eye</em>, 2020<br>glazed stoneware <br>12.5 x 11.5 x 3.5 inches</p>
-        <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Big Eye">Inquire</a>
-
-        </div>
-        <div class="col-md-8 col-lg-6">
-          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785050/outer-space-arts/all-kinds/narahashi/big-eye_fzxswa.webp" class="d-block w-100" alt="stoneware sculpture">
-        </div>
-        <div class="d-none d-lg-block col-lg-2"></div>
-      </div><!-- end row -->
-
-      <div class="row justify-content-center flex-column-reverse flex-md-row mb-5">
-        <div class="col-md-4 col-lg-2 text-center text-md-start pt-4 p-md-0">
-        <p>KEIKO NARAHASHI<br><em>Noppera Bo</em>, 2026<br>glazed stoneware <br>12.5 x 8 x 8.25 inches</p>
-        <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Noppera Bo">Inquire</a>
-        </div>
-        <div class="col-md-8 col-lg-6">
-          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773783924/outer-space-arts/all-kinds/narahashi/_MMP4991-Edit-1_i5ghna.webp" class="d-block w-100" alt="stoneware sculpture">
-        </div>
-        <div class="d-none d-lg-block col-lg-2"></div>
-      </div><!-- end row -->
-
-  </div><!-- end container -->
-</section><!-- end artwork section -->
-
-<div class="cover p-2 p-sm-5 nine">
-
-</div><!-- end installation container -->
-
-<section>
-  <div class="container">
-      <div class="row justify-content-center flex-column-reverse flex-md-row">
-        <div class="col-md-4 col-lg-2 text-center text-md-start pt-4 p-md-0">
           <p>KEIKO NARAHASHI<br><em>Untitled (Head #5)</em>, 2019-2026<br>Steel, glazed stoneware, magnets<br>19 x 15 x 7 inches</p>
           <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Untitled Head 5">Inquire</a>
         </div>
@@ -318,75 +423,12 @@
   </div><!-- end container -->
 </section><!-- end artwork section -->
 
-<div class="cover p-2 p-sm-5 ten">
-
-</div><!-- end installation container -->
-
-<section>
-  <div class="container">
-
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-7 text-center">
-          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785076/outer-space-arts/all-kinds/narahashi/moonface_ucoos3.webp" class="d-block w-100" alt="stoneware sculpture">
-          <p class="mt-3">KEIKO NARAHASHI<br><em>Moonface</em>, 2023<br> glazed stoneware<br>13 x 19.5 x 6.75 inches</p>
-          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Moonface">Inquire</a>
-        </div>
-
-    </div><!-- END ROW-->
-
-    <div class="row d-flex justify-content-center mb-5">
-
-      <div class="col-lg-7 text-center">
-        <img src="https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_1920/v1773785080/outer-space-arts/all-kinds/narahashi/scapegoat_tx1qjs.webp" class="d-block w-100" alt="stoneware sculpture">
-        <p class="mt-3">KEIKO NARAHASHI<br><em>The Scapegoat</em>, 2026<br> glazed stoneware<br>12.5 x 21 x 6 inches</p>
-        <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=The Scapegoat">Inquire</a>
-      </div>
-      </div><!-- end row -->
-
-  </div><!-- end container -->
-</section><!-- end artwork section -->
 
 <div class="cover p-2 p-sm-5 eleven">
 
 </div><!-- end installation container -->
 
-<section>
-  <div class="container">
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-lg-7 text-center">
-          <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1774038153/outer-space-arts/all-kinds/narahashi/burrow_rgjxzt.webp" class="d-block w-100" alt="stoneware sculpture">
-          <p class="mt-3">KEIKO NARAHASHI<br><em>Burrow</em>, 2026<br> glazed stoneware<br>6.5 x 9.75 x 9.75 inches</p>
-          <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=Burrow">Inquire</a>
-        </div>
-
-    </div><!-- END ROW-->
-
-    <div class="row d-flex justify-content-center mb-5">
-
-      <div class="col-lg-7 text-center">
-        <img src="https://res.cloudinary.com/jryandoherty/image/upload/v1773785077/outer-space-arts/all-kinds/narahashi/mud-marsh_pnxq9e.webp" class="d-block w-100" alt="stoneware sculpture">
-        <p class="mt-3">KEIKO NARAHASHI<br><em>I Rose From Marsh Mud</em>, 2025<br> glazed stoneware<br>7 x 12 x 12 inches</p>
-        <a class="buy-button" href="mailto:info@outerspacearts.xyz?subject=I Rose From Marsh Mud">Inquire</a>
-      </div>
-      </div><!-- end row -->
-
-  </div><!-- end container -->
-</section><!-- end artwork section -->
-
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-12 col-lg-10">
-            <p>LUCY MINK (b.1968) received her MFA from Minneapolis College of Art and Design in 1995. Her work has been included in numerous group exhibitions including, Halsey McKay Gallery, East Hampton, NY, Satchel Projects, New York, NY, Big Town Gallery, Rochester, VT, McGowan Fine Art in Concord, NH, Morgan Lehman Gallery, New York, NY (‘15), and Hoffman LaChance Contemporary, St. Louis, MO (‘15), Geoffrey Young Gallery, Great Barrington, MA (’14) and Outlet Fine Art, Brooklyn (’15). She is the recipient of a Pollock-Krasner Foundation Grant (‘12). And she was the Artist in Residence at Dartmouth College, Fall, 2018. Lucy Mink lives and works in Contoocook, NH.</p>
-
-            <p class="mb-5"><a href="/pdfs/LucyMink.pdf" target="_blank">view Lucy Mink's full biography</a></p>
-
-            <p>KEIKO NARAHASHI (b. 1959, Tokyo, Japan) received an MFA in Painting from Bard College, Annandale-On-Hudson, New York, and her BFA from Parsons School of Design, New York. Institutional exhibitions include those at the Art Institute of Chicago; Bronx Museum of the Arts, New York; Sheppard Contemporary Gallery, University of Nevada, Reno; Kuhn Fine Arts Gallery, Ohio State University, Marion; The College Art Gallery, The College of New Jersey; Educational Alliance, New York; Dumbo Arts Center, New York; Dallas Center of Contemporary Art, Texas; Visceglia Gallery, Caldwell College, New Jersey; Korean Cultural Center, Los Angeles; Bard College; Hofstra University, Hempstead, New York; and Usdan Gallery at Bennington College, Vermont. The Whitney Museum of American Art holds an editioned work by Narahashi in its permanent collection. She was a recipient of the Marie Walsh Sharpe Foundation Studio Grant, and the New York Foundation for the Arts Fellowship Grant in Painting. </p>
-
-            <p><a href="https://www.keikonarahashi.com/pagecv-1" target="_blank">view Keiko Narahashi's full biography</a></p>
-          </div>
-    </div>
-</div><!-- end artwork section -->
 </main>
 <footer class="text-center mt-5">
 <div class="container-fluid">
@@ -400,17 +442,6 @@
         <p class="m-0">35 Pleasant Street, Concord, NH 03301</p>
         <p class="m-0">&copy; 2026 Outer Space</p>
       </div>
-    </div>
-
-    <div class="col-lg-6 text-center text-lg-end">
-      <a href="mailto:info@outerspacearts.xyz" id="email-footer" aria-label="Send an email to Outer Space"><svg viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" /></svg></a>
-      <a href="https://www.instagram.com/outerspacearts.xyz/" target="_blank" id="insta-footer" aria-label="Go to Outer Space's Instagram">
-      <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      </a>
-
-      <a href="https://www.youtube.com/@outerspacearts/" target="_blank" id="youtube-footer" aria-label="Go to Outer Space's Youtube page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M16.23 7.102c-2.002-.136-6.462-.135-8.461 0-2.165.148-2.419 1.456-2.436 4.898.017 3.436.27 4.75 2.437 4.898 1.999.135 6.459.136 8.461 0 2.165-.148 2.42-1.457 2.437-4.898-.018-3.436-.271-4.75-2.438-4.898zm-6.23 7.12v-4.444l4.778 2.218-4.778 2.226zm2-12.222c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12z"/></svg></a>
-      <a href="https://www.facebook.com/outerspacearts/" target="_blank" id="facebook-footer" aria-label="Go to Outer Space's Facebook page"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg></a>
-
     </div>
 
     </div>
