@@ -67,12 +67,8 @@ body {
 
 .pre-pulse {
     stroke: #ff80a1;
-
-
 }
-    .pulse{
-
-
+    .pulse {
            stroke: #ff80a1;
            fill:none;
            stroke-width:1px;
@@ -115,6 +111,75 @@ body {
     }
 }
 
+
+
+.show-graphic-background-montages {
+    width: 100%;
+    aspect-ratio: 21 / 9;
+
+    background: url('https://res.cloudinary.com/jryandoherty/image/upload/v1782932515/outer-space-arts/montages/banner-montages_cxuc70.webp') #aa4c63;
+    background-size:cover;
+    display:flex;
+
+    flex-direction: row;
+    align-content:center;
+    justify-content: center;
+
+    @media (max-width:768px){
+
+        aspect-ratio: 12 / 9;
+        background-position-x: -180%;
+    }
+/* for smaller touch sreens in landscape */
+    @media screen and (max-width: 760px) and (orientation: landscape) and (pointer: coarse) {
+        aspect-ratio: 21 / 9;
+    }
+
+    svg {
+       width:30%;
+       max-width:500px;
+       @media (max-width:768px){
+           width:50%;
+       }
+    }
+
+    .logo-shadow {
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.9));
+
+
+        }
+
+
+        /* Base styling for all items */
+        .montages-fade-item {
+          opacity: 0;
+          animation: fadeIn 0.5s ease-out forwards;
+          animation-delay: 1s;
+
+        }
+
+        /* Individual stagger delays */
+        .montages-fade-item-2 {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+            animation-delay: 2s;
+        }
+        .montages-fade-item-3 {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: 3s;
+        }
+
+        .montages-fade-item:nth-child(3) { animation-delay: 0.3s; }
+        .montages-fade-item:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+
+
+
+}
 
 
 .show-graphic-bg {
@@ -170,10 +235,8 @@ body {
 }
 
 h1 {
-
     animation: 1s ease-out 0s 1 slideInTop;
     font-weight:400;
-
 }
 
 .unblur-text {
@@ -234,7 +297,6 @@ h1 {
   }
 }
 
-
 .creativity-explored-ii #hero {
   height:60vh;
   background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_pad,w_2800/v1756825041/outer-space-arts/ce/installation/part2/_MMP7829-Edit_zfcjta.webp') center center / cover no-repeat #000;
@@ -244,6 +306,39 @@ h1 {
     background-position: 70% 20%;
   }
 }
+
+.mink-narahashi #hero {
+  background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2100/v1773763428/outer-space-arts/all-kinds/installations/_MMP4555-Edit_cmo8rs.webp') center center / cover no-repeat #000;
+  display:flex;
+  flex-direction:column;
+  height:75vh;
+  align-items: flex-end;
+  @media (max-width:768px){
+      align-items: flex-start;
+  }
+
+  @media (max-width:992px){
+  background-position: 20% 0;
+  }
+
+  @media(max-width: 600px){
+    height:100vh;
+  }
+
+  .headline-container {
+    width:30%;
+    @media (max-width:992px){
+        width:50%;
+    }
+    @media(max-width:600px){
+        margin:0;
+        width:75%;
+    }
+  }
+
+} /* end one */
+
+
 
 @media (max-width:1024px){
   .brein-riley #hero, .ap-mack #hero, .cook-kettner #hero, .kent-kohlmann #hero {
@@ -279,10 +374,35 @@ h1 {
 
 .ex-button {
   color:#fff!important;
-  padding: 0.6rem .65rem 0.4rem!important;
+  padding: 0.6rem .65rem 0.2rem!important;
   background: $spacered;
   &:hover{
     background-color: #de0019;
+  }
+  @media (max-width:768px){
+    width:75%!important;
+  }
+}
+
+
+.directions-button {
+  color:#fff!important;
+  padding: 0.6rem .65rem 0.2rem!important;
+  background: #aa4c63;
+  &:hover{
+      background-color: #bc556e;
+  }
+  @media (max-width:768px){
+    width:75%!important;
+  }
+}
+
+.rsvp-button {
+  color:#000!important;
+  padding: 0.6rem .65rem 0.2rem!important;
+  background: #d9b341;
+  &:hover{
+      background-color:#ffce55;
   }
   @media (max-width:768px){
     width:75%!important;
@@ -308,6 +428,7 @@ h1 {
   background-size: auto;
   background-size: 1135px;
   height: 50vh;
+  max-height: 455px;
   display: flex;
   align-items: center;
   justify-content: center;
