@@ -78,19 +78,20 @@
 
     @media (max-width:992px){
         width:40%;
-        margin-top: 20px;
     }
 
     @media(max-width:600px){
         width:50%;
-        margin-top:50px;
+
     }
   }
 
 }/* end cover */
 
+
+
   .one {
-    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342883/outer-space-arts/montages/installations/back_room_2_f94lrv.webp') center center / cover no-repeat #000;
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342934/outer-space-arts/montages/installations/Front_room_4_xhgwsv.webp') center center / cover no-repeat #000;
 
     @media (max-width:992px){
     background-position: 20% 0;
@@ -107,17 +108,21 @@
   }
 
   .three {
-    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342939/outer-space-arts/montages/installations/Front_room_5_ltxt78.webp') center center / cover no-repeat;
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342883/outer-space-arts/montages/installations/back_room_2_f94lrv.webp') center center / cover no-repeat;
 
     @media (max-width:768px){
 
-    background-position: 75% center;
+    background-position: 22% center;
 
     }
   }
 
   .four {
-    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342934/outer-space-arts/montages/installations/Front_room_4_xhgwsv.webp') center center / cover no-repeat;
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342939/outer-space-arts/montages/installations/Front_room_5_ltxt78.webp') center center / cover no-repeat;
+
+    @media (max-width:920px){
+        background-position-x: 10%;
+    }
   }
 
   .five {
@@ -127,32 +132,42 @@
 
   .six {
    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342920/outer-space-arts/montages/installations/Front_room_1_xcbn4j.webp') top center / cover no-repeat;
+
+   @media (max-width:920px){
+       background-position-x: 20%;
+   }
   }
 
 
   .seven {
     background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342915/outer-space-arts/montages/installations/Back_room_6_e7dsud.webp') center center / cover no-repeat;
+    @media (max-width:992px){
+        background-image: url(' https://res.cloudinary.com/jryandoherty/image/upload/v1788121427/outer-space-arts/montages/installations/_MMP9164-Edit_zi2dkr.jpg');
+    }
+
+
   }
 
   .eight {
     background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342911/outer-space-arts/montages/installations/back_room_5_cy1flw.webp') top center / cover no-repeat;
+
+    @media (max-width:992px){
+        background-image: url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,h_1200/v1785878614/outer-space-arts/montages/installations/_MMP9243-Edit_grqjk0.webp');
+    }
   }
 
   .nine {
     background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342889/outer-space-arts/montages/installations/back_room_3_pe7olp.webp') 20% center / cover no-repeat;
 
-    @media (max-width:768px){
-        background-image: url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,h_1200/v1785878615/outer-space-arts/montages/installations/_MMP9215-Edit_tzwovy.webp');
 
-    }
   }
 
   .ten {
     background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342878/outer-space-arts/montages/installations/Back_room_1_r0anrd.webp') center center / cover no-repeat;
-
-    @media (max-width:992px){
-        background-image: url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,h_1200/v1785878614/outer-space-arts/montages/installations/_MMP9243-Edit_grqjk0.webp');
+    @media (max-width:920px){
+        background-position-x: 5%;
     }
+
 
   }
 
