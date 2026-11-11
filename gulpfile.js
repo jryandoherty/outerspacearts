@@ -21,6 +21,7 @@ async function includeHTML(){
     '!nav.html', // ignore
     '!install.html', // ignore
     '!index-old.html', // ignore
+    '!index-backup.html', // ignore
     '!nav-new.html', // ignore
     '!current-ex.html', // ignore
     '!current-ex-new.html', // ignore

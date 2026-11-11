@@ -1,0 +1,192 @@
+.exhibitions-montages {
+
+   p {
+     color:#000;
+   }
+
+  .artist-headline {
+    font-size:1.63rem;
+    color:#661004;
+  }
+
+  a {
+      text-decoration:none;
+  }
+
+  .buy-button {
+
+    text-align:center;
+    border:none;
+    border-radius:1.5rem;
+    min-width:11.625rem;
+    padding:.5rem 2rem .25rem;
+    font-weight:bold;
+    background-color:#254cb8;
+    color:#fff;
+    font-size:.95rem;
+    line-height:1.5rem;
+    cursor:pointer;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    @media(max-width:1199px){
+        min-width:9.625rem;
+    }
+  }
+
+  section {
+      background:url('/img/logo-black.svg') top 20px right 20px / 120px no-repeat;
+      padding:8rem 0;
+      @media(max-width: 1024px){
+        background-size:50px;
+        background-position: top 10px right 12px;
+      }
+
+      @media(max-width: 575px){
+        padding:3rem 0 1rem 0;
+      }
+
+.container .row {
+
+    margin-top:2.5rem;
+
+}
+
+    .logo {
+      max-width:120px;
+        @media(max-width: 575px){
+          max-width: 50px;
+        }
+    }
+  }
+
+  @media(max-width: 500px){
+    font-size: .9rem;
+  }
+
+.cover {
+  display:flex;
+  flex-direction:row;
+  height:100vh;
+  align-items:center;
+
+
+  @media(max-width:992px){
+      align-items:start;
+  }
+
+
+
+  .headline-container {
+
+    width:40%;
+
+    @media (max-width:992px){
+        width:60%;
+    }
+
+    @media(max-width:600px){
+        width:80%;
+
+    }
+  }
+
+}/* end cover */
+
+  .one {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019698/outer-space-arts/grabner-digiulio/installations/_MMP2618-Edit_dposm0.webp') center center / cover no-repeat #e8bf45;
+
+    @media (max-width:992px){
+
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019670/outer-space-arts/grabner-digiulio/installations/_MMP2669-Edit_ojve9u.webp') center center / cover no-repeat #e8bf45;
+    }
+
+  } /* end one */
+
+  .two {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019700/outer-space-arts/grabner-digiulio/installations/_MMP2605-Edit_trztml.webp') center center / cover no-repeat #000;
+
+    @media (max-width:768px){
+
+         background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019898/outer-space-arts/grabner-digiulio/installations/_MMP2818-Edit_kvzmez.webp') center center / cover no-repeat #000;
+
+    }
+  }
+
+  .three {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019819/outer-space-arts/grabner-digiulio/installations/_MMP2779-Edit_jajm9g.webp') center center / cover no-repeat;
+
+    @media (max-width:768px){
+       background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019896/outer-space-arts/grabner-digiulio/installations/_MMP2848-Edit_iz9ekr.webp') center center / cover no-repeat #000;
+    }
+  }
+
+  .four {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019822/outer-space-arts/grabner-digiulio/installations/_MMP2775-Edit_hngyy4.webp') center center / cover no-repeat;
+
+    @media (max-width:920px){
+        background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019898/outer-space-arts/grabner-digiulio/installations/_MMP2818-Edit_kvzmez.webp') center center / cover no-repeat #000;
+    }
+  }
+
+  .five {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019823/outer-space-arts/grabner-digiulio/installations/_MMP2800-Edit_wwcd04.webp') center center / cover no-repeat;
+  }
+
+  .six {
+   background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019830/outer-space-arts/grabner-digiulio/installations/_MMP2809-Edit_xbnpgv.webp') center center / cover no-repeat;
+
+   @media (max-width:768px){
+       background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019694/outer-space-arts/grabner-digiulio/installations/_MMP2608-Edit_x06zfu.webp') center center / cover no-repeat;
+
+   }
+  }
+
+  .seven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019893/outer-space-arts/grabner-digiulio/installations/_MMP2836-Edit_lt2bur.webp') center center / cover no-repeat;
+    @media (max-width:992px){
+        background-image: url(' https://res.cloudinary.com/jryandoherty/image/upload/v1788121427/outer-space-arts/montages/installations/_MMP9164-Edit_zi2dkr.jpg');
+    }
+  }
+
+  .eight {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792019898/outer-space-arts/grabner-digiulio/installations/_MMP2830-Edit_bi5iy7.webp') top center / cover no-repeat;
+
+    @media (max-width:992px){
+        background-image: url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,h_1200/v1785878614/outer-space-arts/montages/installations/_MMP9243-Edit_grqjk0.webp');
+    }
+  }
+
+  .nine {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_WebP-2000w/v1792020152/outer-space-arts/grabner-digiulio/installations/_MMP2883_nas0mq.webp') 20% center / cover no-repeat;
+  }
+
+  .ten {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_auto,h_1428,w_2000/f_webp/e_brightness:20/e_contrast:level_10;type_sigmoidal/f_auto/q_auto/outer-space-arts/grabner-digiulio/installations/_MMP2986_pqiirr.jpg') center center / cover no-repeat;
+    @media (max-width:920px){
+        background-position-x: 5%;
+    }
+  }
+
+  .eleven {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_auto,h_1428,w_2000/f_webp/e_brightness:16/e_saturation:6/e_vibrance:10/outer-space-arts/grabner-digiulio/installations/_MMP2975_hnwguk.jpg') center center / cover no-repeat;
+  }
+
+  .twelve {
+    background:url('https://res.cloudinary.com/jryandoherty/image/upload/t_webP-2000h/v1792019687/outer-space-arts/grabner-digiulio/installations/_MMP2640-Edit_obczjy.webp') center center / cover no-repeat;
+  }
+
+
+footer {
+  .row {
+    margin:0;
+  }
+}
+
+  .ex-description p {
+    text-align:justify;
+  }
+
+}

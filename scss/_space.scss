@@ -182,6 +182,77 @@ body {
 }
 
 
+.show-graphic-background-grabner {
+    width: 100%;
+    aspect-ratio: 23 / 9;
+
+    background: url('/img/degiulio-grabner/banner-grabner.jpg') #55967d;
+    background-size:cover;
+
+    display:flex;
+    flex-direction: row;
+    align-items:end;
+    align-content:end;
+    justify-content: center;
+
+    @media (max-width:768px){
+
+        aspect-ratio: 12 / 9;
+
+    }
+/* for smaller touch sreens in landscape */
+    @media screen and (max-width: 760px) and (orientation: landscape) and (pointer: coarse) {
+        aspect-ratio: 21 / 9;
+    }
+
+    svg {
+       width:30%;
+       max-width:500px;
+       @media (max-width:768px){
+           width:50%;
+       }
+    }
+
+    .logo-shadow {
+        filter: drop-shadow(0 4px 6px rgba(0,0,0,0.9));
+
+
+        }
+
+
+        /* Base styling for all items */
+        .montages-fade-item {
+          opacity: 0;
+          animation: fadeIn 0.5s ease-out forwards;
+          animation-delay: 1s;
+
+        }
+
+        /* Individual stagger delays */
+        .montages-fade-item-2 {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+            animation-delay: 2s;
+        }
+        .montages-fade-item-3 {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: 3s;
+        }
+
+        .montages-fade-item:nth-child(3) { animation-delay: 0.3s; }
+        .montages-fade-item:nth-child(4) { animation-delay: 0.4s; }
+
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+
+
+
+}
+
+
+
 .show-graphic-bg {
   width: 100%;
   aspect-ratio: 32 / 9;
@@ -307,6 +378,34 @@ h1 {
   }
 }
 
+.cordova-idetsu #hero {
+
+  background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2500/v1785342934/outer-space-arts/montages/installations/Front_room_4_xhgwsv.webp') 50%/cover no-repeat #e8bf45;
+  display:flex;
+  flex-direction:column;
+  height:70vh;
+  align-items: flex-end;
+
+  @media (max-width:992px){
+  background-position: 20% 0;
+  }
+
+  .headline-container {
+
+    width:30%;
+
+    @media (max-width:992px){
+        width:40%;
+    }
+
+    @media(max-width:600px){
+        width:50%;
+
+    }
+  }
+
+}
+
 .mink-narahashi #hero {
   background:url('https://res.cloudinary.com/jryandoherty/image/upload/c_scale,w_2100/v1773763428/outer-space-arts/all-kinds/installations/_MMP4555-Edit_cmo8rs.webp') center center / cover no-repeat #000;
   display:flex;
@@ -388,9 +487,9 @@ h1 {
 .directions-button {
   color:#fff!important;
   padding: 0.6rem .65rem 0.2rem!important;
-  background: #aa4c63;
+  background:#5a8b64;
   &:hover{
-      background-color: #bc556e;
+      background-color: #3c5c3c;
   }
   @media (max-width:768px){
     width:75%!important;
